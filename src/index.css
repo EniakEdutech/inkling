@@ -84,8 +84,16 @@ code {
   flex-wrap: nowrap;
 }
 
+.margin-center {
+  margin: 0 auto;
+}
+
 .w-100 {
   width: 100%;
+}
+
+.w-80 {
+  width: 80%;
 }
 
 .w-75 {
@@ -124,8 +132,17 @@ a {
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
+  .md-row {
+    flex-direction: row;
+  }
+  .md-column {
+    flex-direction: column;
+  }
   .w-md-100 {
     width: 100%
+  }
+  .w-md-80 {
+    width: 80%;
   }
   .w-md-75 {
     width: 75%;
@@ -148,8 +165,17 @@ a {
 /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
+  .xmd-row {
+    flex-direction: row;
+  }
+  .xmd-column {
+    flex-direction: column;
+  }
   .w-xmd-100 {
     width: 100%
+  }
+  .w-xmd-80 {
+    width: 80%;
   }
   .w-xmd-75 {
     width: 75%;
@@ -172,8 +198,17 @@ a {
 /* Extra large devices (large desktops, 1200px and up) */
 
 @media (min-width: 1200px) {
+  .lg-row {
+    flex-direction: row;
+  }
+  .lg-column {
+    flex-direction: column;
+  }
   .w-lg-100 {
     width: 100%
+  }
+  .w-lg-80 {
+    width: 80%;
   }
   .w-lg-75 {
     width: 75%;
@@ -192,8 +227,17 @@ a {
 /* Extra extra large devices (iMac) */
 
 @media screen and (min-width:2560px) {
+  .xlg-row {
+    flex-direction: row;
+  }
+  .xlg-column {
+    flex-direction: column;
+  }
   .w-xlg-100 {
     width: 100%
+  }
+  .w-xlg-80 {
+    width: 80%;
   }
   .w-xlg-75 {
     width: 75%;
