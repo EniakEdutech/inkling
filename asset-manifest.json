@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/inkling/static/css/main.b65df07a.chunk.css",
-    "main.js": "/inkling/static/js/main.e1384849.chunk.js",
-    "main.js.map": "/inkling/static/js/main.e1384849.chunk.js.map",
+    "main.js": "/inkling/static/js/main.2a2a3a89.chunk.js",
+    "main.js.map": "/inkling/static/js/main.2a2a3a89.chunk.js.map",
     "runtime-main.js": "/inkling/static/js/runtime-main.93f24f6c.js",
     "runtime-main.js.map": "/inkling/static/js/runtime-main.93f24f6c.js.map",
-    "static/js/2.8b0a83b6.chunk.js": "/inkling/static/js/2.8b0a83b6.chunk.js",
-    "static/js/2.8b0a83b6.chunk.js.map": "/inkling/static/js/2.8b0a83b6.chunk.js.map",
+    "static/js/2.6f08618d.chunk.js": "/inkling/static/js/2.6f08618d.chunk.js",
+    "static/js/2.6f08618d.chunk.js.map": "/inkling/static/js/2.6f08618d.chunk.js.map",
     "index.html": "/inkling/index.html",
     "static/css/main.b65df07a.chunk.css.map": "/inkling/static/css/main.b65df07a.chunk.css.map",
-    "static/js/2.8b0a83b6.chunk.js.LICENSE.txt": "/inkling/static/js/2.8b0a83b6.chunk.js.LICENSE.txt"
+    "static/js/2.6f08618d.chunk.js.LICENSE.txt": "/inkling/static/js/2.6f08618d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.93f24f6c.js",
-    "static/js/2.8b0a83b6.chunk.js",
+    "static/js/2.6f08618d.chunk.js",
     "static/css/main.b65df07a.chunk.css",
-    "static/js/main.e1384849.chunk.js"
+    "static/js/main.2a2a3a89.chunk.js"
   ]
 }
