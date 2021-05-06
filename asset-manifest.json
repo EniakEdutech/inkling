@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/inkling/static/css/main.775ed9bb.chunk.css",
+    "main.js": "/inkling/static/js/main.f12a24a3.chunk.js",
+    "main.js.map": "/inkling/static/js/main.f12a24a3.chunk.js.map",
+    "runtime-main.js": "/inkling/static/js/runtime-main.93f24f6c.js",
+    "runtime-main.js.map": "/inkling/static/js/runtime-main.93f24f6c.js.map",
+    "static/js/2.b22afb30.chunk.js": "/inkling/static/js/2.b22afb30.chunk.js",
+    "static/js/2.b22afb30.chunk.js.map": "/inkling/static/js/2.b22afb30.chunk.js.map",
+    "index.html": "/inkling/index.html",
+    "static/css/main.775ed9bb.chunk.css.map": "/inkling/static/css/main.775ed9bb.chunk.css.map",
+    "static/js/2.b22afb30.chunk.js.LICENSE.txt": "/inkling/static/js/2.b22afb30.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.93f24f6c.js",
+    "static/js/2.b22afb30.chunk.js",
+    "static/css/main.775ed9bb.chunk.css",
+    "static/js/main.f12a24a3.chunk.js"
+  ]
+}
