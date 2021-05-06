@@ -9,7 +9,6 @@ export const Home = () => {
         <p>Home page</p>
         <Link to="/aboutus">About Us</Link>
         <Button className="w-100 w-md-50 w-lg-25" primary>Test button</Button>
-        <Button className="w-100 w-md-50 w-lg-25" secondary>Test button</Button>
         <Button className="w-100 w-md-50 w-lg-25" helper>Test button</Button>
         <Button className="w-100 w-md-50 w-lg-25" info>Test button</Button>
         <Button className="w-100 w-md-50 w-lg-25" error>Test button</Button>

@@ -2,32 +2,24 @@ import styled, { css } from 'styled-components'
 
 const StyledButton = styled.button`
 background: white;
-box-shadow: 3px 3px 9px 0px var(--primary-variant);
+box-shadow: 3px 3px 9px 0px var(--primary-light-variant);
 color: black;                                                                                                                       
 padding: 15px 30px;
 border-radius: 15px;
 border: transparent;
 
 :hover {
-  box-shadow: 2px 2px 4px var(--primary-variant);
-  ${props => props.secondary && css`
-  box-shadow: 2px 2px 4px var(--secondary-variant);
-  `}
+  box-shadow: 2px 2px 4px var(--primary-light-variant);
 }
 
 :active {
-  box-shadow: none;
+  box-shadow: 3px 3px 9px 0px var(--primary-light-variant) inset;
 }
 
 ${props => props.primary && css`
 background: var(--primary);
 color: var(--primary-text);
 `};
-${props => props.secondary && css`
-background: var(--secondary);
-color: var(--secondary-text);
-box-shadow: 3px 3px 9px 0px var(--secondary-variant);
-`}
 ${props => props.info && css`
 color: var(--info);
 `}

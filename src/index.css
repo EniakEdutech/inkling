@@ -9,17 +9,16 @@
 }
 
 :root {
-  --primary: gray;
-  --secondary: white;
-  --primary-variant: lightgray;
-  --secondary-variant: gray;
-  --primary-text: rgb(251, 251, 83);
-  --secondary-text: violet;
-  --disabled: darkgray;
-  --disabled-text: rgb(37, 37, 37);
-  --error: rgb(255, 83, 83);
-  --helper: rgb(83, 255, 83);
-  --info: rgb(83, 83, 255);
+  --primary-text: white;
+  --primary: rgb(15, 17, 17);
+  --primary-dark-variant: rgb(19, 19, 19);
+  --primary-light-variant: rgb(91, 99, 99);
+  --disabled: rgb(203, 203, 205);
+  --disabled-text: rgb(66, 66, 80);
+  --error: rgb(176, 0, 32);
+  --error-text: white;
+  --helper: rgb(58, 182, 25);
+  --info: rgb(25, 64, 182);
 }
 
 body {
