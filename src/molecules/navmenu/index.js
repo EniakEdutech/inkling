@@ -7,9 +7,8 @@ import { Hamburger } from '../../atoms/hamburger'
 import logo from '../../assets/inkling.png'
 
 const StyledNav = styled.nav`
+position: sticky;
 top: 0;
-left: 0;
-right: 0;
 z-index: 100;
 background-color: var(--primary-text);
 box-shadow: 5px 0 10px 0px var(--primary-light-variant);
@@ -101,7 +100,7 @@ display: none;
 
 export const NavMenu = props => {
     const [show, setShow] = useState(false)
-    return <StyledNav className="fixed">
+    return <StyledNav>
         <StyledParentDiv className="flex column space-between align-center margin-center md-row">
             <StyledLogo src={logo} alt="logo" title="Inkling" />
             <StylesNavigationItems className="column md-row w-100 w-md-unset" toggleShow={show}>
