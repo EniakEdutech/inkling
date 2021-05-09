@@ -133,8 +133,7 @@ export const NavMenu = props => {
                 <NavLink to="/portfolio">Portfolio</NavLink>
                 <NavLink to="/contactus">Contact Us</NavLink>
             </StylesNavigationItems>
-            {/* TODO: animate hamburger icon and toggle between X and - on click */}
-            <Hamburger click={() => setShow(!show)} />
+            <Hamburger click={() => setShow(!show)} show={show} />
         </StyledParentDiv>
     </StyledNav>
 }
