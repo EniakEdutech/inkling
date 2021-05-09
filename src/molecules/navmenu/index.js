@@ -78,7 +78,6 @@ display: none;
     color: var(--primary-text);
 }
 
-
 @media screen and (min-width: 768px) {
     display: flex;
     >a {
@@ -93,8 +92,17 @@ display: none;
     >a.active {
         background-color: var(--primary-text);
         color: var(--primary-dark-variant);
+        position: relative;
+    }
+    >a.active:before {
+        content: "";
+        position: absolute;
+        left: 30%;
+        bottom: 0;
+        height: 1px;
+        width: 40%;
         border-bottom: 1px solid var(--primary-dark-variant);
-    }    
+    }
 }
 `
 
@@ -104,7 +112,7 @@ export const NavMenu = props => {
         <StyledParentDiv className="flex column space-between align-center margin-center md-row">
             <StyledLogo src={logo} alt="logo" title="Inkling" />
             <StylesNavigationItems className="column md-row w-100 w-md-unset" toggleShow={show}>
-                <NavLink to="/">Home</NavLink>
+                <NavLink to="/" exact>Home</NavLink>
                 <NavLink to="/aboutus">About Us</NavLink>
                 <NavLink to="/portfolio">Portfolio</NavLink>
                 <NavLink to="/contactus">Contact Us</NavLink>
