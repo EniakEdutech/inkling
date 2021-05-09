@@ -4,7 +4,9 @@ import styled, { css } from 'styled-components'
 // Components
 import { Hamburger } from '../../atoms/hamburger'
 // static
-import logo from '../../assets/inkling.png'
+import logo from '../../assets/inkling@.5x.png'
+import logo2x from '../../assets/inkling.png'
+import logo4x from '../../assets/inkling@2x.png'
 
 const StyledNav = styled.nav`
 position: sticky;
@@ -26,16 +28,25 @@ width: 90%;
 }
 `
 
-const StyledLogo = styled.img`
-height: auto;
-width: 120px;
+const StyledLogo = styled.picture`
 margin: 8px 0;
 align-self: flex-start;
+height: auto;
+width: 120px;
+
+> * {
+    height: auto;
+    width: 120px;
+}
 
 @media screen and (min-width: 768px) {
-    width: 160px
-    margin: 0;
     align-self: center;
+    width: 160px;
+    margin: 0;
+    > * {
+        width: 160px;
+        margin: 0;
+    }
 }
 `
 // TODO: add animations to open and closing of menu items on mobile
@@ -110,7 +121,12 @@ export const NavMenu = props => {
     const [show, setShow] = useState(false)
     return <StyledNav>
         <StyledParentDiv className="flex column space-between align-center margin-center md-row">
-            <StyledLogo src={logo} alt="logo" title="Inkling" />
+            <StyledLogo>
+                <source srcSet={logo} media="(max-width: 768px)" ></source>
+                <source srcSet={logo2x} media="(min-width: 768px)" ></source>
+                <source srcSet={logo4x} media="(min-width: 1900px)" ></source>
+                <img src={logo} alt="logo" title="Inkling" />
+            </StyledLogo>
             <StylesNavigationItems className="column md-row w-100 w-md-unset" toggleShow={show}>
                 <NavLink to="/" exact>Home</NavLink>
                 <NavLink to="/aboutus">About Us</NavLink>
