@@ -120,6 +120,14 @@ hr {
   align-items: center;
 }
 
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
 .space-between {
   justify-content: space-between;
 }
@@ -174,6 +182,10 @@ hr {
 
 .w-25 {
   width: 25%;
+}
+
+.w-unset {
+  width: unset;
 }
 
 .relative {
@@ -233,6 +245,9 @@ hr {
   .w-md-25 {
     width: 25%;
   }
+  .w-md-unset {
+    width: unset;
+  }
 }
 
 /* iPad 10'5" */
@@ -265,6 +280,9 @@ hr {
   }
   .w-xmd-25 {
     width: 25%;
+  }
+  .w-xmd-unset {
+    width: unset;
   }
 }
 
@@ -317,7 +335,12 @@ hr {
   .w-lg-25 {
     width: 25%;
   }
+  .w-lg-unset {
+    width: unset;
+  }
 }
+
+@media screen and (min-width: 1900px) {}
 
 /* Extra extra large devices (iMac) */
 
@@ -345,6 +368,9 @@ hr {
   }
   .w-xlg-25 {
     width: 25%;
+  }
+  .w-xlg-unset {
+    width: unset;
   }
 }
 
