@@ -1,0 +1,1 @@
+// banner image that covers entire width of screen

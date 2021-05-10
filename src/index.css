@@ -31,26 +31,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-h1 {
-  font-size: 40px;
-  font-family: 'Merriweather', 'Open Sans', 'Helvetica Neue', sans-serif
-}
-
-h2 {
-  font-size: 30px;
-  font-family: 'Poppins', sans-serif;
-}
-
-h3 {
-  font-size: 25px;
-  font-family: 'Work Sans', sans-serif;
-}
-
-h4 {
-  font-size: 21px;
-}
-
-blockquote, h5 {
+blockquote {
   font-size: 17px;
 }
 
@@ -58,7 +39,7 @@ b, strong, s {
   font-size: 16px;
 }
 
-a, p, input, textarea, button, select, h6, q {
+a, p, input, textarea, button, select, q {
   font-size: 15px;
 }
 
@@ -203,23 +184,8 @@ hr {
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
-  h1 {
-    font-size: 50px;
-  }
-  h2 {
-    font-size: 35px;
-  }
-  h3 {
-    font-size: 30px;
-  }
-  h4 {
-    font-size: 25px;
-  }
-  blockquote, h5 {
+  blockquote {
     font-size: 21px;
-  }
-  h6 {
-    font-size: 17px;
   }
   .md-row {
     flex-direction: row;
@@ -293,23 +259,8 @@ hr {
 /* Extra large devices (large desktops, 1200px and up) */
 
 @media (min-width: 1200px) {
-  h1 {
-    font-size: 45px;
-  }
-  h2 {
-    font-size: 32px;
-  }
-  h3 {
-    font-size: 26px;
-  }
-  h4 {
-    font-size: 22px;
-  }
-  blockquote, h5 {
+  blockquote {
     font-size: 19px;
-  }
-  h6 {
-    font-size: 15px;
   }
   .lg-row {
     flex-direction: row;
