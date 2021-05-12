@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/inkling/static/css/main.b65df07a.chunk.css",
-    "main.js": "/inkling/static/js/main.a626f3c8.chunk.js",
-    "main.js.map": "/inkling/static/js/main.a626f3c8.chunk.js.map",
-    "runtime-main.js": "/inkling/static/js/runtime-main.93f24f6c.js",
-    "runtime-main.js.map": "/inkling/static/js/runtime-main.93f24f6c.js.map",
-    "static/js/2.6741b08c.chunk.js": "/inkling/static/js/2.6741b08c.chunk.js",
-    "static/js/2.6741b08c.chunk.js.map": "/inkling/static/js/2.6741b08c.chunk.js.map",
+    "main.css": "/inkling/static/css/main.5e18c66b.chunk.css",
+    "main.js": "/inkling/static/js/main.05c1c2f9.chunk.js",
+    "main.js.map": "/inkling/static/js/main.05c1c2f9.chunk.js.map",
+    "runtime-main.js": "/inkling/static/js/runtime-main.6880259b.js",
+    "runtime-main.js.map": "/inkling/static/js/runtime-main.6880259b.js.map",
+    "static/js/2.3638b87d.chunk.js": "/inkling/static/js/2.3638b87d.chunk.js",
+    "static/js/2.3638b87d.chunk.js.map": "/inkling/static/js/2.3638b87d.chunk.js.map",
     "index.html": "/inkling/index.html",
-    "static/css/main.b65df07a.chunk.css.map": "/inkling/static/css/main.b65df07a.chunk.css.map",
-    "static/js/2.6741b08c.chunk.js.LICENSE.txt": "/inkling/static/js/2.6741b08c.chunk.js.LICENSE.txt"
+    "static/css/main.5e18c66b.chunk.css.map": "/inkling/static/css/main.5e18c66b.chunk.css.map",
+    "static/js/2.3638b87d.chunk.js.LICENSE.txt": "/inkling/static/js/2.3638b87d.chunk.js.LICENSE.txt",
+    "static/media/inkling.c882a76d.png": "/inkling/static/media/inkling.c882a76d.png",
+    "static/media/inkling@2x.1958b764.png": "/inkling/static/media/inkling@2x.1958b764.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.93f24f6c.js",
-    "static/js/2.6741b08c.chunk.js",
-    "static/css/main.b65df07a.chunk.css",
-    "static/js/main.a626f3c8.chunk.js"
+    "static/js/runtime-main.6880259b.js",
+    "static/js/2.3638b87d.chunk.js",
+    "static/css/main.5e18c66b.chunk.css",
+    "static/js/main.05c1c2f9.chunk.js"
   ]
 }
