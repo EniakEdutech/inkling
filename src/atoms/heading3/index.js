@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const StyledH4 = styled.h4`
-font-size: 21px;
+font-size: 17px;
 
 @media (min-width: 768px) {
     font-size: 25px;

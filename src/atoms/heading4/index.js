@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const StyledH5 = styled.h5`
-font-size: 17px;
+font-size: 16px;
 
 @media (min-width: 768px) {
     font-size: 21px;
