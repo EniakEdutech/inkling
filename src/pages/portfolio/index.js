@@ -6,7 +6,8 @@ import { NavMenu } from '../../molecules/navmenu'
 import { Project } from '../../organisms/project'
 
 const CategoryContainerDiv = styled.div`
-margin: 20px 0;
+margin: 50px 5px 20px 5px;
+background-color: var(--primary-text);
 overflow-x: auto;
 white-space: nowrap;
 
@@ -19,6 +20,11 @@ const CategoryDiv = styled.div`
 padding: 10px 30px;
 border: 1px solid var(--primary-light-variant);
 color: var(--primary-light-variant);
+cursor: pointer;
+
+&:hover {
+    color: var(--primary-dark-variant);
+}
 
 &.selected {
     border: 1px solid var(--primary-dark-variant);
@@ -38,14 +44,31 @@ export class Portfolio extends Component {
                     description: "Eniak description",
                     image: "https://ik.imagekit.io/bizwem110d/default-image.jpg",
                     alt: "Eniak",
-                    // link="/eniak",
+                    link: "eniak",
                     category: ['Design', 'Development']
+                },
+                {
+                    title: "Main Bhi Ambani",
+                    description: "Spoofing the oligarch",
+                    image: "https://ik.imagekit.io/bizwem110d/default-image.jpg",
+                    alt: "Main bhi ambani",
+                    link: "mainbhiambani",
+                    category: ['Development']
+                },
+                {
+                    title: "Thakur College Feedback System",
+                    description: "Feedback management system",
+                    image: "https://ik.imagekit.io/bizwem110d/default-image.jpg",
+                    alt: "TCSC Feedback",
+                    link: "tcscfeedback",
+                    category: ['Development']
                 },
                 {
                     title: "ITK",
                     description: "Information Technology Kindergarden",
                     image: "https://ik.imagekit.io/bizwem110d/default-image.jpg",
                     alt: "ITK",
+                    link: "",
                     category: ['Design', 'Curriculum Design']
                 },
                 {
@@ -53,6 +76,7 @@ export class Portfolio extends Component {
                     description: "90 minute application challenge",
                     image: "https://ik.imagekit.io/bizwem110d/default-image.jpg",
                     alt: "90min",
+                    link: "",
                     category: ['Development']
                 },
                 {
@@ -60,6 +84,7 @@ export class Portfolio extends Component {
                     description: "Code for all",
                     image: "https://ik.imagekit.io/bizwem110d/default-image.jpg",
                     alt: "Code for all",
+                    link: "",
                     category: ['Curriculum Design']
                 }
             ],
@@ -129,6 +154,14 @@ export class Portfolio extends Component {
                     </CategoryDiv>
                 </CategoryContainerDiv>
                 <div className="flex wrap">
+                    {this.state.showProjects.map((project, index) => <Project
+                        key={index}
+                        title={project.title}
+                        description={project.description}
+                        image={project.image}
+                        alt={project.alt}
+                        link={"/portfolio/" + project.link} />)}
+                </div>
                 {this.state.count < this.state.projects.length &&
                     <div className="flex center" style={{ margin: "50px" }}>
                         <Button onClick={this.increaseCount} showmore>Show more</Button>

@@ -1,15 +1,12 @@
 import styled from "styled-components"
-// import { Heading2 } from "../../atoms/heading2"
-// import { Heading4 } from "../../atoms/heading4"
+import { Link } from 'react-router-dom'
+// components
 import { CardTitle } from "../../molecules/cardTitle"
 import { CardSub } from "../../molecules/cardSubtitle"
 import { Image } from "../../atoms/image"
 
 const StyledDiv = styled.div`
-padding: 10px;
->.image {
-    width: 100%;
-}
+padding: 5px;
 
 @media screen and (hover:hover) {
     >.title {
@@ -23,16 +20,15 @@ padding: 10px;
         left: 0;
         bottom: 0;
     }
-    :hover > .title {
+    &:hover > .title {
         display: flex;
         background-color: rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(5px);
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
-    >.image {
-    }
+@media screen and (min-width: 992px) {
+    padding: 8px 5px;
 }
 `
 
@@ -47,11 +43,13 @@ height: 25vh;
 // const styledMobileDiv
 
 export const Project = props => {
-    return <StyledDiv {...props} className="relative w-100 w-xmd-50 w-xlg-33">
-        <div className="title">
-            <CardTitle>{props.title}</CardTitle>
-            <CardSub>{props.description}</CardSub>
-        </div>
-        <ProjectImage src={props.image} className="image" alt={props.alt} />
-    </StyledDiv>
+    return <Link to={props.link} className="relative w-100 w-xmd-50 w-xlg-33">
+        <StyledDiv {...props}>
+            <div className="title">
+                <CardTitle>{props.title}</CardTitle>
+                <CardSub>{props.description}</CardSub>
+            </div>
+            <ProjectImage src={props.image} className="image" alt={props.alt} />
+        </StyledDiv>
+    </Link>
 }
