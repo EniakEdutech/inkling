@@ -137,6 +137,66 @@ hr {
   flex-wrap: nowrap;
 }
 
+.g-1 {
+  gap: 1em;
+}
+
+.g-2 {
+  gap: 2em;
+}
+
+.g-3 {
+  gap: 3em;
+}
+
+.g-4 {
+  gap: 4em;
+}
+
+.g-5 {
+  gap: 5em;
+}
+
+.r-g-1 {
+  row-gap: 1em;
+}
+
+.r-g-2 {
+  row-gap: 2em;
+}
+
+.r-g-3 {
+  row-gap: 3em;
+}
+
+.r-g-4 {
+  row-gap: 4em;
+}
+
+.r-g-5 {
+  row-gap: 5em;
+}
+
+.c-g-1 {
+  column-gap: 1em;
+}
+
+.c-g-2 {
+  column-gap: 2em;
+}
+
+.c-g-3 {
+  column-gap: 3em;
+}
+
+.c-g-4 {
+  column-gap: 4em;
+}
+
+.c-g-5 {
+  column-gap: 5em;
+}
+
 .margin-center {
   margin: 0 auto;
 }
