@@ -1,1 +1,7 @@
-// Important text that isn't strong but bold
+import styled from "styled-components"
+
+const StyledBold = styled.b``
+
+export const ImportantText = props => {
+    return <StyledBold {...props}>{props.children}</StyledBold>
+}

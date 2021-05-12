@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const StyledH3 = styled.h3`
-font-size: 25px;
+font-size: 18px;
 font-family: 'Work Sans', sans-serif;
 font-weight: 300;
 letter-spacing: 2px;
