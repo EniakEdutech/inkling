@@ -4,7 +4,6 @@ import styled, { css } from 'styled-components'
 // Components
 import { Hamburger } from '../../atoms/hamburger'
 // static
-import logo from '../../assets/inkling@.5x.png'
 import logo2x from '../../assets/inkling.png'
 import logo4x from '../../assets/inkling@2x.png'
 
@@ -46,6 +45,13 @@ width: 120px;
     > * {
         width: 160px;
         margin: 0;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    width: 200px;
+    > * {
+        width: 200px;
     }
 }
 `
@@ -122,10 +128,9 @@ export const NavMenu = props => {
     return <StyledNav>
         <StyledParentDiv className="flex column space-between align-center margin-center md-row">
             <StyledLogo>
-                <source srcSet={logo} media="(max-width: 768px)" ></source>
                 <source srcSet={logo2x} media="(min-width: 768px)" ></source>
                 <source srcSet={logo4x} media="(min-width: 1900px)" ></source>
-                <img src={logo} alt="logo" title="Inkling" />
+                <img src={logo2x} alt="logo" title="Inkling" />
             </StyledLogo>
             <StylesNavigationItems className="column md-row w-100 w-md-unset" toggleShow={show}>
                 <NavLink to="/" exact>Home</NavLink>
