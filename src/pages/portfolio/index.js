@@ -1,6 +1,7 @@
 import { Fragment, Component } from 'react'
 import styled from 'styled-components'
 // components
+import { Button } from '../../atoms/button'
 import { NavMenu } from '../../molecules/navmenu'
 import { Project } from '../../organisms/project'
 
@@ -63,6 +64,7 @@ export class Portfolio extends Component {
                 }
             ],
             showProjects: [],
+            count: 6,
             category: 'all'
         }
     }
@@ -74,7 +76,7 @@ export class Portfolio extends Component {
     categorySelector = category => {
         if (category === 'all') {
             this.setState({
-                showProjects: this.state.projects,
+                showProjects: this.state.projects.slice(0, this.state.count),
                 category: 'all'
             })
         } else {
@@ -85,11 +87,19 @@ export class Portfolio extends Component {
                 }
                 return null
             })
+            showProjectList.slice(0, this.state.count)
             this.setState({
                 showProjects: showProjectList,
                 category: category,
             })
         }
+    }
+
+    increaseCount = async () => {
+        await this.setState({
+            count: this.state.count + 6
+        })
+        this.categorySelector(this.state.category)
     }
 
     render() {
@@ -119,8 +129,11 @@ export class Portfolio extends Component {
                     </CategoryDiv>
                 </CategoryContainerDiv>
                 <div className="flex wrap">
-                    {this.state.showProjects.map(project => <Project key={project.title} title={project.title} description={project.description} image={project.image} alt={project.alt} />)}
-                </div>
+                {this.state.count < this.state.projects.length &&
+                    <div className="flex center" style={{ margin: "50px" }}>
+                        <Button onClick={this.increaseCount} showmore>Show more</Button>
+                    </div>
+                }
             </div>
         </Fragment>
     }
