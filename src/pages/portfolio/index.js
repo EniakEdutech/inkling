@@ -42,7 +42,7 @@ export class Portfolio extends Component {
                 {
                     title: "Eniak",
                     description: "Eniak description",
-                    image: "https://ik.imagekit.io/bizwem110d/default-image.jpg",
+                    image: "https://ik.imagekit.io/bizwem110d/inkling/Eniak_project_images/Phone_5zgidaNEt.png",
                     alt: "Eniak",
                     link: "eniak",
                     category: ['Design', 'Development']
@@ -50,7 +50,7 @@ export class Portfolio extends Component {
                 {
                     title: "Main Bhi Ambani",
                     description: "Spoofing the oligarch",
-                    image: "https://ik.imagekit.io/bizwem110d/default-image.jpg",
+                    image: "https://ik.imagekit.io/bizwem110d/inkling/Main_bhi_Ambani/mainbhiambani-banner-1_iLApmpYn2.png",
                     alt: "Main bhi ambani",
                     link: "mainbhiambani",
                     category: ['Development']
@@ -58,34 +58,10 @@ export class Portfolio extends Component {
                 {
                     title: "Thakur College Feedback System",
                     description: "Feedback management system",
-                    image: "https://ik.imagekit.io/bizwem110d/default-image.jpg",
+                    image: "https://ik.imagekit.io/bizwem110d/inkling/TCSC_Feedback/tcsc-banner-1_mAiOSZvKY.png",
                     alt: "TCSC Feedback",
                     link: "tcscfeedback",
                     category: ['Development']
-                },
-                {
-                    title: "ITK",
-                    description: "Information Technology Kindergarden",
-                    image: "https://ik.imagekit.io/bizwem110d/default-image.jpg",
-                    alt: "ITK",
-                    link: "",
-                    category: ['Design', 'Curriculum Design']
-                },
-                {
-                    title: "90 min",
-                    description: "90 minute application challenge",
-                    image: "https://ik.imagekit.io/bizwem110d/default-image.jpg",
-                    alt: "90min",
-                    link: "",
-                    category: ['Development']
-                },
-                {
-                    title: "Code for all",
-                    description: "Code for all",
-                    image: "https://ik.imagekit.io/bizwem110d/default-image.jpg",
-                    alt: "Code for all",
-                    link: "",
-                    category: ['Curriculum Design']
                 }
             ],
             showProjects: [],
