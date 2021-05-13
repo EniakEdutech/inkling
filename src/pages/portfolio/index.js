@@ -134,7 +134,7 @@ export class Portfolio extends Component {
                         key={index}
                         title={project.title}
                         description={project.description}
-                        image={project.image}
+                        image={project.image + '?tr=w-500,h-250,fo-center'}
                         alt={project.alt}
                         link={"/portfolio/" + project.link} />)}
                 </div>
