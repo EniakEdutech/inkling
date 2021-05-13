@@ -20,6 +20,9 @@ ${props => props.primary && css`
 background: var(--primary);
 color: var(--primary-text);
 `};
+${props => props.showmore && css`
+box-shadow: var(--primary-light-variant) 0px 5px 15px;
+`}
 ${props => props.info && css`
 color: var(--info);
 `}
