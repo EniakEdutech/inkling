@@ -391,6 +391,9 @@ hr {
   .md-column {
     flex-direction: column;
   }
+  .md-center {
+    justify-content: center;
+  }
   .flex-md-1 {
     flex: 1;
   }
