@@ -112,7 +112,7 @@ export const Home = props => {
                 then approach the project accordingly.
             </StyledImportantText>
         </div>
-        <StyledPortfolioParent className="flex lg-row w-xlg-75 margin-center">
+        <div className="flex lg-row w-xlg-75 margin-center">
             <div className="flex lg-column flex-lg-6">
                 <Image className="flex-lg-1"
                     src="https://ik.imagekit.io/bizwem110d/inkling/Snapdeal/snapdeal_box1_3KfhaxJVc.png?tr=w-500,h-250" />
