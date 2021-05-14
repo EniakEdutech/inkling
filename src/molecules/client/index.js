@@ -2,7 +2,13 @@ import styled from "styled-components"
 import { Image } from "../../atoms/image"
 
 const StyledDiv = styled.div`
-padding: 1em;
+@media screen and (min-width: 1200px) {
+    padding: 1em;
+}
+
+@media screen and (min-width: 2560px) {
+    padding: 3em;
+}
 `
 
 const StyledImage = styled(Image)`

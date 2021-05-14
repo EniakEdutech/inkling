@@ -20,6 +20,10 @@ background-position: center;
 @media screen and (min-width: 768px) {
     min-height: calc(100vh - 83px);
 }
+
+@media screen and (min-width: 2560x) {
+    min-height: calc(100vh - 88.98px);
+}
 `
 
 const StyledDivParent = styled.div`
@@ -30,12 +34,19 @@ box-shadow: 5px 5px 10px 0px var(--primary-light-variant);
     padding: 100px;
     border-radius: 15px;
 }
+
+@media screen and (min-width: 2560px) {
+    padding: 200px;
+}
 `
 
 const StyledDivChild = styled.div`
 border-left: 2px solid var(--primary-light-variant);
 @media screen and (min-width: 992px) {
     padding-left: 50px;
+}
+@media screen and (min-width: 2560px) {
+    padding: 100px;
 }
 `
 
@@ -83,7 +94,7 @@ export const Home = props => {
     return <Fragment>
         <NavMenu />
         <StyledDivContainer className="flex center align-center" background="https://ik.imagekit.io/bizwem110d/inkling/home-background_HK4W1i-Jg.png">
-            <StyledDivParent className="w-xmd-75 w-lg-66">
+            <StyledDivParent className="w-xmd-75 w-lg-66 w-xlg-50">
                 <StyledDivChild className="w-100">
                     <Heading1>From elegant systems to beautiful designs...</Heading1>
                     <StyledHeading3>
@@ -93,7 +104,7 @@ export const Home = props => {
                 </StyledDivChild>
             </StyledDivParent>
         </StyledDivContainer>
-        <div className="flex column lg-row align-center center g-1 margin-center w-80 w-lg-75 my-2 my-md-3 my-lg-4">
+        <div className="flex column lg-row align-center center g-1 margin-center w-80 w-lg-75 w-xlg-50 my-2 my-md-3 my-lg-4">
             <Heading1 className="flex-lg-2">What we&nbsp;do</Heading1>
             <StyledImportantText className="flex-lg-8">
                 Our team creates outcome oriented solutions for your brand. The process involves research,
@@ -101,7 +112,7 @@ export const Home = props => {
                 then approach the project accordingly.
             </StyledImportantText>
         </div>
-        <div className="flex lg-row">
+        <StyledPortfolioParent className="flex lg-row w-xlg-75 margin-center">
             <div className="flex lg-column flex-lg-6">
                 <Image className="flex-lg-1"
                     src="https://ik.imagekit.io/bizwem110d/inkling/Snapdeal/snapdeal_box1_3KfhaxJVc.png?tr=w-500,h-250" />
