@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/inkling/static/css/main.269ee2d3.chunk.css",
-    "main.js": "/inkling/static/js/main.048204d8.chunk.js",
-    "main.js.map": "/inkling/static/js/main.048204d8.chunk.js.map",
+    "main.css": "/inkling/static/css/main.ca431f21.chunk.css",
+    "main.js": "/inkling/static/js/main.077ed2c6.chunk.js",
+    "main.js.map": "/inkling/static/js/main.077ed2c6.chunk.js.map",
     "runtime-main.js": "/inkling/static/js/runtime-main.6880259b.js",
     "runtime-main.js.map": "/inkling/static/js/runtime-main.6880259b.js.map",
-    "static/js/2.038d4467.chunk.js": "/inkling/static/js/2.038d4467.chunk.js",
-    "static/js/2.038d4467.chunk.js.map": "/inkling/static/js/2.038d4467.chunk.js.map",
+    "static/js/2.13d74404.chunk.js": "/inkling/static/js/2.13d74404.chunk.js",
+    "static/js/2.13d74404.chunk.js.map": "/inkling/static/js/2.13d74404.chunk.js.map",
     "index.html": "/inkling/index.html",
-    "static/css/main.269ee2d3.chunk.css.map": "/inkling/static/css/main.269ee2d3.chunk.css.map",
-    "static/js/2.038d4467.chunk.js.LICENSE.txt": "/inkling/static/js/2.038d4467.chunk.js.LICENSE.txt",
+    "static/css/main.ca431f21.chunk.css.map": "/inkling/static/css/main.ca431f21.chunk.css.map",
+    "static/js/2.13d74404.chunk.js.LICENSE.txt": "/inkling/static/js/2.13d74404.chunk.js.LICENSE.txt",
     "static/media/inkling.c882a76d.png": "/inkling/static/media/inkling.c882a76d.png",
     "static/media/inkling@2x.1958b764.png": "/inkling/static/media/inkling@2x.1958b764.png"
   },
   "entrypoints": [
     "static/js/runtime-main.6880259b.js",
-    "static/js/2.038d4467.chunk.js",
-    "static/css/main.269ee2d3.chunk.css",
-    "static/js/main.048204d8.chunk.js"
+    "static/js/2.13d74404.chunk.js",
+    "static/css/main.ca431f21.chunk.css",
+    "static/js/main.077ed2c6.chunk.js"
   ]
 }
