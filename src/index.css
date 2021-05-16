@@ -382,7 +382,7 @@ hr {
 
 /* Medium devices (tablets, 768px and up) */
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   blockquote {
     font-size: 21px;
   }
@@ -506,7 +506,7 @@ hr {
 
 /* Large devices (desktops, 992px and up) */
 
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
   .xmd-row {
     flex-direction: row;
   }
@@ -624,7 +624,7 @@ hr {
 
 /* Extra large devices (large desktops, 1200px and up) */
 
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   blockquote {
     font-size: 19px;
   }
@@ -739,11 +739,11 @@ hr {
   }
 }
 
-@media screen and (min-width: 1900px) {}
+@media only screen and (min-width: 1900px) {}
 
 /* Extra extra large devices (iMac) */
 
-@media screen and (min-width:2560px) {
+@media only screen and (min-width:2560px) {
   .xlg-row {
     flex-direction: row;
   }
@@ -855,6 +855,6 @@ hr {
   }
 }
 
-@media screen and (min-width: 3072px) {}
+@media only screen and (min-width: 3072px) {}
 
-@media screen and (min-width: 5120px) {}
+@media only screen and (min-width: 5120px) {}
