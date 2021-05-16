@@ -1,7 +1,6 @@
 import { Fragment } from "react"
 import styled from "styled-components"
 // components
-import { NavMenu } from '../../molecules/navmenu'
 import { Heading1 } from '../../atoms/heading1'
 import { Heading3 } from '../../atoms/heading3'
 import { ImportantText } from '../../atoms/importantText'
@@ -92,7 +91,6 @@ padding-bottom: 20px;
 
 export const Home = props => {
     return <Fragment>
-        <NavMenu />
         <StyledDivContainer className="flex center align-center" background="https://ik.imagekit.io/bizwem110d/inkling/home-background_HK4W1i-Jg.png">
             <StyledDivParent className="w-xmd-75 w-lg-66 w-xlg-50">
                 <StyledDivChild className="w-100">
