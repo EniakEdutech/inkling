@@ -2,7 +2,6 @@ import { Fragment, Component } from 'react'
 import styled from 'styled-components'
 // components
 import { Button } from '../../atoms/button'
-import { NavMenu } from '../../molecules/navmenu'
 import { Project } from '../../organisms/project'
 
 const CategoryContainerDiv = styled.div`
@@ -105,7 +104,6 @@ export class Portfolio extends Component {
 
     render() {
         return <Fragment>
-            <NavMenu />
             <div className="flex column w-100 w-md-80 w-xlg-50 margin-center">
                 <CategoryContainerDiv className="flex">
                     <CategoryDiv

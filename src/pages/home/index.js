@@ -1,10 +1,8 @@
 import { Link } from 'react-router-dom'
 import { Button } from '../../atoms/button'
-import {NavMenu} from '../../molecules/navmenu'
 
 export const Home = () => {
     return <div className="flex column" style={{ rowGap: "10px" }}>
-        <NavMenu />
         <p>Home page</p>
         <Link to="/aboutus">About Us</Link>
         <Link to="/portfolio/eniak">Eniak</Link>

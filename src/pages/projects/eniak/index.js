@@ -2,7 +2,6 @@ import { Fragment } from 'react'
 // special components
 import ScrollToTopOnMount from '../../../atoms/scrollToTop'
 // components
-import { NavMenu } from '../../../molecules/navmenu'
 import { NavButtons, StickyNavButtons } from '../../../molecules/navbuttons'
 import { Title } from '../../../atoms/title'
 import { Heading1 } from '../../../atoms/heading1'
@@ -14,7 +13,6 @@ import { Banner } from '../../../atoms/banner'
 export const Eniak = props => {
     return <Fragment>
         <ScrollToTopOnMount />
-        <NavMenu />
         <div class="flex column r-g-1 w-80 w-xlg-50 margin-center my-2 my-xmd-4 my-lg-5">
             <div className="flex column lg-row">
                 <Title className="flex-lg-3">Eniak</Title>

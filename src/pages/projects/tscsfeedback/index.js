@@ -2,7 +2,6 @@ import { Fragment } from 'react'
 // special components
 import ScrollToTopOnMount from '../../../atoms/scrollToTop'
 // components
-import { NavMenu } from '../../../molecules/navmenu'
 import { NavButtons, StickyNavButtons } from '../../../molecules/navbuttons'
 import { Title } from '../../../atoms/title'
 import { Heading4 } from '../../../atoms/heading4'
@@ -15,7 +14,6 @@ import { Image } from '../../../atoms/image'
 export const TCSCFeedback = props => {
     return <Fragment>
         <ScrollToTopOnMount />
-        <NavMenu />
         <div class="flex column r-g-1 w-80 w-xlg-50 margin-center my-2 my-lg-5">
             <Title>Thakur College Feedback System</Title>
             <div className="flex column lg-row r-g-1">

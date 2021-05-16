@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 // Modules
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import './index.css';
+// Component
+import { NavMenu } from './molecules/navmenu'
 // Pages
 import { Home } from './pages/home'
 import { AboutUs } from './pages/aboutus';
@@ -14,6 +16,7 @@ import { TCSCFeedback } from './pages/projects/tscsfeedback'
 ReactDOM.render(
   <React.StrictMode>
     <Router basename={process.env.PUBLIC_URL} >
+      <NavMenu />
       <Switch>
         <Route path="/aboutus" ><AboutUs /></Route>
         <Route path="/portfolio" exact><Portfolio /></Route>
