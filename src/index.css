@@ -13,6 +13,7 @@
   --primary: rgb(15, 17, 17);
   --primary-dark-variant: rgb(19, 19, 19);
   --primary-light-variant: rgb(91, 99, 99);
+  --primary-lightest-variant: rgb(225, 225, 225);
   --disabled: rgb(203, 203, 205);
   --disabled-text: rgb(66, 66, 80);
   --error: rgb(176, 0, 32);
