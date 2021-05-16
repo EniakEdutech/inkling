@@ -4,8 +4,6 @@ import styled from "styled-components"
 import { Heading1 } from '../../atoms/heading1'
 import { Heading3 } from '../../atoms/heading3'
 import { ImportantText } from '../../atoms/importantText'
-import { Image } from '../../atoms/image'
-import { Link } from "react-router-dom"
 import { Client } from "../../molecules/client"
 
 
@@ -29,24 +27,14 @@ const StyledDivParent = styled.div`
 background-color: var(--primary-dark-variant);
 color: var(--primary-text);
 box-shadow: 5px 5px 10px 0px var(--primary-light-variant);
+border-radius: 10px;
 @media screen and (min-width: 992px) {
-    padding: 100px;
     border-radius: 15px;
-}
-
-@media screen and (min-width: 2560px) {
-    padding: 200px;
 }
 `
 
 const StyledDivChild = styled.div`
 border-left: 2px solid var(--primary-light-variant);
-@media screen and (min-width: 992px) {
-    padding-left: 50px;
-}
-@media screen and (min-width: 2560px) {
-    padding: 100px;
-}
 `
 
 const StyledHeading3 = styled(Heading3)`
@@ -57,20 +45,6 @@ const StyledImportantText = styled(ImportantText)`
 @media screen and (min-width: 992px) {
     border-left: 2px solid var(--primary-light-variant);
     padding-left: 50px;
-}
-`
-
-const StyledPortfolioDiv = styled.div`
-&>a {
-    background-color: var(--disabled);
-    color: var(--disabled-text);
-    padding: 20px 0;
-    font-size: 30px;
-}
-&>a:hover {
-    text-decoration: none;
-    background-color: var(--primary-light-variant);
-    color: var(--disabled)
 }
 `
 
@@ -91,9 +65,10 @@ padding-bottom: 20px;
 
 export const Home = props => {
     return <Fragment>
-        <StyledDivContainer className="flex center align-center" background="https://ik.imagekit.io/bizwem110d/inkling/home-background_HK4W1i-Jg.png">
-            <StyledDivParent className="w-xmd-75 w-lg-66 w-xlg-50">
-                <StyledDivChild className="w-100">
+        <StyledDivContainer className="flex center align-center"
+            background="https://ik.imagekit.io/bizwem110d/inkling/home-background_HK4W1i-Jg.png">
+            <StyledDivParent className="w-80 w-xmd-75 w-lg-66 w-xlg-50 px-1 py-1 py-md-2 px-md-2 px-xmd-3 py-xmd-3 px-lg-4 py-lg-4 py-xlg-5 px-xlg-5">
+                <StyledDivChild className="flex column r-g-2 w-100 px-1 px-md-2 px-xmd-3 px-lg-4 px-xlg-5">
                     <Heading1>From elegant systems to beautiful designs...</Heading1>
                     <StyledHeading3>
                         Our team of skilled designers and developers can help build your
@@ -110,20 +85,8 @@ export const Home = props => {
                 then approach the project accordingly.
             </StyledImportantText>
         </div>
-        <div className="flex lg-row w-xlg-75 margin-center">
-            <div className="flex lg-column flex-lg-6">
-                <Image className="flex-lg-1"
-                    src="https://ik.imagekit.io/bizwem110d/inkling/Snapdeal/snapdeal_box1_3KfhaxJVc.png?tr=w-500,h-250" />
-                <Image className="flex-lg-1"
-                    src="https://ik.imagekit.io/bizwem110d/inkling/90_Min_App_Challenge/90min_pamphlet_f4S5mNkYr.png?tr=w-500,h-250" />
-            </div>
-            <StyledPortfolioDiv className="flex lg-column flex-lg-4">
-                <Image className="flex-lg-10"
-                    src="https://ik.imagekit.io/bizwem110d/inkling/Doolally/Doolally_poster2_irR3RpwEN.png?tr=w-250,h-500" />
-                <Link to="/portfolio" className="w-100 flex center align-center flex-lg-2">view more &rarr;</Link>
-            </StyledPortfolioDiv>
-        </div>
-        <div className="flex lg-column r-g-2 w-lg-80 margin-center my-lg-4 align-center">
+        {/* TODO:  Add portfolio section */}
+        <div className="flex column r-g-2 w-95 w-lg-80 margin-center my-2 my-lg-4 align-center">
             <ClientHeading1>Our Clients</ClientHeading1>
             <div className="flex wrap">
                 <Client src="https://ik.imagekit.io/bizwem110d/inkling/Snapdeal/snapdeal_box1_3KfhaxJVc.png?tr=w-200,h-100" />
