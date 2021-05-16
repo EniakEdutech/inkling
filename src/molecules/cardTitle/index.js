@@ -1,14 +1,18 @@
 import { Heading2 } from '../../atoms/heading2'
 import styled from 'styled-components'
 
-const CardTitleDiv = styled.div`
+const CardTitleHeading = styled(Heading2)`
 white-space: nowrap; 
 overflow: hidden;
-text-overflow: ellipsis; 
+text-overflow: ellipsis;
+
+@media screen and (hover:hover) {
+    text-align: center;
+}
 `
 
 export const CardTitle = props => {
-    return <CardTitleDiv>
-        <Heading2>{props.children}</Heading2>
-    </CardTitleDiv>
+    return <div className="w-100">
+        <CardTitleHeading>{props.children}</CardTitleHeading>
+    </div>
 }
