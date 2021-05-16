@@ -1,8 +1,27 @@
-import { Fragment, Component } from 'react'
+import { Component } from 'react'
 import styled from 'styled-components'
 // components
 import { Button } from '../../atoms/button'
 import { Project } from '../../organisms/project'
+
+const ContainerDiv = styled.div`
+min-height: var(--small-screen-100vh);
+@media screen and (min-width: 768px) {
+    min-height: var(--tablet-screen-100vh);
+}
+
+@media screen and (min-width: 992px) {
+    min-height: var(--small-desktop-screen-100vh);
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
+    min-height: var(--ipadpro-screen-100vh);
+}
+
+@media screen and (min-width: 2560x) {
+    min-height: var( --extra-large-screen-100vh);
+}
+`
 
 const CategoryContainerDiv = styled.div`
 margin: 50px 5px 20px 5px;
@@ -103,45 +122,44 @@ export class Portfolio extends Component {
     }
 
     render() {
-        return <Fragment>
-            <div className="flex column w-100 w-md-80 w-xlg-50 margin-center">
-                <CategoryContainerDiv className="flex">
-                    <CategoryDiv
-                        onClick={() => this.categorySelector('all')}
-                        className={this.state.category === 'all' && "selected"}>
-                        All Projects
+        return <ContainerDiv className="flex column w-100 w-md-80 w-xlg-50 margin-center">
+            <CategoryContainerDiv className="flex">
+                <CategoryDiv
+                    onClick={() => this.categorySelector('all')}
+                    className={this.state.category === 'all' && "selected"}>
+                    All Projects
                         </CategoryDiv>
-                    <CategoryDiv
-                        onClick={() => this.categorySelector('Design')}
-                        className={this.state.category === 'Design' && "selected"}>
-                        Design
+                <CategoryDiv
+                    onClick={() => this.categorySelector('Design')}
+                    className={this.state.category === 'Design' && "selected"}>
+                    Design
                         </CategoryDiv>
-                    <CategoryDiv
-                        onClick={() => this.categorySelector('Development')}
-                        className={this.state.category === 'Development' && "selected"}>
-                        Development
+                <CategoryDiv
+                    onClick={() => this.categorySelector('Development')}
+                    className={this.state.category === 'Development' && "selected"}>
+                    Development
                         </CategoryDiv>
-                    <CategoryDiv
-                        onClick={() => this.categorySelector('Curriculum Design')}
-                        className={this.state.category === 'Curriculum Design' && "selected"}>
-                        Curriculum Design
+                <CategoryDiv
+                    onClick={() => this.categorySelector('Curriculum Design')}
+                    className={this.state.category === 'Curriculum Design' && "selected"}>
+                    Curriculum Design
                     </CategoryDiv>
-                </CategoryContainerDiv>
-                <div className="flex wrap">
-                    {this.state.showProjects.map((project, index) => <Project
-                        key={index}
-                        title={project.title}
-                        description={project.description}
-                        image={project.image + '?tr=w-500,h-250,fo-center'}
-                        alt={project.alt}
-                        link={"/portfolio/" + project.link} />)}
-                </div>
-                {this.state.count < this.state.projects.length &&
-                    <div className="flex center" style={{ margin: "50px" }}>
-                        <Button onClick={this.increaseCount} showmore>Show more</Button>
-                    </div>
-                }
+            </CategoryContainerDiv>
+            <div className="flex wrap">
+                {this.state.showProjects.map((project, index) => <Project
+                    height={window.outerHeight < "992px" ? "25vh" : "40vh"}
+                    key={index}
+                    title={project.title}
+                    description={project.description}
+                    image={project.image + '?tr=w-500,h-250,fo-center'}
+                    alt={project.alt}
+                    link={"/portfolio/" + project.link} />)}
             </div>
-        </Fragment>
+            {this.state.count < this.state.projects.length &&
+                <div className="flex center" style={{ margin: "50px" }}>
+                    <Button onClick={this.increaseCount} showmore>Show more</Button>
+                </div>
+            }
+        </ContainerDiv>
     }
 }

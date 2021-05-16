@@ -9,25 +9,25 @@ import { Heading1 } from "../../atoms/heading1"
 import { Anchor } from '../../atoms/anchor'
 
 const StyledContainer = styled.div`
-min-height: calc(100vh - 70.93px - 161px);
+min-height: var(--small-screen-100vh);
 background-image: url(${props => props.background});
 background-size: cover;
 background-attachment: fixed;
 background-position: center;
 @media screen and (min-width: 768px) {
-    min-height: calc(100vh - 83px - 123.16px);
+    min-height: var(--tablet-screen-100vh);
 }
 
 @media screen and (min-width: 992px) {
-    min-height: calc(100vh - 83px - 102.45px);
+    min-height: var(--small-desktop-screen-100vh);
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
-    min-height: calc(100vh - 83px - 134.45px);
+    min-height: var(--ipadpro-screen-100vh);
 }
 
 @media screen and (min-width: 2560x) {
-    min-height: calc(100vh - 88.98px - 102.45px);
+    min-height: var( --extra-large-screen-100vh);
 }
 `
 
