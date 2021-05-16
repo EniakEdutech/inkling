@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 // Modules
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import './index.css';
-// Component
 import { NavMenu } from './molecules/navmenu'
+import { Footer } from './molecules/footer'
 // Pages
 import { Home } from './pages/home'
-import { AboutUs } from './pages/aboutus';
+import { AboutUs } from './pages/aboutus'
+import { ContactUs } from './pages/contactus'
 import { Portfolio } from './pages/portfolio'
 import { Eniak } from './pages/projects/eniak'
 import { MainBhiAmbani } from './pages/projects/mainbhiambani'
@@ -23,8 +24,10 @@ ReactDOM.render(
         <Route path="/portfolio/eniak"><Eniak /></Route>
         <Route path="/portfolio/mainbhiambani"><MainBhiAmbani /></Route>
         <Route path="/portfolio/tcscfeedback"><TCSCFeedback /></Route>
+        <Route path="/contactus"><ContactUs /></Route>
         <Route path="/" ><Home /></Route>
       </Switch>
+      <Footer />
     </Router>
   </React.StrictMode>,
   document.getElementById('root')
