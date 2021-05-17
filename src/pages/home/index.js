@@ -48,6 +48,23 @@ const StyledImportantText = styled(ImportantText)`
 }
 `
 
+const WhatwedoHeading1 = styled(Heading1)`
+@media screen and (max-width: 1200px) {
+    position: relative;
+    padding-bottom: 10px;
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: 30%;
+        bottom: 0;
+        height: 1px;
+        width: 40%;
+        border-bottom: 2px solid var(--primary-dark-variant);
+    }
+}
+`
+
 const ClientHeading1 = styled(Heading1)`
 position: relative;
 padding-bottom: 20px;
@@ -78,7 +95,7 @@ export const Home = props => {
             </StyledDivParent>
         </StyledDivContainer>
         <div className="flex column lg-row align-center center g-1 margin-center w-80 w-lg-75 w-xlg-50 my-2 my-md-3 my-lg-4">
-            <Heading1 className="flex-lg-2">What we&nbsp;do</Heading1>
+            <WhatwedoHeading1 className="flex-lg-2">What we&nbsp;do</WhatwedoHeading1>
             <StyledImportantText className="flex-lg-8">
                 Our team creates outcome oriented solutions for your brand. The process involves research,
                 strategy, creatives, development and execution. We take into account the end users needs and
