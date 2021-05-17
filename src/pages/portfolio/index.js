@@ -25,6 +25,7 @@ min-height: var(--small-screen-100vh);
 
 const CategoryContainerDiv = styled.div`
 margin: 50px 5px 20px 5px;
+padding: 10px 0;
 background-color: var(--primary-text);
 overflow-x: auto;
 white-space: nowrap;
@@ -36,17 +37,25 @@ white-space: nowrap;
 
 const CategoryDiv = styled.div`
 padding: 10px 30px;
-border: 1px solid var(--primary-light-variant);
-color: var(--primary-light-variant);
+margin: 0 5px;
+border-radius: 5px;
+color: var(--primary-text);
+background-color: var(--primary-lighter-variant);
 cursor: pointer;
+box-shadow: 5px 5px 5px 0px var(--primary-light-variant);
 
 &:hover {
-    color: var(--primary-dark-variant);
+    background-color: var(--primary-lightest-variant);
+    color: var(--primary-light-variant);
+    box-shadow: 10px 10px 10px 0px var(--primary-light-variant);
 }
 
 &.selected {
-    border: 1px solid var(--primary-dark-variant);
-    background-color: var(--primary-dark-variant);
+    background-color: var(--primary-light-variant);
+    box-shadow: 2px 2px 2px 0px var(--primary-lightest-variant);
+}
+
+&.selected:hover {
     color: var(--primary-text);
 }
 `

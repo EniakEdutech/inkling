@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components'
 const StyledButton = styled.button`
 background: white;
 box-shadow: 3px 3px 9px 0px var(--primary-light-variant);
-color: black;                                                                                                                       
+color: var(--primary-light-text);
 padding: 15px 30px;
 border-radius: 15px;
 border: transparent;

@@ -23,7 +23,7 @@ padding: 5px;
     &:hover > .title {
         display: flex;
         background-color: rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur(5px);
+        backdrop-filter: blur(50px);
     }
 }
 
