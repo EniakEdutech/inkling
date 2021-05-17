@@ -4,7 +4,6 @@ const StyledH2 = styled.h2`
 font-size: 20px;
 font-family: 'Poppins', sans-serif;
 font-weight: 400;
-${props => props}
 
 @media (min-width: 768px) {
     font-size: 35px;
