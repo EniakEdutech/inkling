@@ -629,6 +629,60 @@ hr {
     padding-left: 5em;
     padding-right: 5em;
   }
+  .g-md-unset {
+    gap: unset;
+  }
+  .g-md-1 {
+    gap: 1em;
+  }
+  .g-md-2 {
+    gap: 2em;
+  }
+  .g-md-3 {
+    gap: 3em;
+  }
+  .g-md-4 {
+    gap: 4em;
+  }
+  .g-md-5 {
+    gap: 5em;
+  }
+  .r-g-md-unset {
+    row-gap: unset;
+  }
+  .r-g-md-1 {
+    row-gap: 1em;
+  }
+  .r-g-md-2 {
+    row-gap: 2em;
+  }
+  .r-g-md-3 {
+    row-gap: 3em;
+  }
+  .r-g-md-4 {
+    row-gap: 4em;
+  }
+  .r-g-md-5 {
+    row-gap: 5em;
+  }
+  .c-g-md-unset {
+    column-gap: unset;
+  }
+  .c-g-md-1 {
+    column-gap: 1em;
+  }
+  .c-g-md-2 {
+    column-gap: 2em;
+  }
+  .c-g-md-3 {
+    column-gap: 3em;
+  }
+  .c-g-md-4 {
+    column-gap: 4em;
+  }
+  .c-g-md-5 {
+    column-gap: 5em;
+  }
 }
 
 /* iPad 10'5" */
@@ -822,6 +876,60 @@ hr {
     padding-left: 5em !important;
     padding-right: 5em !important;
   }
+  .g-ipp-unset {
+    gap: unset !important;
+  }
+  .g-ipp-1 {
+    gap: 1em !important;
+  }
+  .g-ipp-2 {
+    gap: 2em !important;
+  }
+  .g-ipp-3 {
+    gap: 3em !important;
+  }
+  .g-ipp-4 {
+    gap: 4em !important;
+  }
+  .g-ipp-5 {
+    gap: 5em !important;
+  }
+  .r-g-ipp-unset {
+    row-gap: unset !important;
+  }
+  .r-g-ipp-1 {
+    row-gap: 1em !important;
+  }
+  .r-g-ipp-2 {
+    row-gap: 2em !important;
+  }
+  .r-g-ipp-3 {
+    row-gap: 3em !important;
+  }
+  .r-g-ipp-4 {
+    row-gap: 4em !important;
+  }
+  .r-g-ipp-5 {
+    row-gap: 5em !important;
+  }
+  .c-g-ipp-unset {
+    column-gap: unset !important;
+  }
+  .c-g-ipp-1 {
+    column-gap: 1em !important;
+  }
+  .c-g-ipp-2 {
+    column-gap: 2em !important;
+  }
+  .c-g-ipp-3 {
+    column-gap: 3em !important;
+  }
+  .c-g-ipp-4 {
+    column-gap: 4em !important;
+  }
+  .c-g-ipp-5 {
+    column-gap: 5em !important;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -1014,6 +1122,60 @@ hr {
   .px-xmd-5 {
     padding-left: 5em;
     padding-right: 5em;
+  }
+  .g-xmd-unset {
+    gap: unset;
+  }
+  .g-xmd-1 {
+    gap: 1em;
+  }
+  .g-xmd-2 {
+    gap: 2em;
+  }
+  .g-xmd-3 {
+    gap: 3em;
+  }
+  .g-xmd-4 {
+    gap: 4em;
+  }
+  .g-xmd-5 {
+    gap: 5em;
+  }
+  .r-g-xmd-unset {
+    row-gap: unset;
+  }
+  .r-g-xmd-1 {
+    row-gap: 1em;
+  }
+  .r-g-xmd-2 {
+    row-gap: 2em;
+  }
+  .r-g-xmd-3 {
+    row-gap: 3em;
+  }
+  .r-g-xmd-4 {
+    row-gap: 4em;
+  }
+  .r-g-xmd-5 {
+    row-gap: 5em;
+  }
+  .c-g-xmd-unset {
+    column-gap: unset;
+  }
+  .c-g-xmd-1 {
+    column-gap: 1em;
+  }
+  .c-g-xmd-2 {
+    column-gap: 2em;
+  }
+  .c-g-xmd-3 {
+    column-gap: 3em;
+  }
+  .c-g-xmd-4 {
+    column-gap: 4em;
+  }
+  .c-g-xmd-5 {
+    column-gap: 5em;
   }
 }
 
@@ -1215,6 +1377,60 @@ hr {
     padding-left: 5em;
     padding-right: 5em;
   }
+  .g-lg-unset {
+    gap: unset;
+  }
+  .g-lg-1 {
+    gap: 1em;
+  }
+  .g-lg-2 {
+    gap: 2em;
+  }
+  .g-lg-3 {
+    gap: 3em;
+  }
+  .g-lg-4 {
+    gap: 4em;
+  }
+  .g-lg-5 {
+    gap: 5em;
+  }
+  .r-g-lg-unset {
+    row-gap: unset;
+  }
+  .r-g-lg-1 {
+    row-gap: 1em;
+  }
+  .r-g-lg-2 {
+    row-gap: 2em;
+  }
+  .r-g-lg-3 {
+    row-gap: 3em;
+  }
+  .r-g-lg-4 {
+    row-gap: 4em;
+  }
+  .r-g-lg-5 {
+    row-gap: 5em;
+  }
+  .c-g-lg-unset {
+    column-gap: unset;
+  }
+  .c-g-lg-1 {
+    column-gap: 1em;
+  }
+  .c-g-lg-2 {
+    column-gap: 2em;
+  }
+  .c-g-lg-3 {
+    column-gap: 3em;
+  }
+  .c-g-lg-4 {
+    column-gap: 4em;
+  }
+  .c-g-lg-5 {
+    column-gap: 5em;
+  }
 }
 
 @media only screen and (min-width: 1900px) {}
@@ -1409,6 +1625,60 @@ hr {
   .px-xlg-5 {
     padding-left: 5em;
     padding-right: 5em;
+  }
+  .g-xlg-unset {
+    gap: unset;
+  }
+  .g-xlg-1 {
+    gap: 1em;
+  }
+  .g-xlg-2 {
+    gap: 2em;
+  }
+  .g-xlg-3 {
+    gap: 3em;
+  }
+  .g-xlg-4 {
+    gap: 4em;
+  }
+  .g-xlg-5 {
+    gap: 5em;
+  }
+  .r-g-xlg-unset {
+    row-gap: unset;
+  }
+  .r-g-xlg-1 {
+    row-gap: 1em;
+  }
+  .r-g-xlg-2 {
+    row-gap: 2em;
+  }
+  .r-g-xlg-3 {
+    row-gap: 3em;
+  }
+  .r-g-xlg-4 {
+    row-gap: 4em;
+  }
+  .r-g-xlg-5 {
+    row-gap: 5em;
+  }
+  .c-g-xlg-unset {
+    column-gap: unset;
+  }
+  .c-g-xlg-1 {
+    column-gap: 1em;
+  }
+  .c-g-xlg-2 {
+    column-gap: 2em;
+  }
+  .c-g-xlg-3 {
+    column-gap: 3em;
+  }
+  .c-g-xlg-4 {
+    column-gap: 4em;
+  }
+  .c-g-xlg-5 {
+    column-gap: 5em;
   }
 }
 
