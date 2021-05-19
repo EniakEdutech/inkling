@@ -6,8 +6,7 @@ import { CardSub } from "../../molecules/cardSubtitle"
 import { Image } from "../../atoms/image"
 
 const StyledDiv = styled.div`
-padding: 5px;
-
+padding: 2px;
 @media screen and (hover:hover) {
     >.title {
         display: none;
@@ -25,10 +24,6 @@ padding: 5px;
         background-color: rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(50px);
     }
-}
-
-@media screen and (min-width: 992px) {
-    padding: 8px 5px;
 }
 `
 
@@ -49,7 +44,7 @@ export const Project = props => {
                 <CardTitle>{props.title}</CardTitle>
                 <CardSub>{props.description}</CardSub>
             </div>
-            <ProjectImage src={props.image} className="image" alt={props.alt} />
+            <ProjectImage src={props.image} alt={props.alt} />
         </StyledDiv>
     </Link>
 }

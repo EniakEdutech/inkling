@@ -25,7 +25,6 @@ min-height: var(--small-screen-100vh);
 
 const CategoryContainerDiv = styled.div`
 margin: 50px 5px 20px 5px;
-padding: 10px 0;
 background-color: var(--primary-text);
 overflow-x: auto;
 white-space: nowrap;
@@ -132,7 +131,7 @@ export class Portfolio extends Component {
 
     render() {
         return <ContainerDiv className="flex column w-100 w-md-80 w-xlg-50 margin-center">
-            <CategoryContainerDiv className="flex">
+            <CategoryContainerDiv className="flex py-3">
                 <CategoryDiv
                     onClick={() => this.categorySelector('all')}
                     className={this.state.category === 'all' && "selected"}>
