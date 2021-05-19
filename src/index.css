@@ -285,6 +285,10 @@ hr {
   margin: 0 auto;
 }
 
+.h-100 {
+  height: 100%;
+}
+
 .w-100 {
   width: 100%;
 }
@@ -387,6 +391,10 @@ hr {
   margin-right: 5em;
 }
 
+.p-half {
+  padding: 0.5em;
+}
+
 .p-1 {
   padding: 1em;
 }
@@ -405,6 +413,26 @@ hr {
 
 .p-5 {
   padding: 5em;
+}
+
+.p-6 {
+  padding: 6em;
+}
+
+.p-7 {
+  padding: 7em;
+}
+
+.p-8 {
+  padding: 8em;
+}
+
+.p-9 {
+  padding: 9em;
+}
+
+.p-10 {
+  padding: 10em;
 }
 
 .py-1 {
@@ -455,6 +483,11 @@ hr {
 .px-5 {
   padding-left: 5em;
   padding-right: 5em;
+}
+
+.py-6 {
+  padding-top: 6em;
+  padding-bottom: 6em;
 }
 
 .pl-1 {
@@ -1068,6 +1101,14 @@ hr {
     padding-left: 5em !important;
     padding-right: 5em !important;
   }
+  .py-ipp-6 {
+    padding-top: 6em !important;
+    padding-bottom: 6em !important;
+  }
+  .py-ipp-7 {
+    padding-top: 7em !important;
+    padding-bottom: 7em !important;
+  }
   .pl-ipp-1 {
     padding-left: 1em !important;
   }
@@ -1389,6 +1430,10 @@ hr {
   .px-xmd-5 {
     padding-left: 5em;
     padding-right: 5em;
+  }
+  .px-xmd-6 {
+    padding-left: 6em;
+    padding-right: 6em;
   }
   .pl-xmd-1 {
     padding-left: 1em;
