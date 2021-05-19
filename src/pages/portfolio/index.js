@@ -4,27 +4,33 @@ import styled from 'styled-components'
 import { Button } from '../../atoms/button'
 import { Project } from '../../organisms/project'
 
-const ContainerDiv = styled.div`
+const ParentContainer = styled.div`
+background-image: url('https://ik.imagekit.io/bizwem110d/inkling/Projects_web_FvBoVS1BU.png?tr=w-400');
+background-size: cover;
+
 min-height: var(--small-screen-100vh);
 @media screen and (min-width: 768px) {
     min-height: var(--tablet-screen-100vh);
+    background-image: url('https://ik.imagekit.io/bizwem110d/inkling/Projects_web_FvBoVS1BU.png?tr=w-768');
 }
 
 @media screen and (min-width: 992px) {
     min-height: var(--small-desktop-screen-100vh);
+    background-image: url('https://ik.imagekit.io/bizwem110d/inkling/Projects_web_FvBoVS1BU.png?tr=w-992');
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
     min-height: var(--ipadpro-screen-100vh);
+    background-image: url('https://ik.imagekit.io/bizwem110d/inkling/Projects_web_FvBoVS1BU.png?tr=w-1024');
 }
 
 @media screen and (min-width: 2560x) {
     min-height: var( --extra-large-screen-100vh);
+    background-image: url('https://ik.imagekit.io/bizwem110d/inkling/Projects_web_FvBoVS1BU.png');
 }
 `
 
 const CategoryContainerDiv = styled.div`
-margin: 50px 5px 20px 5px;
 background-color: var(--primary-text);
 overflow-x: auto;
 white-space: nowrap;
@@ -41,7 +47,7 @@ border-radius: 5px;
 color: var(--primary-text);
 background-color: var(--primary-lighter-variant);
 cursor: pointer;
-box-shadow: 5px 5px 5px 0px var(--primary-light-variant);
+box-shadow: 5px 5px 5px 0px var(--primary-lightest-variant);
 
 &:hover {
     background-color: var(--primary-lightest-variant);
@@ -56,6 +62,13 @@ box-shadow: 5px 5px 5px 0px var(--primary-light-variant);
 
 &.selected:hover {
     color: var(--primary-text);
+}
+`
+
+const ProjectDiv = styled.div`
+row-gap: 1em;
+@media screen and (hover:hover) {
+    row-gap: 0;
 }
 `
 
@@ -88,6 +101,14 @@ export class Portfolio extends Component {
                     alt: "TCSC Feedback",
                     link: "tcscfeedback",
                     category: ['Development']
+                },
+                {
+                    title: "ITK",
+                    description: "Bringing computational thinking to school children.",
+                    image: "https://ik.imagekit.io/bizwem110d/inkling/ITK_project/ITK_illustration_RFbw68B8k.png",
+                    alt: "ITK",
+                    link: "itk",
+                    category: ['Development', 'Curriculum Design']
                 }
             ],
             showProjects: [],
@@ -130,44 +151,45 @@ export class Portfolio extends Component {
     }
 
     render() {
-        return <ContainerDiv className="flex column w-100 w-md-80 w-xlg-50 margin-center">
-            <CategoryContainerDiv className="flex py-3">
-                <CategoryDiv
-                    onClick={() => this.categorySelector('all')}
-                    className={this.state.category === 'all' && "selected"}>
-                    All Projects
-                        </CategoryDiv>
-                <CategoryDiv
-                    onClick={() => this.categorySelector('Design')}
-                    className={this.state.category === 'Design' && "selected"}>
-                    Design
-                        </CategoryDiv>
-                <CategoryDiv
-                    onClick={() => this.categorySelector('Development')}
-                    className={this.state.category === 'Development' && "selected"}>
-                    Development
-                        </CategoryDiv>
-                <CategoryDiv
-                    onClick={() => this.categorySelector('Curriculum Design')}
-                    className={this.state.category === 'Curriculum Design' && "selected"}>
-                    Curriculum Design
+        return <ParentContainer>
+            <div className="flex column w-100 w-md-80 w-xlg-50 margin-center">
+                <CategoryContainerDiv className="flex py-2 py-md-3">
+                    <CategoryDiv
+                        onClick={() => this.categorySelector('all')}
+                        className={this.state.category === 'all' && "selected"}>
+                        All Projects
                     </CategoryDiv>
-            </CategoryContainerDiv>
-            <div className="flex wrap">
-                {this.state.showProjects.map((project, index) => <Project
-                    height={window.outerHeight < "992px" ? "25vh" : "40vh"}
-                    key={index}
-                    title={project.title}
-                    description={project.description}
-                    image={project.image + '?tr=w-500,h-250,fo-center'}
-                    alt={project.alt}
-                    link={"/portfolio/" + project.link} />)}
+                    <CategoryDiv
+                        onClick={() => this.categorySelector('Design')}
+                        className={this.state.category === 'Design' && "selected"}>
+                        Design
+                    </CategoryDiv>
+                    <CategoryDiv
+                        onClick={() => this.categorySelector('Development')}
+                        className={this.state.category === 'Development' && "selected"}>
+                        Development
+                    </CategoryDiv>
+                    <CategoryDiv
+                        onClick={() => this.categorySelector('Curriculum Design')}
+                        className={this.state.category === 'Curriculum Design' && "selected"}>
+                        Curriculum Design
+                    </CategoryDiv>
+                </CategoryContainerDiv>
+                <ProjectDiv className="flex wrap">
+                    {this.state.showProjects.map((project, index) => <Project
+                        key={index}
+                        title={project.title}
+                        description={project.description}
+                        image={project.image + '?tr=w-500,h-250,fo-center'}
+                        alt={project.alt}
+                        link={"/portfolio/" + project.link} />)}
+                </ProjectDiv>
+                {this.state.count < this.state.projects.length &&
+                    <div className="flex center" style={{ margin: "50px" }}>
+                        <Button onClick={this.increaseCount} showmore>Show more</Button>
+                    </div>
+                }
             </div>
-            {this.state.count < this.state.projects.length &&
-                <div className="flex center" style={{ margin: "50px" }}>
-                    <Button onClick={this.increaseCount} showmore>Show more</Button>
-                </div>
-            }
-        </ContainerDiv>
+        </ParentContainer>
     }
 }

@@ -9,22 +9,30 @@ const StyledDiv = styled.div`
 padding: 2px;
 @media screen and (hover:hover) {
     >.title {
-        display: none;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        position: absolute;
+        row-gap: 1em;
+        width: 0;
         top: 0;
         right: 0;
-        left: 0;
+        left: 100%;
         bottom: 0;
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(15px);
+        transition: .5s ease;
+        overflow: hidden;
+        position: absolute;
     }
     &:hover > .title {
-        display: flex;
-        background-color: rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur(50px);
+        width: 100%;
+        left: 0;
+        padding-left: 5em;
+        padding-top: 5em;
     }
 }
+`
+
+const StyledCardTitle = styled(CardTitle)`
+font-weight: 700;
+letter-spacing: 1px;
 `
 
 const ProjectImage = styled(Image)`
@@ -32,17 +40,20 @@ height: 25vh;
 @media screen and (min-width: 992px) {
     height: 40vh;
 }
-
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    height: 25vh;
+}
+@media only screen and (min-width: 2560px) {
+    height: 20vh;
+}
 `
-
-// const styledMobileDiv
 
 export const Project = props => {
     return <Link to={props.link} className="relative w-100 w-xmd-50 w-xlg-33">
-        <StyledDiv {...props}>
-            <div className="title">
-                <CardTitle>{props.title}</CardTitle>
-                <CardSub>{props.description}</CardSub>
+        <StyledDiv {...props} className="relative">
+            <div className="title flex column">
+                <StyledCardTitle className="flex">{props.title}</StyledCardTitle>
+                <CardSub className="flex">{props.description}</CardSub>
             </div>
             <ProjectImage src={props.image} alt={props.alt} />
         </StyledDiv>
