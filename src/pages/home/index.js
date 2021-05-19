@@ -162,12 +162,13 @@ export const Home = props => {
                 <HomeProject className="flex-xmd-1" half>
                     <Image width="inherit" height="inherit" src="https://ik.imagekit.io/bizwem110d/inkling/Snapdeal/snapdeal_box1_3KfhaxJVc.png" alt={props.alt} />
                 </HomeProject>
-                <HomeProject className="flex-xmd-1" half ninetymin>
-                    <Image width="inherit" height="inherit" src="https://ik.imagekit.io/bizwem110d/inkling/90_Min_App_Challenge/90min_pamphlet_f4S5mNkYr.png" alt={props.alt} />
+                <HomeProject className="flex-xmd-1" half>
+                    <Image width="inherit" height="inherit" src="https://ik.imagekit.io/bizwem110d/inkling/90_Min_App_Challenge/90min_pamphlet_f4S5mNkYr.png?tr=w-500,h-270" alt={props.alt} />
                 </HomeProject>
             </div>
             <div className="flex column flex-xmd-4 flex-ipp-1">
-                <HomeProject className="flex-xmd-12" portrait>
+                <HomeProject className="flex-xmd-12">
+                    <source srcSet="https://ik.imagekit.io/bizwem110d/inkling/Doolally/Doolally_poster2_irR3RpwEN.png?tr=h-500,w-350" media="(min-width: 992px)" />
                     <Image width="inherit" height="inherit" src="https://ik.imagekit.io/bizwem110d/inkling/Doolally/Doolally_poster2_irR3RpwEN.png" alt={props.alt} />
                 </HomeProject>
                 <StyledLink className="flex center align-center flex-ipp-2 flex-xmd-1">view more &rarr;</StyledLink>
