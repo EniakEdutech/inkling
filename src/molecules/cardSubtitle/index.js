@@ -8,6 +8,7 @@ overflow: hidden;
 text-overflow: ellipsis;
 @media screen and (hover:hover) {
     text-align: center;
+    color: var(--primary-dark-variant);
 }
 `
 
