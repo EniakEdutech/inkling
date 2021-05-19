@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/inkling/static/css/main.7d4e59ab.chunk.css",
-    "main.js": "/inkling/static/js/main.7c6dc510.chunk.js",
-    "main.js.map": "/inkling/static/js/main.7c6dc510.chunk.js.map",
+    "main.css": "/inkling/static/css/main.f3c24f73.chunk.css",
+    "main.js": "/inkling/static/js/main.ea9e3f42.chunk.js",
+    "main.js.map": "/inkling/static/js/main.ea9e3f42.chunk.js.map",
     "runtime-main.js": "/inkling/static/js/runtime-main.6880259b.js",
     "runtime-main.js.map": "/inkling/static/js/runtime-main.6880259b.js.map",
     "static/js/2.e29c3693.chunk.js": "/inkling/static/js/2.e29c3693.chunk.js",
     "static/js/2.e29c3693.chunk.js.map": "/inkling/static/js/2.e29c3693.chunk.js.map",
     "index.html": "/inkling/index.html",
-    "static/css/main.7d4e59ab.chunk.css.map": "/inkling/static/css/main.7d4e59ab.chunk.css.map",
+    "static/css/main.f3c24f73.chunk.css.map": "/inkling/static/css/main.f3c24f73.chunk.css.map",
     "static/js/2.e29c3693.chunk.js.LICENSE.txt": "/inkling/static/js/2.e29c3693.chunk.js.LICENSE.txt",
     "static/media/inkling.c882a76d.png": "/inkling/static/media/inkling.c882a76d.png",
     "static/media/inkling@2x.1958b764.png": "/inkling/static/media/inkling@2x.1958b764.png"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.6880259b.js",
     "static/js/2.e29c3693.chunk.js",
-    "static/css/main.7d4e59ab.chunk.css",
-    "static/js/main.7c6dc510.chunk.js"
+    "static/css/main.f3c24f73.chunk.css",
+    "static/js/main.ea9e3f42.chunk.js"
   ]
 }
