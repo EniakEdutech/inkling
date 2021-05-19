@@ -103,7 +103,7 @@ export const Footer = props => {
     return <StyledContainer className="w-100 flex center">
         <div className="flex align-center center c-g-1 w-lg-80 w-xlg-50">
             <div className="relative">
-                <StyledFooterLogo className="py-1 py-md-3">
+                <StyledFooterLogo>
                     <source srcSet={footerLogo} media="min-width: 768px)"></source>
                     <source srcSet={footerLogox2} media="(min-width: 992px)"></source>
                     <img src={footerLogo} alt="logo" title="Inkling" />
