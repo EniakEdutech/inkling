@@ -7,13 +7,13 @@ white-space: nowrap;
 overflow: hidden;
 text-overflow: ellipsis;
 @media screen and (hover:hover) {
-    text-align: center;
     color: var(--primary-dark-variant);
+    white-space: unset;
 }
 `
 
 export const CardSub = props => {
     return <div className="w-100">
-        <CardSubtitle>{props.children}</CardSubtitle>
+        <CardSubtitle {...props}>{props.children}</CardSubtitle>
     </div>
 }
