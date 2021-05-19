@@ -133,10 +133,10 @@ export const NavMenu = props => {
                 <img src={logo2x} alt="logo" title="Inkling" />
             </StyledLogo>
             <StylesNavigationItems className="column md-row w-100 w-md-unset" toggleShow={show}>
-                <NavLink to="/" exact>Home</NavLink>
-                <NavLink to="/aboutus">About Us</NavLink>
-                <NavLink to="/portfolio">Portfolio</NavLink>
-                <NavLink to="/contactus">Contact Us</NavLink>
+                <NavLink to="/" exact onClick={() => setShow(false)}>Home</NavLink>
+                <NavLink to="/aboutus" onClick={() => setShow(false)}F>About Us</NavLink>
+                <NavLink to="/portfolio" onClick={() => setShow(false)}>Portfolio</NavLink>
+                <NavLink to="/contactus" onClick={() => setShow(false)}>Contact Us</NavLink>
             </StylesNavigationItems>
             <Hamburger click={() => setShow(!show)} show={show} />
         </StyledParentDiv>
