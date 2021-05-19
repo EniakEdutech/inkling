@@ -7,7 +7,7 @@ import { Heading3 } from '../../atoms/heading3'
 import { Paragraph } from '../../atoms/paragraph'
 import { Client } from "../../molecules/client"
 import { Image } from "../../atoms/image"
-import { HomeProject} from '../../organisms/homeproject'
+import { HomeProject } from '../../organisms/homeproject'
 
 
 const StyledDivContainer = styled.div`
@@ -169,6 +169,9 @@ export const Home = props => {
             <div className="flex column flex-xmd-4 flex-ipp-1">
                 <HomeProject className="flex-xmd-12">
                     <source srcSet="https://ik.imagekit.io/bizwem110d/inkling/Doolally/Doolally_poster2_irR3RpwEN.png?tr=h-500,w-350" media="(min-width: 992px)" />
+                    <source
+                        srcSet="https://ik.imagekit.io/bizwem110d/inkling/Doolally/Doolally_poster2_irR3RpwEN.png"
+                        media="(min-device-width: 1024px and max-device-width: 1366px and orientation: portrait)" />
                     <Image width="inherit" height="inherit" src="https://ik.imagekit.io/bizwem110d/inkling/Doolally/Doolally_poster2_irR3RpwEN.png" alt={props.alt} />
                 </HomeProject>
                 <StyledLink className="flex center align-center flex-ipp-2 flex-xmd-1">view more &rarr;</StyledLink>
