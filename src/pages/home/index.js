@@ -11,16 +11,16 @@ import { HomeProject } from '../../organisms/homeproject'
 
 
 const StyledDivContainer = styled.div`
-min-height: calc(100vh - 70.93px);
+min-height: var(--small-screen-navmenu-100vh);
 background-image: url("https://ik.imagekit.io/bizwem110d/inkling/home-background_HK4W1i-Jg.png");
 background-size: cover;
 
 @media screen and (min-width: 768px) {
-    min-height: calc(100vh - 83px);
+    min-height: var(--tablet-navmenu-100vh);
 }
 
 @media screen and (min-width: 2560x) {
-    min-height: calc(100vh - 88.98px);
+    min-height: var(--extra-large-navmenu-100vh);
 }
 `
 

@@ -25,14 +25,14 @@ background-position: center;
 `
 
 const StyledContainer = styled.div`
-min-height: calc(100vh - 70.93px);
+min-height: var(--small-screen-navmenu-100vh);
 background-image: url("https://ik.imagekit.io/bizwem110d/inkling/Backgrounds_for_mobile/aboutus_mob_01_bzuWWwmm5.png");
 background-size: contain;
 background-attachment: fixed;
 background-position: center;
 
 @media screen and (min-width: 768px) {
-    min-height: calc(100vh - 83px);
+    min-height: var(--tablet-navmenu-100vh);
 }
 
 @media screen and (min-width: 992px) {
@@ -46,7 +46,7 @@ background-position: center;
 }
 
 @media screen and (min-width: 2560x) {
-    min-height: calc(100vh - 88.98px);
+    min-height: var(--extra-large-navmenu-100vh);
 }
 `
 
