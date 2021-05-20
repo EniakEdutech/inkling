@@ -90,13 +90,21 @@ padding-bottom: 5px;
 const RotatedDiv = styled.div`
 background-color: var(--primary-text);
 transform: rotateZ(-90deg);
-left: -2em;
+left: -6em;
+top: 50px;
 padding-bottom: 10px;
+padding-right: 80px;
 border-bottom: 1px solid var(--primary-dark-variant);
+
+> b {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
 `
 
 const RotateDevelopmentDiv = styled(RotatedDiv)`
-left: -4em;
+left: -8em;
+top: 85px;
 `
 
 export const AboutUs = () => {
@@ -128,30 +136,22 @@ export const AboutUs = () => {
                         <Service
                             heading="digital design"
                             body="I have experience with consulting for businesses and creating efficient marketing strategies to make their brands grow.">
-                            <source srcSet="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/digitalDesign_jnIiNczxla.png"></source>
-                            <source srcSet="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/digitalDesignx2_c9fmv2wh45.png" media="(min-width: 992px)"></source>
-                            <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/digitalDesign_jnIiNczxla.png" alt="services" title="services" />
+                            <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/digitalDesign_VPGRt3UnG2.svg" alt="services" title="services" />
                         </Service>
                         <Service
                             heading="print design"
                             body="Creating a brand will also involve printables that can be used for marketing. We will deliver quality outcomes.">
-                            <source srcSet="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/printDesign_EzHSrxDaJQ.png"></source>
-                            <source srcSet="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/printDesignx2_ZsDZ2U8hS7.png" media="(min-width: 992px)"></source>
-                            <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/printDesign_EzHSrxDaJQ.png" alt="services" title="services" />
+                            <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/printDesign_y7PMQ1476D.svg" alt="services" title="services" />
                         </Service>
                         <Service
                             heading="brand strategy"
                             body="We will help your brand, succeed by positioning it in the market in a certain way such that it appeals to the user.">
-                            <source srcSet="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/brandStrategy_lPIPgS6tMu.png"></source>
-                            <source srcSet="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/brandStrategyx2_aLPRNYGDEy.png" media="(min-width: 992px)"></source>
-                            <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/brandStrategy_lPIPgS6tMu.png" alt="services" title="services" />
+                            <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/brandStrategy_6B45X-5OLO.svg" alt="services" title="services" />
                         </Service>
                         <Service
                             heading="user interface"
                             body="Marketing will also involve Web and App Development. We create user friendly and efficient platforms.">
-                            <source srcSet="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/userInterface_3QdIBU597l.png"></source>
-                            <source srcSet="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/userInterfacex2_qNxuJfp6yC.png" media="(min-width: 992px)"></source>
-                            <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/userInterface_3QdIBU597l.png" alt="services" title="services" />
+                            <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/userInterface_qKSq0Q1b_.svg" alt="services" title="services" />
                         </Service>
                     </div>
                 </div>
@@ -163,30 +163,22 @@ export const AboutUs = () => {
                         <Service
                             heading="app development"
                             body="Our team creates outcome oriented solutions for your brand. The process involves research, strategy, creatives,">
-                            <source srcSet="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/appDevelopment_yqH14K6bjw.png"></source>
-                            <source srcSet="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/appDevelopmentx2_IDUZ5sitll.png" media="(min-width: 992px)"></source>
-                            <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/appDevelopment_yqH14K6bjw.png" alt="services" title="services" />
+                            <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/appDevelopment_f2Xn0e7lFf.svg" alt="services" title="services" />
                         </Service>
                         <Service
                             heading="machine learning"
                             body="Our team creates outcome oriented solutions for your brand. The process involves research, strategy, creatives,">
-                            <source srcSet="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/machineLearning_AvE1eR_a6.png"></source>
-                            <source srcSet="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/machineLearningx2_Jb4g_ef0W7.png" media="(min-width: 992px)"></source>
-                            <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/machineLearning_AvE1eR_a6.png" alt="services" title="services" />
+                            <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/machineLearning_VZY73dIsDv.svg" alt="services" title="services" />
                         </Service>
                         <Service
                             heading="web development"
                             body="Our team creates outcome oriented solutions for your brand. The process involves research, strategy, creatives,">
-                            <source srcSet="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/webDevelopment_M7YbM82b8g.png"></source>
-                            <source srcSet="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/webDevelopmentx2_-iYxLQZjG.png" media="(min-width: 992px)"></source>
-                            <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/webDevelopment_M7YbM82b8g.png" alt="services" title="services" />
+                            <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/webDevelopment_HyfTru1XVP.svg" alt="services" title="services" />
                         </Service>
                         <Service
                             heading="automation"
                             body="Our team creates outcome oriented solutions for your brand. The process involves research, strategy, creatives,">
-                            <source srcSet="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/automations_ZhNMjWuye5.png"></source>
-                            <source srcSet="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/automationx2_9jWKLCC6gD.png" media="(min-width: 992px)"></source>
-                            <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/automations_ZhNMjWuye5.png" alt="services" title="services" />
+                            <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/automation_cI0KgnCuF_.svg" alt="services" title="services" />
                         </Service>
                     </div>
                 </div>

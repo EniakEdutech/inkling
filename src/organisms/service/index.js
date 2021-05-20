@@ -2,19 +2,21 @@ import styled from 'styled-components'
 // Components
 import { ImportantText } from '../../atoms/importantText'
 import { Paragraph } from '../../atoms/paragraph'
+import { Picture } from '../../atoms/picture'
 
-const ServicesIcon = styled.picture`
-width: 50px;
+const ServicesIcon = styled(Picture)`
+width: auto;
+height: 50px;
 
 > * {
-    width: 50px;
+    height: 100%;
 }
 
 @media screen and (min-width: 992px) {
-    width: 80px;
+    height: 80px;
 
     > * {
-        width: 80px;
+        height: 100%;
     }
 }
 `
@@ -22,6 +24,9 @@ width: 50px;
 const ServicesHeading = styled(ImportantText)`
 text-align: center;
 text-transform: uppercase;
+font-size: 15px;
+letter-spacing: 2px;
+font-weight: 500;
 `
 
 const ServicesBody = styled(Paragraph)`
