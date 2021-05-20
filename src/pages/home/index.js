@@ -43,7 +43,7 @@ const StyledHeading1 = styled(Heading1)`
     font-size: 27px;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
     font-size: 35px;
 }
 `

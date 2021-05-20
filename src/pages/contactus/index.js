@@ -7,6 +7,7 @@ import callIconx2 from '../../assets/callx2.png'
 // Component
 import { Heading1 } from "../../atoms/heading1"
 import { Anchor } from '../../atoms/anchor'
+import { Picture } from "../../atoms/picture"
 
 const StyledContainer = styled.div`
 min-height: var(--small-screen-100vh);
@@ -83,7 +84,7 @@ height: 150px;
 margin-top: 5px;
 `
 
-const StyledIcon = styled.picture`
+const StyledIcon = styled(Picture)`
 width: 20px;
 margin-top: 10px;
 

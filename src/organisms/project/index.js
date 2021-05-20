@@ -40,7 +40,7 @@ height: 25vh;
 @media screen and (min-width: 992px) {
     height: 40vh;
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
     height: 25vh;
 }
 @media only screen and (min-width: 2560px) {
