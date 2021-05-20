@@ -114,8 +114,19 @@ top: 90px;
     background-color: var(--primary-text);
 }
 
+@media screen and (min-width: 768px) {
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
 @media screen and (min-width: 992px) {
     left: -4em;
+}
+
+@media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+    padding-left: 30px;
+    left: -5em;
 }
 `
 
@@ -125,6 +136,11 @@ padding-right: 35px;
 @media screen and (min-width: 992px) {
     left: -3.5em;
 }
+
+@media screen and (min-width: 1200px) {
+    left: -4.6em;
+}
+
 `
 
 export const AboutUs = () => {
