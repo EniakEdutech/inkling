@@ -30,7 +30,7 @@ font-weight: 500;
 `
 
 const ServicesBody = styled(Paragraph)`
-text-align: center;
+text-align: left;
 `
 
 export const Service = props => <div className="w-50 w-xmd-33 w-lg-25 px-xlg-2">

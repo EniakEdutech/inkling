@@ -28,7 +28,6 @@ const StyledContainer = styled.div`
 min-height: var(--small-screen-navmenu-100vh);
 background-image: url("https://ik.imagekit.io/bizwem110d/inkling/Backgrounds_for_mobile/aboutus_mob_01_bzuWWwmm5.png");
 background-size: contain;
-background-attachment: fixed;
 background-position: center;
 
 @media screen and (min-width: 768px) {
@@ -60,7 +59,7 @@ border-radius: 5px;
 const StyledParent2 = styled.div`
 background-color: var(--primary-text);
 color: var(--primary-dark-variant);
-border-left: 1px solid var(--primary-dark-variant);
+border-left: 2px solid var(--primary-dark-variant);
 `
 
 const StyledHeading2 = styled(Heading2)`
@@ -75,6 +74,8 @@ background-color: white;
 const SectionHeading1 = styled(Heading1)`
 position: relative;
 padding-bottom: 5px;
+text-transform: uppercase;
+font-weight: 700;
 
 &:before {
     content: "";
