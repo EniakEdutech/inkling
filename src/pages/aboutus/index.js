@@ -73,7 +73,6 @@ background-color: white;
 
 const SectionHeading1 = styled(Heading1)`
 position: relative;
-padding-bottom: 5px;
 text-transform: uppercase;
 font-weight: 700;
 
@@ -89,23 +88,32 @@ font-weight: 700;
 `
 
 const RotatedDiv = styled.div`
-background-color: var(--primary-text);
 transform: rotateZ(-90deg);
-left: -6em;
-top: 50px;
-padding-bottom: 10px;
-padding-right: 80px;
 border-bottom: 1px solid var(--primary-dark-variant);
+border-left: 1px solid var(--primary-dark-variant);
+padding-right: 115px;
+padding-bottom: 5px;
+padding-left: 5px;
+left: -8em;
+top: 90px;
 
 > b {
     letter-spacing: 2px;
     text-transform: uppercase;
+    background-color: var(--primary-text);
+}
+
+@media screen and (min-width: 992px) {
+    left: -4em;
 }
 `
 
 const RotateDevelopmentDiv = styled(RotatedDiv)`
-left: -8em;
-top: 85px;
+left: -7.5em;
+padding-right: 35px;
+@media screen and (min-width: 992px) {
+    left: -3.5em;
+}
 `
 
 export const AboutUs = () => {
@@ -127,13 +135,13 @@ export const AboutUs = () => {
             </div>
         </StyledContainer>
         <AboutUsDiv>
-            <SectionDiv className="flex column w-80 w-lg-75 w-xlg-50 margin-center px-1">
-                <SectionHeading1 className="my-1">Our Services</SectionHeading1>
+            <SectionDiv className="flex column w-80 w-lg-80 w-xlg-50 margin-center px-1">
+                <SectionHeading1 className="my-1 pb-1">Our Services</SectionHeading1>
                 <div className="relative my-1 w-100">
                     <RotatedDiv className="absolute">
                         <ImportantText>Design</ImportantText>
                     </RotatedDiv>
-                    <div className="flex wrap r-g-2">
+                    <div className="flex wrap ml-xmd-4 r-g-2">
                         <Service
                             heading="digital design"
                             body="I have experience with consulting for businesses and creating efficient marketing strategies to make their brands grow.">
@@ -160,7 +168,7 @@ export const AboutUs = () => {
                     <RotateDevelopmentDiv className="absolute">
                         <ImportantText>Development</ImportantText>
                     </RotateDevelopmentDiv>
-                    <div className="flex wrap r-g-2">
+                    <div className="flex wrap ml-xmd-4 r-g-2">
                         <Service
                             heading="app development"
                             body="Our team creates outcome oriented solutions for your brand. The process involves research, strategy, creatives,">
@@ -187,7 +195,7 @@ export const AboutUs = () => {
         </AboutUsDiv>
         <AboutUsDiv>
             <SectionDiv className="flex column w-80 w-lg-75 w-xlg-50 margin-center px-1">
-                <SectionHeading1 className="my-1">Our Team</SectionHeading1>
+                <SectionHeading1 className="my-1 pb-1">Our Team</SectionHeading1>
                 <div className="flex wrap r-g-2 my-2">
                     <TeamMember
                         name="jasprit sudan"
