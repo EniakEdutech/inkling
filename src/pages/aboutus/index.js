@@ -1,6 +1,7 @@
 import { Fragment } from "react"
 import styled from "styled-components"
 // Components
+import ScrollToTopOnMount from '../../atoms/scrollToTop'
 import { Heading2 } from "../../atoms/heading2"
 import { Paragraph } from '../../atoms/paragraph'
 import { Heading1 } from "../../atoms/heading1"
@@ -118,6 +119,7 @@ padding-right: 35px;
 
 export const AboutUs = () => {
     return <Fragment>
+        <ScrollToTopOnMount />
         <StyledContainer className="flex align-center center">
             <div className="flex column md-center w-xlg-50 margin-center r-g-2 r-g-md-4 r-g-xlg-5 py-3 px-2 px-md-3 px-lg-5">
                 <StyledParent1 className="flex column r-g-1 self-align-start w-75 w-lg-66 w-xlg-50 py-2 px-2 py-ipp-3 px-ipp-3 py-lg-4 px-lg-4 py-xlg-5 px-xlg-5">

@@ -1,6 +1,7 @@
-import { Component } from 'react'
+import { Component, Fragment } from 'react'
 import styled from 'styled-components'
 // components
+import ScrollToTopOnMount from '../../atoms/scrollToTop'
 import { Button } from '../../atoms/button'
 import { Project } from '../../organisms/project'
 
@@ -151,45 +152,48 @@ export class Portfolio extends Component {
     }
 
     render() {
-        return <ParentContainer>
-            <div className="flex column w-100 w-md-80 w-xlg-50 margin-center">
-                <CategoryContainerDiv className="flex py-2 py-md-3">
-                    <CategoryDiv
-                        onClick={() => this.categorySelector('all')}
-                        className={this.state.category === 'all' && "selected"}>
-                        All Projects
+        return <Fragment>
+            <ScrollToTopOnMount />
+            <ParentContainer>
+                <div className="flex column w-100 w-md-80 w-xlg-50 margin-center">
+                    <CategoryContainerDiv className="flex py-2 py-md-3">
+                        <CategoryDiv
+                            onClick={() => this.categorySelector('all')}
+                            className={this.state.category === 'all' && "selected"}>
+                            All Projects
                     </CategoryDiv>
-                    <CategoryDiv
-                        onClick={() => this.categorySelector('Design')}
-                        className={this.state.category === 'Design' && "selected"}>
-                        Design
+                        <CategoryDiv
+                            onClick={() => this.categorySelector('Design')}
+                            className={this.state.category === 'Design' && "selected"}>
+                            Design
                     </CategoryDiv>
-                    <CategoryDiv
-                        onClick={() => this.categorySelector('Development')}
-                        className={this.state.category === 'Development' && "selected"}>
-                        Development
+                        <CategoryDiv
+                            onClick={() => this.categorySelector('Development')}
+                            className={this.state.category === 'Development' && "selected"}>
+                            Development
                     </CategoryDiv>
-                    <CategoryDiv
-                        onClick={() => this.categorySelector('Curriculum Design')}
-                        className={this.state.category === 'Curriculum Design' && "selected"}>
-                        Curriculum Design
+                        <CategoryDiv
+                            onClick={() => this.categorySelector('Curriculum Design')}
+                            className={this.state.category === 'Curriculum Design' && "selected"}>
+                            Curriculum Design
                     </CategoryDiv>
-                </CategoryContainerDiv>
-                <ProjectDiv className="flex wrap">
-                    {this.state.showProjects.map((project, index) => <Project
-                        key={index}
-                        title={project.title}
-                        description={project.description}
-                        image={project.image + '?tr=w-500,h-250,fo-center'}
-                        alt={project.alt}
-                        link={"/portfolio/" + project.link} />)}
-                </ProjectDiv>
-                {this.state.count < this.state.projects.length &&
-                    <div className="flex center" style={{ margin: "50px" }}>
-                        <Button onClick={this.increaseCount} showmore>Show more</Button>
-                    </div>
-                }
-            </div>
-        </ParentContainer>
+                    </CategoryContainerDiv>
+                    <ProjectDiv className="flex wrap">
+                        {this.state.showProjects.map((project, index) => <Project
+                            key={index}
+                            title={project.title}
+                            description={project.description}
+                            image={project.image + '?tr=w-500,h-250,fo-center'}
+                            alt={project.alt}
+                            link={"/portfolio/" + project.link} />)}
+                    </ProjectDiv>
+                    {this.state.count < this.state.projects.length &&
+                        <div className="flex center" style={{ margin: "50px" }}>
+                            <Button onClick={this.increaseCount} showmore>Show more</Button>
+                        </div>
+                    }
+                </div>
+            </ParentContainer>
+        </Fragment>
     }
 }

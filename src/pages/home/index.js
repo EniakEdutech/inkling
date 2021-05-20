@@ -2,6 +2,7 @@ import { Fragment } from "react"
 import styled from "styled-components"
 import { Link } from 'react-router-dom'
 // components
+import ScrollToTopOnMount from '../../atoms/scrollToTop'
 import { Heading1 } from '../../atoms/heading1'
 import { Heading3 } from '../../atoms/heading3'
 import { Paragraph } from '../../atoms/paragraph'
@@ -138,6 +139,7 @@ font-size: 17px;
 
 export const Home = props => {
     return <Fragment>
+        <ScrollToTopOnMount />
         <StyledDivContainer className="flex center align-center">
             <StyledDivParent className="w-80 w-xmd-75 w-lg-66 w-xlg-33 py-6 px-3 py-md-5 px-md-4 py-ipp-7 py-xmd-4 px-xmd-6">
                 <StyledDivChild className="flex column r-g-2 w-100 pl-2">
