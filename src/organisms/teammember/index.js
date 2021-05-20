@@ -30,15 +30,15 @@ const TeamDesignation = styled(Heading4)`
 font-family: 'Montserrat', sans-serif;
 text-transform: capitalize;
 font-weight: 300;
+font-size: 16px;
 `
 
 const TeamInfo = styled(Paragraph)`
-font-family: 'Work Sans', sans-serif;
-font-size: 14px;
+line-height: 20px;
 `
 
 export const TeamMember = props => <div className="w-50 w-md-33 w-xlg-25">
-    <div className="flex column r-g-1 w-95">
+    <div className="flex column r-g-2 w-95 margin-center">
         <TeamImage colour1={props.colour1} colour2={props.colour2}>
             {props.children}
         </TeamImage>

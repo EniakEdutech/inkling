@@ -31,8 +31,8 @@ font-weight: 700;
 `
 
 const ServicesBody = styled(Paragraph)`
-font-family: 'Work Sans', sans-serif;
-font-size: 14px;
+font-size: 12px;
+line-height: 20px;
 `
 
 export const Service = props => <div className="w-50 w-xmd-33 w-lg-25 px-xlg-2">
