@@ -6,6 +6,7 @@ import { Hamburger } from '../../atoms/hamburger'
 // static
 import logo2x from '../../assets/inkling.png'
 import logo4x from '../../assets/inkling@2x.png'
+import logosvg from '../../assets/inkling.svg'
 
 const StyledNav = styled.nav`
 position: sticky;
@@ -128,9 +129,9 @@ export const NavMenu = props => {
     return <StyledNav>
         <StyledParentDiv className="flex column space-between align-center margin-center md-row">
             <StyledLogo>
-                <source srcSet={logo2x} media="(min-width: 768px)" ></source>
+                <source srcSet={logo2x} media="(min-width: 992px)" ></source>
                 <source srcSet={logo4x} media="(min-width: 1900px)" ></source>
-                <img src={logo2x} alt="logo" title="Inkling" />
+                <img src={logosvg} alt="logo" title="Inkling" />
             </StyledLogo>
             <StylesNavigationItems className="column md-row w-100 w-md-unset" toggleShow={show}>
                 <NavLink to="/" exact onClick={() => setShow(false)}>Home</NavLink>

@@ -1,11 +1,11 @@
 import styled from "styled-components"
+import { NavLink } from 'react-router-dom'
 // static
-import footerLogo from '../../assets/inkling_footer.png'
-import footerLogox2 from '../../assets/inkling_footerx2.png'
+import footerSvg from '../../assets/inkling-white.svg'
 // Component
 // import { Image } from '../../atoms/image'
 import { ImportantText } from '../../atoms/importantText'
-import { NavLink } from 'react-router-dom'
+import { Picture } from '../../atoms/picture'
 
 const StyledContainer = styled.div`
 padding: 2em 0;
@@ -24,7 +24,7 @@ color: var(--primary-text);
 
 // const StyledParent = styled.div``
 
-const StyledFooterLogo = styled.picture`
+const StyledFooterLogo = styled(Picture)`
 width: 100px;
 
 > * {
@@ -84,8 +84,7 @@ border-left: 1px solid var(--primary-lightest-variant);
 
     > a:hover {
         text-decoration: none;
-        padding-bottom: 0.5em;
-        border-bottom: 1px solid var(--primary-lightest-variant);
+        color: var(--primary-lighter-variant);
     }
     
     > a.active {
@@ -116,9 +115,7 @@ export const Footer = props => {
         <div className="flex align-center center c-g-1 w-lg-80 w-xlg-50 py-md-2">
             <div className="relative">
                 <StyledFooterLogo>
-                    <source srcSet={footerLogo} media="(min-width: 768px)"></source>
-                    <source srcSet={footerLogox2} media="(min-width: 992px)"></source>
-                    <img src={footerLogo} alt="logo" title="Inkling" />
+                    <img src={footerSvg} alt="logo" title="Inkling" />
                 </StyledFooterLogo>
                 <StyledImportantText className="absolute">By ENIAK EDUTECH PVT LTD</StyledImportantText>
             </div>
