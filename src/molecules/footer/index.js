@@ -70,6 +70,7 @@ border-left: 1px solid var(--primary-lightest-variant);
 > a {
     font-size: 12px;
     margin-bottom: 1em;
+    font-family: 'Poppins',sans-serif;
 }
 
 > a.active {

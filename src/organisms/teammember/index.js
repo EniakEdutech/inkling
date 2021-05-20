@@ -20,12 +20,14 @@ position: relative;
 `
 
 const TeamName = styled(Heading2)`
+font-family: 'Montserrat', sans-serif;
 text-transform: capitalize;
 font-weight: 600;
 letter-spacing: 0px;
 `
 
 const TeamDesignation = styled(Heading4)`
+font-family: 'Montserrat', sans-serif;
 text-transform: capitalize;
 font-weight: 300;
 `
