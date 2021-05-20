@@ -22,11 +22,11 @@
   --error-text: white;
   --helper: rgb(58, 182, 25);
   --info: rgb(25, 64, 182);
-  --small-screen-100vh: calc(100vh - 70.93px - 161px);
-  --tablet-screen-100vh: calc(100vh - 83px - 123.16px);
-  --small-desktop-screen-100vh: calc(100vh - 83px - 102.45px);
-  --ipadpro-screen-100vh: calc(100vh - 83px - 134.45px);
-  --extra-large-screen-100vh: calc(100vh - 88.98px - 102.45px);
+  --small-screen-100vh: calc(100vh - 70.93px - 176px);
+  --tablet-screen-100vh: calc(100vh - 83px - 219px);
+  --small-desktop-screen-100vh: calc(100vh - 83px - 187px);
+  --ipadpro-screen-100vh: calc(100vh - 83px - 219px);
+  --extra-large-screen-100vh: calc(100vh - 88.98px - 187px);
 }
 
 body {

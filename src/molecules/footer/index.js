@@ -1,4 +1,3 @@
-// import { useEffect } from 'react'
 import styled from "styled-components"
 // static
 import footerLogo from '../../assets/inkling_footer.png'
@@ -66,54 +65,70 @@ bottom: 6px;
 `
 
 const StyledNavLinkDiv = styled.div`
-border-left: 1px solid var(--primary-light-variant);
-padding-left: 40px;
-gap: 10px;
+border-left: 1px solid var(--primary-lightest-variant);
 
 > a {
     font-size: 12px;
+    margin-bottom: 1em;
 }
 
 > a.active {
-    padding-bottom: 2px;
-    border-bottom: 1px solid var(--primary-lightest-variant);
+    text-decoration: underline;
 }
 
 @media screen and (min-width: 768px) {
-    padding-left: 20px;
     > a {
         font-size: 14px;
+        margin-bottom: 0;
     }
-}
 
-@media screen and (min-width: 1200px) {
-    gap: 30px;
+    > a:hover {
+        text-decoration: none;
+        padding-bottom: 0.5em;
+        border-bottom: 1px solid var(--primary-lightest-variant);
+    }
+    
+    > a.active {
+        text-decoration: none;
+        padding-bottom: 0.5em;
+        border-bottom: 1px solid var(--primary-lightest-variant);
+    }
 }
 `
 
-// position: ${window.location.pathname.split('/')[window.location.pathname.split('/').length - 1] === 'contactus' ? 'fixed' : 'sticky'};
+const CircleDiv = styled.div`
+display: none;
+
+@media screen and (min-width: 768px) {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: var(--primary-lightest-variant);
+    margin-left: 2em;
+    margin-right: 2em;
+}    
+`
 
 export const Footer = props => {
 
-    // useEffect(() => {
-    //     console.log(props.path);
-    //     console.log(window.document.body.offsetHeight)
-    // }, [props.path]);
-
     return <StyledContainer className="w-100 flex center">
-        <div className="flex align-center center c-g-1 w-lg-80 w-xlg-50">
+        <div className="flex align-center center c-g-1 w-lg-80 w-xlg-50 py-md-2">
             <div className="relative">
                 <StyledFooterLogo>
-                    <source srcSet={footerLogo} media="min-width: 768px)"></source>
+                    <source srcSet={footerLogo} media="(min-width: 768px)"></source>
                     <source srcSet={footerLogox2} media="(min-width: 992px)"></source>
                     <img src={footerLogo} alt="logo" title="Inkling" />
                 </StyledFooterLogo>
                 <StyledImportantText className="absolute">By ENIAK EDUTECH PVT LTD</StyledImportantText>
             </div>
-            <StyledNavLinkDiv className="flex column md-row">
+            <StyledNavLinkDiv className="flex column md-row md-align-center pl-2 py-md-2 r-g-md-2">
                 <NavLink to="/" exact>Home</NavLink>
+                <CircleDiv />
                 <NavLink to="/aboutus">About Us</NavLink>
+                <CircleDiv />
                 <NavLink to="/portfolio">Portfolio</NavLink>
+                <CircleDiv />
                 <NavLink to="/contactus">Contact Us</NavLink>
             </StyledNavLinkDiv>
         </div>
