@@ -159,22 +159,22 @@ export const Home = props => {
         </div>
         <div className="flex column xmd-row ipp-column w-xlg-66 margin-center">
             <div className="flex column flex-xmd-6 flex-ipp-1">
-                <HomeProject className="flex-xmd-1" half>
+                <HomeProject className="flex-xmd-1" to="/portfolio/snapdeal" title="Snapdeal" description="Unbox Zindagi">
                     <Image width="inherit" height="inherit" src="https://ik.imagekit.io/bizwem110d/inkling/Snapdeal/snapdeal_box1_3KfhaxJVc.png" alt={props.alt} />
                 </HomeProject>
-                <HomeProject className="flex-xmd-1" half>
+                <HomeProject className="flex-xmd-1" to="/portfolio/90min" title="90 minute app challenge" description="Coding is a superpower">
                     <Image width="inherit" height="inherit" src="https://ik.imagekit.io/bizwem110d/inkling/90_Min_App_Challenge/90min_pamphlet_f4S5mNkYr.png?tr=w-500,h-270" alt={props.alt} />
                 </HomeProject>
             </div>
             <div className="flex column flex-xmd-4 flex-ipp-1">
-                <HomeProject className="flex-xmd-12">
+                <HomeProject className="flex-xmd-12" to="/portfolio/doolally" title="Doolally">
                     <source srcSet="https://ik.imagekit.io/bizwem110d/inkling/Doolally/Doolally_poster2_irR3RpwEN.png?tr=h-500,w-350" media="(min-width: 992px)" />
                     <source
                         srcSet="https://ik.imagekit.io/bizwem110d/inkling/Doolally/Doolally_poster2_irR3RpwEN.png"
                         media="(min-device-width: 1024px and max-device-width: 1366px and orientation: portrait)" />
                     <Image width="inherit" height="inherit" src="https://ik.imagekit.io/bizwem110d/inkling/Doolally/Doolally_poster2_irR3RpwEN.png" alt={props.alt} />
                 </HomeProject>
-                <StyledLink className="flex center align-center flex-ipp-2 flex-xmd-1">view more &rarr;</StyledLink>
+                <StyledLink to="/portfolio" className="flex center align-center flex-ipp-2 flex-xmd-1">view more &rarr;</StyledLink>
             </div>
         </div>
         <StyledClientsDiv className="py-2 py-md-3 py-xmd-4 py-lg-5">
