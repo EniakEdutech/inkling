@@ -25,25 +25,25 @@ color: var(--primary-text);
 // const StyledParent = styled.div``
 
 const StyledFooterLogo = styled(Picture)`
-width: 100px;
+width: 120px;
 
 > * {
-    width: 100px;
+    width: 120px;
 }
 
 @media screen and (min-width: 768px) {
-   width: 140px;
+   width: 160px;
 
    > * {
-       width: 140px;
+       width: 160px;
    }
 }
 
 @media screen and (min-width: 992px) {
-    width: 170px;
+    width: 200px;
 
     > * {
-        width: 170px;
+        width: 200px;
     }
 }
 `
