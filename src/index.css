@@ -344,6 +344,14 @@ hr {
   cursor: pointer;
 }
 
+.ml-1 {
+  margin-left: 1em;
+}
+
+.ml-3 {
+  margin-left: 3em;
+}
+
 .my-1 {
   margin-top: 1em;
   margin-bottom: 1em;
@@ -1012,6 +1020,9 @@ hr {
   }
   .w-xmd-unset {
     width: unset;
+  }
+  .ml-xmd-4 {
+    margin-left: 4em;
   }
   .my-xmd-1 {
     margin-top: 1em;
