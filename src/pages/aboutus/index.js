@@ -172,7 +172,7 @@ export const AboutUs = () => {
                     <div className="flex wrap ml-xmd-4 r-g-2">
                         <Service
                             heading="digital design"
-                            body="I have experience with consulting for businesses and creating efficient marketing strategies to make their brands grow.">
+                            body={["We have designers who ensure", <br />, "your company has a unique brand", <br />, "identity and can translate that", <br />, "onto digital platforms."]}>
                             <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/digitalDesign_VPGRt3UnG2.svg" alt="services" title="services" />
                         </Service>
                         <Service
@@ -222,7 +222,7 @@ export const AboutUs = () => {
             </SectionDiv>
             <SectionDiv className="flex column w-80 w-lg-75 w-xlg-50 margin-center px-1 py-3 pb-5">
                 <SectionHeading1 className="my-1 pb-1">Our Team</SectionHeading1>
-                <div className="flex wrap r-g-2 my-2">
+                <div className="flex wrap r-g-4 my-2">
                     <TeamMember
                         name="jasprit sudan"
                         designation="Business Strategist"
