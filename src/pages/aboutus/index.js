@@ -11,17 +11,27 @@ import { TeamMember } from '../../organisms/teammember'
 
 const AboutUsDiv = styled.div`
 background-image: url("https://ik.imagekit.io/bizwem110d/inkling/Backgrounds_for_mobile/about_mob_2_VbDMbVr9F.png");
-background-size: cover;
-background-attachment: fixed;
-background-position: center;
+background-size: contain;
+background-position: 0%;
+
+@media screen and (min-width: 768px) {
+    background-position: 60%;
+}
 
 @media screen and (min-width: 992px) {
     background-image: url("https://ik.imagekit.io/bizwem110d/inkling/About_web_2_UEel0P6InS.png");
-    background-size: cover;
+    background-size: contain;
+    background-position: 0%;
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
     background-image: url("https://ik.imagekit.io/bizwem110d/inkling/Backgrounds_for_mobile/about_mob_2_VbDMbVr9F.png");
+    background-size: contain;
+    background-position: 0%;
+}
+
+@media screen and (min-width: 1200px) {
+    background-size: cover;
 }
 `
 
@@ -137,7 +147,7 @@ export const AboutUs = () => {
             </div>
         </StyledContainer>
         <AboutUsDiv>
-            <SectionDiv className="flex column w-80 w-lg-80 w-xlg-50 margin-center px-1">
+            <SectionDiv className="flex column w-80 w-lg-80 w-xlg-50 margin-center px-1 py-3">
                 <SectionHeading1 className="my-1 pb-1">Our Services</SectionHeading1>
                 <div className="relative my-1 w-100">
                     <RotatedDiv className="absolute">
@@ -194,9 +204,7 @@ export const AboutUs = () => {
                     </div>
                 </div>
             </SectionDiv>
-        </AboutUsDiv>
-        <AboutUsDiv>
-            <SectionDiv className="flex column w-80 w-lg-75 w-xlg-50 margin-center px-1">
+            <SectionDiv className="flex column w-80 w-lg-75 w-xlg-50 margin-center px-1 py-3 pb-5">
                 <SectionHeading1 className="my-1 pb-1">Our Team</SectionHeading1>
                 <div className="flex wrap r-g-2 my-2">
                     <TeamMember
