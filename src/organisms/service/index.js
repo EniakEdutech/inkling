@@ -22,19 +22,21 @@ height: 50px;
 `
 
 const ServicesHeading = styled(ImportantText)`
+font-family: 'Montserrat',sans-serif;
 text-align: center;
 text-transform: uppercase;
 font-size: 15px;
 letter-spacing: 2px;
-font-weight: 500;
+font-weight: 700;
 `
 
 const ServicesBody = styled(Paragraph)`
 text-align: left;
+font-family: 'Work Sans', sans-serif;
 `
 
 export const Service = props => <div className="w-50 w-xmd-33 w-lg-25 px-xlg-2">
-    <div class="flex column align-center r-g-1 w-95">
+    <div class="flex column align-center r-g-1 w-95 margin-center">
         <ServicesIcon>
             {props.children}
         </ServicesIcon>
