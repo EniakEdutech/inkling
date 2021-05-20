@@ -30,6 +30,11 @@ text-transform: capitalize;
 font-weight: 300;
 `
 
+const TeamInfo = styled(Paragraph)`
+font-family: 'Work Sans', sans-serif;
+font-size: 14px;
+`
+
 export const TeamMember = props => <div className="w-50 w-md-33 w-xlg-25">
     <div className="flex column r-g-1 w-95">
         <TeamImage colour1={props.colour1} colour2={props.colour2}>
@@ -39,6 +44,6 @@ export const TeamMember = props => <div className="w-50 w-md-33 w-xlg-25">
             <TeamName>{props.name}</TeamName>
             <TeamDesignation>{props.designation}</TeamDesignation>
         </div>
-        <Paragraph>{props.info}</Paragraph>
+        <TeamInfo>{props.info}</TeamInfo>
     </div>
 </div>
