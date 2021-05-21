@@ -163,8 +163,8 @@ export const AboutUs = () => {
             </div>
         </StyledContainer>
         <AboutUsDiv>
-            <SectionDiv className="flex column w-80 w-lg-80 w-xlg-50 margin-center px-1 py-3">
-                <SectionHeading1 className="my-1 pb-1">Our Services</SectionHeading1>
+            <SectionDiv className="flex column w-80 w-lg-80 w-xlg-50 margin-center px-1 py-3 r-g-2">
+                <SectionHeading1 className="pb-1">Our Services</SectionHeading1>
                 <div className="relative my-1 w-100">
                     <RotatedDiv className="absolute">
                         <ImportantText>Design</ImportantText>
@@ -177,17 +177,17 @@ export const AboutUs = () => {
                         </Service>
                         <Service
                             heading="print design"
-                            body="Creating a brand will also involve printables that can be used for marketing. We will deliver quality outcomes.">
+                            body={["Creating a brand will also", <br />, "involve printables that can be", <br />, "used for marketing. We will", <br />, "deliver quality outcomes."]}>
                             <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/printDesign_y7PMQ1476D.svg" alt="services" title="services" />
                         </Service>
                         <Service
                             heading="brand strategy"
-                            body="We will help your brand, succeed by positioning it in the market in a certain way such that it appeals to the user.">
+                            body={["We will help your brand,", <br />, "succeed by positioning it in the", <br />, "market in a certain way such that", <br />, "it appeals to the user."]}>
                             <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/brandStrategy_6B45X-5OLO.svg" alt="services" title="services" />
                         </Service>
                         <Service
                             heading="user interface"
-                            body="Marketing will also involve Web and App Development. We create user friendly and efficient platforms.">
+                            body={["Marketing will also involve", <br />, "Web and App Development.", <br />, "We create user friendly and", <br />, "efficient platforms."]}>
                             <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/userInterface_qKSq0Q1b_.svg" alt="services" title="services" />
                         </Service>
                     </div>
@@ -199,22 +199,22 @@ export const AboutUs = () => {
                     <div className="flex wrap ml-xmd-4 r-g-2">
                         <Service
                             heading="app development"
-                            body="Our team creates outcome oriented solutions for your brand. The process involves research, strategy, creatives,">
+                            body={["Our team creates outcome", <br />, "oriented solutions for your", <br />, "brand. The process involves", <br />, "research, strategy, creatives,"]}>
                             <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/appDevelopment_f2Xn0e7lFf.svg" alt="services" title="services" />
                         </Service>
                         <Service
                             heading="machine learning"
-                            body="Our team creates outcome oriented solutions for your brand. The process involves research, strategy, creatives,">
+                            body={["Our team creates outcome", <br />, "oriented solutions for your", <br />, "brand. The process involves", <br />, "research, strategy, creatives,"]}>
                             <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/machineLearning_VZY73dIsDv.svg" alt="services" title="services" />
                         </Service>
                         <Service
                             heading="web development"
-                            body="Our team creates outcome oriented solutions for your brand. The process involves research, strategy, creatives,">
+                            body={["Our team creates outcome", <br />, "oriented solutions for your", <br />, "brand. The process involves", <br />, "research, strategy, creatives,"]}>
                             <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/webDevelopment_HyfTru1XVP.svg" alt="services" title="services" />
                         </Service>
                         <Service
                             heading="automation"
-                            body="Our team creates outcome oriented solutions for your brand. The process involves research, strategy, creatives,">
+                            body={["Our team creates outcome", <br />, "oriented solutions for your", <br />, "brand. The process involves", <br />, "research, strategy, creatives,"]}>
                             <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/automation_cI0KgnCuF_.svg" alt="services" title="services" />
                         </Service>
                     </div>
