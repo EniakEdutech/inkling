@@ -41,5 +41,5 @@ cursor: not-allowed;
 `
 
 export const Button = props => {
-  return <StyledButton {...props} className="px-6 py-1">{props.children}</StyledButton>
+  return <StyledButton {...props}>{props.children}</StyledButton>
 }

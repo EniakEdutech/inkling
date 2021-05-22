@@ -178,7 +178,7 @@ export const Home = props => {
                     </StyledHeading3>
                 </StyledDivChild>
             </StyledDivParent>
-            <Link to="/contactus"><Button primary capital>Contact Us</Button></Link>
+            <Link to="/contactus"><Button className="px-6 py-1" primary capital>Contact Us</Button></Link>
         </StyledDivContainer>
         <div className="py-2 py-md-3 py-xmd-4 py-lg-5">
             <div className="flex column w-md-80 margin-center align-center">

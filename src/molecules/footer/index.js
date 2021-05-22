@@ -49,22 +49,6 @@ width: 120px;
 }
 `
 
-const StyledImportantText = styled(ImportantText)`
-font-size: 6px;
-left: 0;
-bottom: 6px;
-
-@media screen and (min-width: 768px) {
-    font-size: 8px;
-}
-
-@media screen and (min-width: 992px) {
-    font-size: 10px;
-    left: 0;
-    bottom: 10px;
-}
-`
-
 const StyledNavLinkDiv = styled.div`
 border-top: 1px solid var(--primary-lightest-variant);
 border-bottom: 1px solid var(--primary-lightest-variant);
