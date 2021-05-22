@@ -356,6 +356,14 @@ hr {
   margin-right: 2em;
 }
 
+.mb-5 {
+  margin-bottom: 5em;
+}
+
+.mb-7 {
+  margin-bottom: 7em;
+}
+
 .my-1 {
   margin-top: 1em;
   margin-bottom: 1em;
