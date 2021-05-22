@@ -1,13 +1,8 @@
 import styled, { css } from "styled-components"
-// statics
-import mailIcon from '../../assets/mail.png'
-import mailIconx2 from '../../assets/mailx2.png'
-import callIcon from '../../assets/call.png'
-import callIconx2 from '../../assets/callx2.png'
 // Component
 import { Heading1 } from "../../atoms/heading1"
 import { Anchor } from '../../atoms/anchor'
-import { Picture } from "../../atoms/picture"
+import { CallIcon, MailIcon } from '../../molecules/contactusicons'
 
 const StyledContainer = styled.div`
 min-height: var(--small-screen-100vh);
@@ -84,21 +79,6 @@ height: 150px;
 margin-top: 5px;
 `
 
-const StyledIcon = styled(Picture)`
-width: 20px;
-margin-top: 10px;
-
-> * {
-    width: 20px;
-}
-
-@media screen and (min-width: 992px) {
-    margin-top: 0px;
-    position: sticky;
-    right: 0;
-}
-`
-
 const StyledLinkDiv = styled.div`
 position: relative;
 
@@ -112,18 +92,6 @@ width: 40%;
 border-bottom: 1px solid var(--primary-lightest-variant);
 }
 `
-
-const MailIcon = props => <StyledIcon {...props}>
-    <source srcSet={mailIcon}></source>
-    <source srcSet={mailIconx2} media="(min-width: 992px)"></source>
-    <img src={mailIcon} alt="mail" title="email us at" />
-</StyledIcon>
-
-const CallIcon = props => <StyledIcon {...props}>
-    <source srcSet={callIcon}></source>
-    <source srcSet={callIconx2} media="(min-width: 992px)"></source>
-    <img src={callIcon} alt="call" title="call us at" />
-</StyledIcon>
 
 export const ContactUs = props => {
     return <StyledContainer className="flex center align-center" background="https://ik.imagekit.io/bizwem110d/inkling/home-background_HK4W1i-Jg.png">

@@ -1,7 +1,5 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-
-import { Heading3 } from '../../atoms/heading3'
 import { Picture } from '../../atoms/picture'
 
 const StyledDiv = styled.div`
