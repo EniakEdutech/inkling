@@ -3,9 +3,10 @@ import { NavLink } from 'react-router-dom'
 // static
 import footerSvg from '../../assets/inkling-white.svg'
 // Component
-// import { Image } from '../../atoms/image'
+import { Anchor } from '../../atoms/anchor'
 import { ImportantText } from '../../atoms/importantText'
 import { Picture } from '../../atoms/picture'
+import { CallIcon, MailIcon } from '../../molecules/contactusicons'
 
 const StyledContainer = styled.div`
 padding: 2em 0;
@@ -65,11 +66,11 @@ bottom: 6px;
 `
 
 const StyledNavLinkDiv = styled.div`
-border-left: 1px solid var(--primary-lightest-variant);
+border-top: 1px solid var(--primary-lightest-variant);
+border-bottom: 1px solid var(--primary-lightest-variant);
 
 > a {
     font-size: 12px;
-    margin-bottom: 1em;
     font-family: 'Poppins',sans-serif;
 }
 
@@ -77,10 +78,13 @@ border-left: 1px solid var(--primary-lightest-variant);
     text-decoration: underline;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
+    border-left: 1px solid var(--primary-lightest-variant);
+    border-right: 1px solid var(--primary-lightest-variant);
+    border-top: none;
+    border-bottom: none;
     > a {
         font-size: 14px;
-        margin-bottom: 0;
     }
 
     > a:hover {
@@ -96,39 +100,32 @@ border-left: 1px solid var(--primary-lightest-variant);
 }
 `
 
-const CircleDiv = styled.div`
-display: none;
-
-@media screen and (min-width: 768px) {
-    display: inline-block;
-    width: 6px;
-    height: 6px;
-    border-radius: 3px;
-    background-color: var(--primary-lightest-variant);
-    margin-left: 2em;
-    margin-right: 2em;
-}    
-`
-
 export const Footer = props => {
 
     return <StyledContainer className="w-100 flex center">
-        <div className="flex align-center center c-g-1 w-lg-80 w-xlg-50 py-md-2">
-            <div className="relative">
-                <StyledFooterLogo>
-                    <img src={footerSvg} alt="logo" title="Inkling" />
-                </StyledFooterLogo>
-                <StyledImportantText className="absolute">By ENIAK EDUTECH PVT LTD</StyledImportantText>
-            </div>
-            <StyledNavLinkDiv className="flex column md-row md-align-center pl-2 py-md-2 r-g-md-2">
+        <div className="flex column xmd-row align-center center g-2 w-80 w-xmd-95 w-lg-80 w-xlg-50 py-xmd-2">
+            <StyledFooterLogo>
+                <img src={footerSvg} alt="logo" title="Inkling" />
+            </StyledFooterLogo>
+            <StyledNavLinkDiv className="flex row xmd-align-center space-between md-space-around w-100 py-2 px-xmd-2 py-xmd-unset">
                 <NavLink to="/" exact>Home</NavLink>
-                <CircleDiv />
                 <NavLink to="/aboutus">About Us</NavLink>
-                <CircleDiv />
                 <NavLink to="/portfolio">Portfolio</NavLink>
-                <CircleDiv />
                 <NavLink to="/contactus">Contact Us</NavLink>
             </StyledNavLinkDiv>
+            <div className="flex column xmd-align-start g-1">
+                <div className="flex align-center center c-g-1">
+                    <MailIcon />
+                    <Anchor href="mailto:inklingbyeniak@gmail.com">inklingbyeniak@gmail.com</Anchor>
+                </div>
+                <div className="flex align-center center c-g-1">
+                    <CallIcon />
+                    <div className="flex column">
+                        <Anchor href="tel:+917900897894">+91 79008-97894</Anchor>
+                        <Anchor href="tel:+917900134918">+91 79001-34918</Anchor>
+                    </div>
+                </div>
+            </div>
         </div>
     </StyledContainer>
 }
