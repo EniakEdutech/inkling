@@ -598,6 +598,10 @@ hr {
   padding-bottom: 5em;
 }
 
+.pb-7 {
+  padding-bottom: 7em;
+}
+
 /* Medium devices (tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {

@@ -61,9 +61,9 @@ font-weight: 300;
 }
 `
 const StyledServicessDiv = styled.div`
-background-image: url('https://ik.imagekit.io/bizwem110d/inkling/About_web_2_UEel0P6InS.png');
+background-image: url('https://ik.imagekit.io/bizwem110d/inkling/Projects_web_FvBoVS1BU.png');
 background-size: contain;
-background-position: center;
+background-position: bottom;
 
 @media screen and (min-width: 992px) {
     background-size: cover;
@@ -183,10 +183,10 @@ export const Home = props => {
         <div className="py-2 py-md-3 py-xmd-4 py-lg-5">
             <div className="flex column w-md-80 margin-center align-center">
                 <SectionHeading1 className="my-1">Our Clients</SectionHeading1>
-                <ClientImagesDiv className="flex c-g-3 c-g-md-4 w-100 pl-2 mr-2 px-md-unset mx-md-unset">
+                <ClientImagesDiv className="flex align-center c-g-3 c-g-md-4 w-100 pl-2 py-2 mr-2 px-md-unset mx-md-unset">
                     <Client src="https://ik.imagekit.io/bizwem110d/inkling/home/clients/klm_Je65JneOCu.svg" />
-                    <Client src="https://ik.imagekit.io/bizwem110d/inkling/home/clients/snapdeal_9xyblg8qbh.svg" snapdeal />
-                    <Client src="https://ik.imagekit.io/bizwem110d/inkling/home/clients/itk_SfoaOfIWfN.svg" itk />
+                    <Client src="https://ik.imagekit.io/bizwem110d/inkling/home/clients/snapdeal_9xyblg8qbh.svg" small />
+                    <Client src="https://ik.imagekit.io/bizwem110d/inkling/home/clients/itk_SfoaOfIWfN.svg" small />
                     <Client src="https://ik.imagekit.io/bizwem110d/inkling/home/clients/allspace_ibaKJp0yN.svg" />
                     <Client src="https://ik.imagekit.io/bizwem110d/inkling/home/clients/doolally_vMe_bCB3z.svg" />
                 </ClientImagesDiv>
@@ -194,7 +194,7 @@ export const Home = props => {
         </div>
         <div className="flex column align-center">
             <SectionHeading1 className="my-1">Featured Projects</SectionHeading1>
-            <div className="flex column xmd-row ipp-column w-xmd-80 w-ipp-100 w-xlg-66 margin-center">
+            <div className="flex column xmd-row ipp-column w-xmd-80 w-ipp-100 w-xlg-66 my-2 margin-center">
                 <div className="flex column flex-xmd-5 flex-ipp-1">
                     <HomeProject className="flex-xmd-1 p-xmd-1 p-ipp-unset" to="/portfolio/snapdeal" title="Snapdeal">
                         <Image width="inherit" height="inherit" src="https://ik.imagekit.io/bizwem110d/inkling/Snapdeal/snapdeal_box1_3KfhaxJVc.png" alt={props.alt} />
@@ -216,8 +216,8 @@ export const Home = props => {
             <StyledPortfolioLink to="/portfolio" className="flex center align-center my-2">view more &rarr;</StyledPortfolioLink>
         </div>
         <StyledServicessDiv>
-            <div className="flex column align-center w-80 w-xlg-50 margin-center py-3 mb-7">
-                <ServiceSectionHeading1 className="flex my-1 self-align-start">Our Services</ServiceSectionHeading1>
+            <div className="flex column align-center w-80 w-xlg-50 margin-center py-3 pb-7">
+                <ServiceSectionHeading1 className="flex my-3 self-align-start">Our Services</ServiceSectionHeading1>
                 <div className="flex wrap row r-g-2">
                     <Service
                         heading="design"
