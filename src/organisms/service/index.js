@@ -35,12 +35,13 @@ font-size: 12px;
 line-height: 20px;
 `
 
-export const Service = props => <div className="w-50 w-xmd-33 w-lg-25 px-xlg-2">
-    <div class="flex column align-center r-g-1 w-95 margin-center">
+export const Service = props => <div className="w-100 w-xmd-33 margin-center px-1">
+    <div class="flex column align-start r-g-1">
         <ServicesIcon>
-            {props.children}
+            <img src={props.src} alt={props.alt} title={props.title} />
         </ServicesIcon>
         <ServicesHeading>{props.heading}</ServicesHeading>
         <ServicesBody>{props.body}</ServicesBody>
+        {props.children}
     </div>
 </div>
