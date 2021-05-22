@@ -2,6 +2,8 @@ import styled from 'styled-components'
 
 const StyledH4 = styled.h4`
 font-size: 17px;
+font-family: 'Work Sans', sans-serif;
+font-weight: 300;
 
 @media (min-width: 768px) {
     font-size: 25px;

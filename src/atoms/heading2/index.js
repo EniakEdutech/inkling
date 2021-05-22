@@ -10,6 +10,10 @@ letter-spacing: 2px;
     font-size: 30px;
 }
 
+@media (min-width: 992px) {
+    font-size: 28px;
+}
+
 @media (min-width: 1200px) {
     font-size: 26px;
 }

@@ -352,6 +352,10 @@ hr {
   margin-left: 3em;
 }
 
+.mr-2 {
+  margin-right: 2em;
+}
+
 .my-1 {
   margin-top: 1em;
   margin-bottom: 1em;
@@ -499,6 +503,11 @@ hr {
 .py-6 {
   padding-top: 6em;
   padding-bottom: 6em;
+}
+
+.px-6 {
+  padding-left: 6em;
+  padding-right: 6em;
 }
 
 .pl-1 {
@@ -695,6 +704,9 @@ hr {
   .w-md-unset {
     width: unset;
   }
+  .mr-md-unset {
+    margin-right: unset;
+  }
   .my-md-1 {
     margin-top: 1em;
     margin-bottom: 1em;
@@ -749,6 +761,14 @@ hr {
   }
   .p-md-5 {
     padding: 5em;
+  }
+  .py-md-unset {
+    padding-top: unset;
+    padding-bottom: unset;
+  }
+  .px-md-unset {
+    padding-left: unset;
+    padding-right: unset;
   }
   .py-md-1 {
     padding-top: 1em;
@@ -1063,6 +1083,9 @@ hr {
   .mx-xmd-5 {
     margin-left: 5em;
     margin-right: 5em;
+  }
+  .p-xmd-half {
+    padding: 0.5em;
   }
   .p-xmd-1 {
     padding: 1em;
@@ -1389,6 +1412,9 @@ hr {
   .mx-ipp-5 {
     margin-left: 5em !important;
     margin-right: 5em !important;
+  }
+  .p-ipp-unset {
+    padding: unset !important;
   }
   .p-ipp-1 {
     padding: 1em !important;

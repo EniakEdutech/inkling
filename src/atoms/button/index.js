@@ -4,9 +4,9 @@ const StyledButton = styled.button`
 background: white;
 box-shadow: 3px 3px 9px 0px var(--primary-light-variant);
 color: var(--primary-light-text);
-padding: 15px 30px;
-border-radius: 15px;
+border-radius: 30px;
 border: transparent;
+text-transform: ${props => props.capital && 'uppercase'};
 
 :hover {
   box-shadow: 2px 2px 4px var(--primary-light-variant);
@@ -17,7 +17,7 @@ border: transparent;
 }
 
 ${props => props.primary && css`
-background: var(--primary);
+background: var(--primary-dark-variant);
 color: var(--primary-text);
 `};
 ${props => props.showmore && css`
@@ -40,5 +40,5 @@ cursor: not-allowed;
 `
 
 export const Button = props => {
-  return <StyledButton {...props}>{props.children}</StyledButton>
+  return <StyledButton {...props} className="px-6 py-1">{props.children}</StyledButton>
 }

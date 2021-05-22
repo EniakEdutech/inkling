@@ -4,12 +4,12 @@
 import styled, { css } from 'styled-components'
 
 const StyledHamburger = styled.div`
-top: 25px;
+top: 30px;
 right: 10%;
 transition: .25s ease-in-out;
 
 ${props => props.show && css`
-top: 30px;
+top: 35px;
 `}
 
 @media screen and (min-width: 768px) {
@@ -20,7 +20,7 @@ top: 30px;
 const StyledHamburgerLine = styled.div`
 height: 1px;
 background-color: var(--primary-light-variant);
-margin-bottom: 6px;
+margin-bottom: 4px;
 width: 25px;
 opacity: 1;
 -webkit-transform: rotate(0deg);
