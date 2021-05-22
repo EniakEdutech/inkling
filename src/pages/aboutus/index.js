@@ -5,8 +5,6 @@ import ScrollToTopOnMount from '../../atoms/scrollToTop'
 import { Heading2 } from "../../atoms/heading2"
 import { Paragraph } from '../../atoms/paragraph'
 import { Heading1 } from "../../atoms/heading1"
-import { ImportantText } from "../../atoms/importantText"
-import { Service } from '../../organisms/service'
 import { TeamMember } from '../../organisms/teammember'
 
 const AboutUsDiv = styled.div`
@@ -98,51 +96,6 @@ font-weight: 700;
 }
 `
 
-const RotatedDiv = styled.div`
-transform: rotateZ(-90deg);
-border-bottom: 1px solid var(--primary-dark-variant);
-border-left: 1px solid var(--primary-dark-variant);
-padding-right: 115px;
-padding-bottom: 5px;
-padding-left: 5px;
-left: -8em;
-top: 90px;
-
-> b {
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    background-color: var(--primary-text);
-}
-
-@media screen and (min-width: 768px) {
-    padding-bottom: 15px;
-    padding-left: 15px;
-}
-
-@media screen and (min-width: 992px) {
-    left: -4em;
-}
-
-@media screen and (min-width: 1200px) {
-    padding-bottom: 30px;
-    padding-left: 30px;
-    left: -5em;
-}
-`
-
-const RotateDevelopmentDiv = styled(RotatedDiv)`
-left: -7.5em;
-padding-right: 35px;
-@media screen and (min-width: 992px) {
-    left: -3.5em;
-}
-
-@media screen and (min-width: 1200px) {
-    left: -4.6em;
-}
-
-`
-
 export const AboutUs = () => {
     return <Fragment>
         <ScrollToTopOnMount />
@@ -163,63 +116,6 @@ export const AboutUs = () => {
             </div>
         </StyledContainer>
         <AboutUsDiv>
-            <SectionDiv className="flex column w-80 w-lg-80 w-xlg-50 margin-center px-1 py-3 r-g-2">
-                <SectionHeading1 className="pb-1">Our Services</SectionHeading1>
-                <div className="relative my-1 w-100">
-                    <RotatedDiv className="absolute">
-                        <ImportantText>Design</ImportantText>
-                    </RotatedDiv>
-                    <div className="flex wrap ml-xmd-4 r-g-2">
-                        <Service
-                            heading="digital design"
-                            body={["We have designers who ensure", <br />, "your company has a unique brand", <br />, "identity and can translate that", <br />, "onto digital platforms."]}>
-                            <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/digitalDesign_VPGRt3UnG2.svg" alt="services" title="services" />
-                        </Service>
-                        <Service
-                            heading="print design"
-                            body={["Creating a brand will also", <br />, "involve printables that can be", <br />, "used for marketing. We will", <br />, "deliver quality outcomes."]}>
-                            <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/printDesign_y7PMQ1476D.svg" alt="services" title="services" />
-                        </Service>
-                        <Service
-                            heading="brand strategy"
-                            body={["We will help your brand,", <br />, "succeed by positioning it in the", <br />, "market in a certain way such that", <br />, "it appeals to the user."]}>
-                            <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/brandStrategy_6B45X-5OLO.svg" alt="services" title="services" />
-                        </Service>
-                        <Service
-                            heading="user interface"
-                            body={["Marketing will also involve", <br />, "Web and App Development.", <br />, "We create user friendly and", <br />, "efficient platforms."]}>
-                            <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/userInterface_qKSq0Q1b_.svg" alt="services" title="services" />
-                        </Service>
-                    </div>
-                </div>
-                <div className="relative my-1 w-100">
-                    <RotateDevelopmentDiv className="absolute">
-                        <ImportantText>Development</ImportantText>
-                    </RotateDevelopmentDiv>
-                    <div className="flex wrap ml-xmd-4 r-g-2">
-                        <Service
-                            heading="app development"
-                            body={["Our team creates outcome", <br />, "oriented solutions for your", <br />, "brand. The process involves", <br />, "research, strategy, creatives,"]}>
-                            <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/appDevelopment_f2Xn0e7lFf.svg" alt="services" title="services" />
-                        </Service>
-                        <Service
-                            heading="machine learning"
-                            body={["Our team creates outcome", <br />, "oriented solutions for your", <br />, "brand. The process involves", <br />, "research, strategy, creatives,"]}>
-                            <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/machineLearning_VZY73dIsDv.svg" alt="services" title="services" />
-                        </Service>
-                        <Service
-                            heading="web development"
-                            body={["Our team creates outcome", <br />, "oriented solutions for your", <br />, "brand. The process involves", <br />, "research, strategy, creatives,"]}>
-                            <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/webDevelopment_HyfTru1XVP.svg" alt="services" title="services" />
-                        </Service>
-                        <Service
-                            heading="automation"
-                            body={["Our team creates outcome", <br />, "oriented solutions for your", <br />, "brand. The process involves", <br />, "research, strategy, creatives,"]}>
-                            <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/automation_cI0KgnCuF_.svg" alt="services" title="services" />
-                        </Service>
-                    </div>
-                </div>
-            </SectionDiv>
             <SectionDiv className="flex column w-80 w-lg-75 w-xlg-50 margin-center px-1 py-3 pb-5">
                 <SectionHeading1 className="my-1 pb-1">Our Team</SectionHeading1>
                 <div className="flex wrap r-g-4 my-2">
