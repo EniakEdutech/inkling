@@ -216,7 +216,7 @@ export const Home = props => {
             <StyledPortfolioLink to="/portfolio" className="flex center align-center my-2">view more &rarr;</StyledPortfolioLink>
         </div>
         <StyledServicessDiv>
-            <div className="flex column align-center w-80 w-xlg-50 margin-center py-3 pb-7">
+            <div className="flex column align-center w-80 w-xlg-50 margin-center py-3 pb-10">
                 <ServiceSectionHeading1 className="flex my-3 self-align-start">Our Services</ServiceSectionHeading1>
                 <div className="flex wrap row r-g-2">
                     <Service

@@ -602,6 +602,10 @@ hr {
   padding-bottom: 7em;
 }
 
+.pb-10 {
+  padding-bottom: 10em;
+}
+
 /* Medium devices (tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
