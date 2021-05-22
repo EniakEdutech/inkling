@@ -24,24 +24,25 @@ height: 50px;
 const ServicesHeading = styled(ImportantText)`
 font-family: 'Montserrat',sans-serif;
 text-align: center;
-text-transform: uppercase;
-font-size: 15px;
-letter-spacing: 2px;
+text-transform: capitalize;
+font-size: 25px;
 font-weight: 700;
 `
 
 const ServicesBody = styled(Paragraph)`
-font-size: 12px;
-line-height: 20px;
+font-size: 14px;
+line-height: 22px;
 `
 
-export const Service = props => <div className="w-100 w-xmd-33 margin-center px-1">
-    <div class="flex column align-start r-g-1">
+export const Service = props => <div className="w-100 w-xmd-33 margin-center px-md-1">
+    <div class="flex column align-start r-g-2">
         <ServicesIcon>
             <img src={props.src} alt={props.alt} title={props.title} />
         </ServicesIcon>
-        <ServicesHeading>{props.heading}</ServicesHeading>
-        <ServicesBody>{props.body}</ServicesBody>
+        <div className="flex column align-start r-g-1">
+            <ServicesHeading>{props.heading}</ServicesHeading>
+            <ServicesBody>{props.body}</ServicesBody>
+        </div>
         {props.children}
     </div>
 </div>
