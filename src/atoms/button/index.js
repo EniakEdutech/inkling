@@ -6,6 +6,7 @@ box-shadow: 3px 3px 9px 0px var(--primary-light-variant);
 color: var(--primary-light-text);
 border-radius: 30px;
 border: transparent;
+font-family: 'Montserrat', san-serif;
 text-transform: ${props => props.capital && 'uppercase'};
 
 :hover {
