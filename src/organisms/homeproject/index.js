@@ -20,9 +20,9 @@ const StyledDiv = styled.div`
 
 export const HomeProject = props => <Link to={props.to} className={props.className}>
     <StyledDiv className="relative h-100">
-        <div className="title column">
+        {/* <div className="title column">
             <Heading3 className="p-1 p-xmd-half p-ipp-1 p-lg-1">{props.title}</Heading3>
-        </div>
+        </div> */}
         <Picture className="w-100" {...props}>
             {props.children}
         </Picture>
