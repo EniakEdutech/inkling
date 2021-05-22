@@ -1,15 +1,13 @@
-import styled, { css } from "styled-components"
+import styled from "styled-components"
 // Component
-import { Heading1 } from "../../atoms/heading1"
-import { Anchor } from '../../atoms/anchor'
-import { CallIcon, MailIcon } from '../../molecules/contactusicons'
+import { Heading1 } from '../../atoms/heading1'
+import { Button } from "../../atoms/button"
 
 const StyledContainer = styled.div`
 min-height: var(--small-screen-100vh);
-background-image: url(${props => props.background});
+background-image: url("https://ik.imagekit.io/bizwem110d/inkling/Projects_web_FvBoVS1BU.png");
 background-size: cover;
-background-attachment: fixed;
-background-position: center;
+background-position: top;
 @media screen and (min-width: 768px) {
     min-height: var(--tablet-screen-100vh);
 }
@@ -27,103 +25,47 @@ background-position: center;
 }
 `
 
-const StyledParent = styled.div`
-background-color: var(--primary-dark-variant);
-color: var(--primary-text);
-box-shadow: 5px 5px 10px 0px var(--primary-light-variant);
-border-radius: 5px;
-`
-
-const StyledDivMobile = styled.div`
-@media screen and (min-width: 992px) {
-    display: none;
-}
-`
-
-const StyledDivDesktop = styled.div`
-@media screen and (max-width: 991.98px) {
-    display: none;
-}
-`
-
-const StyledHeading1 = styled(Heading1)`
+const SectionHeading1 = styled(Heading1)`
 position: relative;
+padding-bottom: 20px;
+text-transform: uppercase;
+font-weight: 700;
 
 &:before {
     content: "";
     position: absolute;
-    left: 15%;
-    bottom: -5px;
+    left: 0;
+    bottom: 0;
     height: 1px;
-    width: 70%;
-    border-bottom: 1px solid var(--primary-lightest-variant);
-}
-
-@media screen and (min-width: 992px) {
-    &:before {
-        left: 10%;
-        width: 40%;
-    }
+    width: 50%;
+    border-bottom: 2px solid var(--primary-dark-variant);
 }
 `
 
-const StyledVertialDiv = styled.div`
-border-left: 1px solid var(--primary-lightest-variant);
-height: 30px;
-${props => props.long && css`
-height: 60px;
-`}
-${props => props.full && css`
-height: 150px;
-`}
-margin-top: 5px;
+const StyledInput = styled.input`
+padding: 1em;
+border: none;
+border-bottom: 1px solid var(--primary-light-variant);
+font-family: 'Work Sans', sans-serif;
 `
 
-const StyledLinkDiv = styled.div`
-position: relative;
-
-&:before {
-content: "";
-position: absolute;
-left: -2em;
-bottom: 0px;
-height: 1px;
-width: 40%;
-border-bottom: 1px solid var(--primary-lightest-variant);
-}
+const StyledTextArea = styled.textarea`
+padding: 1em;
+border: none;
+border-bottom: 1px solid var(--primary-light-variant);
+font-family: 'Work Sans', sans-serif;
 `
 
 export const ContactUs = props => {
-    return <StyledContainer className="flex center align-center" background="https://ik.imagekit.io/bizwem110d/inkling/home-background_HK4W1i-Jg.png">
-        <StyledParent className="flex column center align-center w-75 w-md-50 w-xmd-66 w-lg-50 w-xlg-33 py-2 py-lg-4 py-xlg-5">
-            <StyledHeading1 className="w-xmd-80 self-start">Contact Us</StyledHeading1>
-            <StyledDivMobile className="flex column center align-center">
-                <StyledVertialDiv></StyledVertialDiv>
-                <div className="flex center align-center column">
-                    <MailIcon />
-                    <Anchor href="mailto:inklingbyeniak@gmail.com">inklingbyeniak@gmail.com</Anchor>
-                </div>
-                <StyledVertialDiv long></StyledVertialDiv>
-                <div className="flex center align-center column">
-                    <CallIcon />
-                    <Anchor href="tel:+917900897894">+91 79008-97894</Anchor>
-                    <Anchor href="tel:+917900134918">+91 79001-34918</Anchor>
-                </div>
-            </StyledDivMobile>
-            <StyledDivDesktop className="flex c-g-2 center w-xmd-100">
-                <div className="flex column r-g-1 align-end flex-xmd-1 py-xmd-2">
-                    <MailIcon />
-                    <CallIcon />
-                </div>
-                <StyledVertialDiv full />
-                <StyledLinkDiv className="flex column r-g-1 flex-xmd-1 py-xmd-2">
-                    <Anchor href="mailto:inklingbyeniak@gmail.com">inklingbyeniak@gmail.com</Anchor>
-                    <div className="flex column">
-                        <Anchor href="tel:+917900897894">+91 79008-97894</Anchor>
-                        <Anchor href="tel:+917900134918">+91 79001-34918</Anchor>
-                    </div>
-                </StyledLinkDiv>
-            </StyledDivDesktop>
-        </StyledParent>
+    return <StyledContainer className="flex center align-center">
+        <div className="flex column start align-center r-g-2 w-80 w-md-66 w-xmd-80 w-ipp-66 w-xlg-33 pb-10">
+            <SectionHeading1 className="self-align-start py-2">Contact Us</SectionHeading1>
+            <div className="flex column xmd-row r-g-2 c-g-1 w-100">
+                <StyledInput className="w-100" placeholder="Name" type="text" />
+                <StyledInput className="w-100" placeholder="Email" type="email" />
+            </div>
+            <StyledTextArea className="w-100" rows="2" placeholder="Write to us" />
+            <Button className="self-align-start py-1 px-3" primary>Submit</Button>
+        </div>
     </StyledContainer>
 }
