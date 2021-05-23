@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom'
 import footerSvg from '../../assets/inkling-white.svg'
 // Component
 import { Anchor } from '../../atoms/anchor'
-import { ImportantText } from '../../atoms/importantText'
 import { Picture } from '../../atoms/picture'
 import { CallIcon, MailIcon } from '../../molecules/contactusicons'
 

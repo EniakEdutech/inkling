@@ -67,9 +67,17 @@ box-shadow: 5px 5px 5px 0px var(--primary-lightest-variant);
 `
 
 const ProjectDiv = styled.div`
-row-gap: 1em;
-@media screen and (hover:hover) {
-    row-gap: 0;
+display: grid;
+grid-template-columns: 1fr;
+grid-tempplate-rows: repeat(20, 1fr);
+grid-gap: 2em;
+
+@media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (min-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
 }
 `
 
@@ -85,7 +93,8 @@ export class Portfolio extends Component {
                     image: "https://ik.imagekit.io/bizwem110d/inkling/Eniak_project_images/Phone_5zgidaNEt.png",
                     alt: "Eniak",
                     link: "eniak",
-                    category: ['Design', 'Development']
+                    category: ['Design', 'Development'],
+                    cardType:"square"
                 },
                 {
                     title: "Main Bhi Ambani",
@@ -93,7 +102,8 @@ export class Portfolio extends Component {
                     image: "https://ik.imagekit.io/bizwem110d/inkling/Main_bhi_Ambani/mainbhiambani-banner-1_iLApmpYn2.png",
                     alt: "Main bhi ambani",
                     link: "mainbhiambani",
-                    category: ['Development']
+                    category: ['Development'],
+                    cardType:"tall"
                 },
                 {
                     title: "Thakur College Feedback System",
@@ -101,7 +111,8 @@ export class Portfolio extends Component {
                     image: "https://ik.imagekit.io/bizwem110d/inkling/TCSC_Feedback/tcsc-banner-1_mAiOSZvKY.png",
                     alt: "TCSC Feedback",
                     link: "tcscfeedback",
-                    category: ['Development']
+                    category: ['Development'],
+                    cardType:"square"
                 },
                 {
                     title: "ITK",
@@ -109,11 +120,85 @@ export class Portfolio extends Component {
                     image: "https://ik.imagekit.io/bizwem110d/inkling/ITK_project/ITK_illustration_RFbw68B8k.png",
                     alt: "ITK",
                     link: "itk",
-                    category: ['Development', 'Curriculum Design']
+                    category: ['Development', 'Curriculum Design'],
+                    cardType: "square"
+                },
+                {
+                    title: "ITK",
+                    description: "Bringing computational thinking to school children.",
+                    image: "https://ik.imagekit.io/bizwem110d/inkling/ITK_project/ITK_illustration_RFbw68B8k.png",
+                    alt: "ITK",
+                    link: "itk",
+                    category: ['Development', 'Curriculum Design'],
+                    cardType: "square"
+                },
+                {
+                    title: "ITK",
+                    description: "Bringing computational thinking to school children.",
+                    image: "https://ik.imagekit.io/bizwem110d/inkling/ITK_project/ITK_illustration_RFbw68B8k.png",
+                    alt: "ITK",
+                    link: "itk",
+                    category: ['Development', 'Curriculum Design'],
+                    cardType: "tall"
+                },
+                {
+                    title: "ITK",
+                    description: "Bringing computational thinking to school children.",
+                    image: "https://ik.imagekit.io/bizwem110d/inkling/ITK_project/ITK_illustration_RFbw68B8k.png",
+                    alt: "ITK",
+                    link: "itk",
+                    category: ['Development', 'Curriculum Design'],
+                    cardType: "large"
+                },
+                {
+                    title: "ITK",
+                    description: "Bringing computational thinking to school children.",
+                    image: "https://ik.imagekit.io/bizwem110d/inkling/ITK_project/ITK_illustration_RFbw68B8k.png",
+                    alt: "ITK",
+                    link: "itk",
+                    category: ['Development', 'Curriculum Design'],
+                    cardType: "square"
+                },
+                {
+                    title: "ITK",
+                    description: "Bringing computational thinking to school children.",
+                    image: "https://ik.imagekit.io/bizwem110d/inkling/ITK_project/ITK_illustration_RFbw68B8k.png",
+                    alt: "ITK",
+                    link: "itk",
+                    category: ['Development', 'Curriculum Design'],
+                    cardType: "square"
+                },
+                {
+                    title: "ITK",
+                    description: "Bringing computational thinking to school children.",
+                    image: "https://ik.imagekit.io/bizwem110d/inkling/ITK_project/ITK_illustration_RFbw68B8k.png",
+                    alt: "ITK",
+                    link: "itk",
+                    category: ['Development', 'Curriculum Design'],
+                    cardType: "tall"
+                },
+                {
+                    title: "ITK",
+                    description: "Bringing computational thinking to school children.",
+                    image: "https://ik.imagekit.io/bizwem110d/inkling/ITK_project/ITK_illustration_RFbw68B8k.png",
+                    alt: "ITK",
+                    link: "itk",
+                    category: ['Development', 'Curriculum Design'],
+                    cardType: "large"
+                },
+                {
+                    title: "ITK",
+                    description: "Bringing computational thinking to school children.",
+                    image: "https://ik.imagekit.io/bizwem110d/inkling/ITK_project/ITK_illustration_RFbw68B8k.png",
+                    alt: "ITK",
+                    link: "itk",
+                    category: ['Development', 'Curriculum Design'],
+                    cardType: "square"
                 }
+                
             ],
             showProjects: [],
-            count: 6,
+            count: 5,
             category: 'all'
         }
     }
@@ -146,7 +231,7 @@ export class Portfolio extends Component {
 
     increaseCount = async () => {
         await this.setState({
-            count: this.state.count + 6
+            count: this.state.count + 5
         })
         this.categorySelector(this.state.category)
     }
@@ -155,8 +240,8 @@ export class Portfolio extends Component {
         return <Fragment>
             <ScrollToTopOnMount />
             <ParentContainer>
-                <div className="flex column w-100 w-md-80 w-xlg-50 margin-center">
-                    <CategoryContainerDiv className="flex py-2 py-md-3">
+                <div className="flex column w-80 w-xlg-50 margin-center">
+                    {/* <CategoryContainerDiv className="flex py-2 py-md-3">
                         <CategoryDiv
                             onClick={() => this.categorySelector('all')}
                             className={this.state.category === 'all' && "selected"}>
@@ -177,15 +262,16 @@ export class Portfolio extends Component {
                             className={this.state.category === 'Curriculum Design' && "selected"}>
                             Curriculum Design
                     </CategoryDiv>
-                    </CategoryContainerDiv>
-                    <ProjectDiv className="flex wrap">
+                    </CategoryContainerDiv> */}
+                    <ProjectDiv>
                         {this.state.showProjects.map((project, index) => <Project
                             key={index}
                             title={project.title}
                             description={project.description}
                             image={project.image + '?tr=w-500,h-250,fo-center'}
                             alt={project.alt}
-                            link={"/portfolio/" + project.link} />)}
+                            link={"/portfolio/" + project.link}
+                            cardType={project.cardType} />)}
                     </ProjectDiv>
                     {this.state.count < this.state.projects.length &&
                         <div className="flex center" style={{ margin: "50px" }}>
