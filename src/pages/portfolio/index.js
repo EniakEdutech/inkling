@@ -287,7 +287,7 @@ export class Portfolio extends Component {
             showProjects: [],
             count: 5,
             category: 'all',
-            showCat: true,
+            showCat: false,
         }
     }
 
@@ -309,7 +309,6 @@ export class Portfolio extends Component {
                 showProjects: this.state.projects.slice(0, this.state.count),
                 category: 'all'
             })
-            this.toggleCategories()
         } else {
             let showProjectList = []
             this.state.projects.map(project => {
@@ -322,7 +321,6 @@ export class Portfolio extends Component {
                 showProjects: showProjectList.slice(0, this.state.count),
                 category: category,
             })
-            this.toggleCategories()
         }
     }
 
@@ -338,14 +336,14 @@ export class Portfolio extends Component {
             <ScrollToTopOnMount />
             <ParentContainer>
                 <div className="flex column w-80 w-xlg-50 margin-center py-3 relative">
-                    <CategoryMenuDiv className="flex align-center c-g-1 pb-3">
-                        <CategoryMenu onClick={this.toggleCategories}>Categories</CategoryMenu>
+                    <CategoryMenuDiv className="flex align-center c-g-1 pb-3" onClick={this.toggleCategories}>
+                        <CategoryMenu>Categories</CategoryMenu>
                         <CategoryDropdown src={dropdown} alt="dropdown" show={this.state.showCat} />
                     </CategoryMenuDiv>
                     <div className="flex center">
                         <CategoryMenu className="screen py-2">Categories</CategoryMenu>
                     </div>
-                    <CategoryDiv className="column xmd-row xmd-space-between lg-space-evenly w-80 w-md-50 w-xmd-80 w-xlg-50 margin-center pl-2 py-2 px-xmd-unset" toggleShow={this.state.showCat}>
+                    <CategoryDiv className="column xmd-row xmd-space-between lg-space-evenly w-80 w-md-50 w-xmd-80 w-xlg-50 margin-center pl-2 py-2 px-xmd-unset pt-xmd-unset pb-xmd-3" toggleShow={this.state.showCat}>
                         <Category className="flex align-center c-g-1" onClick={() => this.categorySelector('all')}>
                             <Image src={allProjects} alt="all projects" />
                             <CategoryImpText
