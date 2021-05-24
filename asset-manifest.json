@@ -1,15 +1,20 @@
 {
   "files": {
-    "main.css": "/inkling/static/css/main.be68418a.chunk.css",
-    "main.js": "/inkling/static/js/main.c36e2551.chunk.js",
-    "main.js.map": "/inkling/static/js/main.c36e2551.chunk.js.map",
+    "main.css": "/inkling/static/css/main.3f1b7dd3.chunk.css",
+    "main.js": "/inkling/static/js/main.8920a9a7.chunk.js",
+    "main.js.map": "/inkling/static/js/main.8920a9a7.chunk.js.map",
     "runtime-main.js": "/inkling/static/js/runtime-main.6880259b.js",
     "runtime-main.js.map": "/inkling/static/js/runtime-main.6880259b.js.map",
-    "static/js/2.e29c3693.chunk.js": "/inkling/static/js/2.e29c3693.chunk.js",
-    "static/js/2.e29c3693.chunk.js.map": "/inkling/static/js/2.e29c3693.chunk.js.map",
+    "static/js/2.593d989d.chunk.js": "/inkling/static/js/2.593d989d.chunk.js",
+    "static/js/2.593d989d.chunk.js.map": "/inkling/static/js/2.593d989d.chunk.js.map",
     "index.html": "/inkling/index.html",
-    "static/css/main.be68418a.chunk.css.map": "/inkling/static/css/main.be68418a.chunk.css.map",
-    "static/js/2.e29c3693.chunk.js.LICENSE.txt": "/inkling/static/js/2.e29c3693.chunk.js.LICENSE.txt",
+    "static/css/main.3f1b7dd3.chunk.css.map": "/inkling/static/css/main.3f1b7dd3.chunk.css.map",
+    "static/js/2.593d989d.chunk.js.LICENSE.txt": "/inkling/static/js/2.593d989d.chunk.js.LICENSE.txt",
+    "static/media/allProjects.b00df689.svg": "/inkling/static/media/allProjects.b00df689.svg",
+    "static/media/curriculumDesign.1c9ad7df.svg": "/inkling/static/media/curriculumDesign.1c9ad7df.svg",
+    "static/media/design.4131077e.svg": "/inkling/static/media/design.4131077e.svg",
+    "static/media/development.bfad9971.svg": "/inkling/static/media/development.bfad9971.svg",
+    "static/media/dropdown.4a37796f.svg": "/inkling/static/media/dropdown.4a37796f.svg",
     "static/media/inkling-white.ab04f647.svg": "/inkling/static/media/inkling-white.ab04f647.svg",
     "static/media/inkling.c882a76d.png": "/inkling/static/media/inkling.c882a76d.png",
     "static/media/inkling.e8c49f10.svg": "/inkling/static/media/inkling.e8c49f10.svg",
@@ -17,8 +22,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.6880259b.js",
-    "static/js/2.e29c3693.chunk.js",
-    "static/css/main.be68418a.chunk.css",
-    "static/js/main.c36e2551.chunk.js"
+    "static/js/2.593d989d.chunk.js",
+    "static/css/main.3f1b7dd3.chunk.css",
+    "static/js/main.8920a9a7.chunk.js"
   ]
 }
