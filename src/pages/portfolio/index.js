@@ -165,6 +165,55 @@ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 grid-gap: 3em;
 `
 
+const StyledPortfolioLink = styled(Button)`
+box-shadow: none;
+border-radius: 0px;
+color: var(--primary-light-variant);
+padding: 15px 30px;
+border: transparent;
+font-size: 17px;
+font-family: 'Montserrat', san-serif;
+font-weight: 700;
+letter-spacing: 2px;
+position: relative;
+cursor: pointer;
+
+&:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    border-top: 1px solid var(--primary-light-variant);
+    width: 50%;
+    transition: .5s ease;
+}
+
+&:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid var(--primary-light-variant);
+    width: 30%;
+    transition: .5s ease;
+}
+
+&:hover {
+    text-decoration: none;
+    box-shadow: none;
+
+    &:before {
+        width: 30%;
+    }
+
+    &:after {
+        width: 50%;
+    }
+}
+
+&:active {
+    box-shadow: none;
+}
+`
+
 export class Portfolio extends Component {
 
     constructor(props) {
@@ -322,7 +371,7 @@ export class Portfolio extends Component {
                     </ProjectDiv>
                     {this.state.count < this.state.projects.length &&
                         <div className="flex center" style={{ margin: "50px" }}>
-                            <Button onClick={this.increaseCount} showmore>Show more</Button>
+                            <StyledPortfolioLink onClick={this.increaseCount} className="flex center align-center my-2">view more</StyledPortfolioLink>
                         </div>
                     }
                 </div>
