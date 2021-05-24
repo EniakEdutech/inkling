@@ -54,9 +54,20 @@ grid-row: span 2;
     `}
 }
 
+${props => props.nameShow ? css`
 &>.title {
     position: absolute;
-    bottom: 2em;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--primary-dark-variant);
+    color: var(--primary-text);
+    z-index: 1;
+}
+` : css`
+&>.title {
+    position: absolute;
+    bottom: 1.5em;
     left: 0;
     background-color: var(--primary-dark-variant);
     color: var(--primary-text);
@@ -77,6 +88,8 @@ grid-row: span 2;
 &>.title::before {
     border-left-color: var(--primary-dark-variant);
 }
+`}
+
 
 &>.title>span {
     text-overflow: ellipsis;

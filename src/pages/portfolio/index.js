@@ -226,7 +226,8 @@ export class Portfolio extends Component {
                     alt: "Eniak",
                     link: "eniak",
                     category: ['Design', 'Development'],
-                    cardType: "square"
+                    cardType: "square",
+                    nShown: false,
                 },
                 {
                     title: "ITK",
@@ -234,23 +235,26 @@ export class Portfolio extends Component {
                     alt: "ITK",
                     link: "itk",
                     category: ['Development', 'Curriculum Design'],
-                    cardType: "tall"
+                    cardType: "tall",
+                    nShown: true,
                 },
                 {
                     title: "90min app challenge",
-                    image: "https://ik.imagekit.io/bizwem110d/inkling/90_Min_App_Challenge/90min_logo_LwfeKLTs-.png?tr=w-800,h-500",
+                    image: "https://ik.imagekit.io/bizwem110d/inkling/90_Min_App_Challenge/90min_logo_LwfeKLTs-.png?tr=w-1000,h-600,fo-custom",
                     alt: "90 min app challenge",
                     link: "90minapp",
                     category: ['Development', 'Curriculum Design'],
-                    cardType: "square"
+                    cardType: "square",
+                    nShown: true,
                 },
                 {
                     title: "Code for All",
-                    image: "https://ik.imagekit.io/bizwem110d/inkling/Code_for_all/CFA_logo_FRqV2ki7NB.png?tr=h-500",
+                    image: "https://ik.imagekit.io/bizwem110d/inkling/Code_for_all/codeForAllProjectsbanner_IV6skIgg3.png?tr=h-500",
                     alt: "code for all",
                     link: "codeforall",
                     category: ['Development', 'Curriculum Design'],
-                    cardType: "square"
+                    cardType: "square",
+                    nShown: false,
                 },
                 {
                     title: "AllSpace Ventures",
@@ -258,7 +262,8 @@ export class Portfolio extends Component {
                     alt: "all space ventures",
                     link: "allspace",
                     category: ['Design'],
-                    cardType: "square"
+                    cardType: "square",
+                    nShown: false,
                 },
                 {
                     title: "Aadhiyaran Agrarian Services",
@@ -266,15 +271,17 @@ export class Portfolio extends Component {
                     alt: "aadhiyaran agrarian services",
                     link: "agrarian",
                     category: ['Design'],
-                    cardType: "tall"
+                    cardType: "tall",
+                    nShown: false,
                 },
                 {
                     title: "Doolally",
-                    image: "https://ik.imagekit.io/bizwem110d/inkling/Doolally/Doolally_finalposter1-01_RV2jbJUMj.png?tr=h-500",
+                    image: "https://ik.imagekit.io/bizwem110d/inkling/Doolally/Doolally_finalposter1-01_RV2jbJUMj.png?tr=w-800,h-500,fo-custom",
                     alt: "doolally",
                     link: "doolally",
                     category: ['Design'],
-                    cardType: "large"
+                    cardType: "large",
+                    nShown: false,
                 }
             ],
             showProjects: [],
@@ -367,6 +374,7 @@ export class Portfolio extends Component {
                             image={project.image}
                             alt={project.alt}
                             link={"/portfolio/" + project.link}
+                            nameShow={project.nShown}
                             cardType={project.cardType} />)}
                     </ProjectDiv>
                     {this.state.count < this.state.projects.length &&
