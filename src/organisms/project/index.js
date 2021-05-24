@@ -25,12 +25,12 @@ grid-row: span 2;
 }
 
 @media screen and (min-width: 992px) {
-    min-height: 40vh;
+    min-height: 30vh;
     ${props => props.cardType === 'tall' && css`
-    min-height: 80vh;
+    min-height: 60vh;
     `}
     ${props => props.cardType === 'large' && css`
-    min-height: 80vh;
+    min-height: 60vh;
     `}
 }
 
@@ -95,6 +95,7 @@ ${props => props.nameShow ? css`
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    display: block;
 }
 `
 
