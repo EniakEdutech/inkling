@@ -67,7 +67,7 @@ border-bottom: 1px solid var(--primary-lightest-variant);
     border-top: none;
     border-bottom: none;
     > a {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     > a:hover {
@@ -90,7 +90,7 @@ export const Footer = props => {
             <StyledFooterLogo>
                 <img src={footerSvg} alt="logo" title="Inkling" />
             </StyledFooterLogo>
-            <StyledNavLinkDiv className="flex row xmd-align-center space-between md-space-evenly w-100 py-2 px-xmd-2 py-xmd-unset">
+            <StyledNavLinkDiv className="flex row xmd-align-center space-between md-center c-g-md-1 w-100 py-2 px-xmd-2 py-xmd-unset">
                 <NavLink to="/" exact>Home</NavLink>
                 <NavLink to="/aboutus">About Us</NavLink>
                 <NavLink to="/portfolio">Portfolio</NavLink>
