@@ -1,9 +1,18 @@
 import { Component, Fragment } from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
+// statics
+import dropdown from '../../assets/dropdown.svg'
+import allProjects from '../../assets/allProjects.svg'
+import design from '../../assets/design.svg'
+import development from '../../assets/development.svg'
+import cDesign from '../../assets/curriculumDesign.svg'
 // components
 import ScrollToTopOnMount from '../../atoms/scrollToTop'
 import { Button } from '../../atoms/button'
 import { Project } from '../../organisms/project'
+import { ImportantText } from '../../atoms/importantText'
+
+import { Image } from '../../atoms/image'
 
 const ParentContainer = styled.div`
 background-image: url('https://ik.imagekit.io/bizwem110d/inkling/Projects_web_FvBoVS1BU.png?tr=w-400');
@@ -31,54 +40,129 @@ min-height: var(--small-screen-100vh);
 }
 `
 
-const CategoryContainerDiv = styled.div`
-background-color: var(--primary-text);
-overflow-x: auto;
-white-space: nowrap;
-
-@media screen and (min-width: 768px) {
-    justify-content: center;
-}
-`
-
 const CategoryDiv = styled.div`
-padding: 10px 30px;
-margin: 0 5px;
+box-shadow: 0px 0px 10px 0px var(--primary-lighter-variant);
 border-radius: 5px;
-color: var(--primary-text);
-background-color: var(--primary-lighter-variant);
-cursor: pointer;
-box-shadow: 5px 5px 5px 0px var(--primary-lightest-variant);
+top: 5em;
+position: absolute;
+z-index: 2;
+background-color: white;
+${props => props.toggleShow ? css`
+display: flex;
+` : css`
+display: none;
+`}
 
-&:hover {
-    background-color: var(--primary-lightest-variant);
-    color: var(--primary-light-variant);
-    box-shadow: 10px 10px 10px 0px var(--primary-light-variant);
-}
-
-&.selected {
-    background-color: var(--primary-light-variant);
-    box-shadow: 2px 2px 2px 0px var(--primary-lightest-variant);
-}
-
-&.selected:hover {
-    color: var(--primary-text);
+@media screen and (min-width: 992px) {
+    display: flex;
+    position: unset;
+    box-shadow: none;
+    border-radius: 0px;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 `
 
-const ProjectDiv = styled.div`
-display: grid;
-grid-template-columns: 1fr;
-grid-tempplate-rows: repeat(20, 1fr);
-grid-gap: 2em;
-
-@media screen and (min-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
+const Category = styled.div`
+cursor: pointer;
+padding: 10px 0;
+&>img {
+    width: 15px;
 }
 
 @media screen and (min-width: 992px) {
-    grid-template-columns: repeat(3, 1fr);
+    &>img {
+        width: 20px;
+    }
 }
+
+@media screen and (min-width: 1200px) {
+    &>img {
+        width: 30px;
+    }
+}
+`
+
+const CategoryImpText = styled(ImportantText)`
+font-family: 'Montserrat', sans-serif;
+color: var(--primary-light-variant);
+text-transform: capitalize;
+font-size: 13px;
+letter-spacing: 1px;
+
+&.selected {
+    position: relative;
+    padding-bottom: 5px;
+}
+
+&.selected::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40%;
+    height: 1px;
+    border-bottom: 1px solid black;
+}
+
+@media screen and (min-width: 992px) {
+    &.selected::before {
+        left: 20%;
+        bottom: -10px;
+    }
+}
+`
+
+const CategoryMenuDiv = styled.div`
+@media screen and (min-width: 992px) {
+    display: none;
+}
+`
+
+const CategoryMenu = styled(CategoryImpText)`
+font-size: 16px;
+text-transform: uppercase;
+font-weight: 400;
+letter-spacing: 0px;
+
+&.screen {
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+    position: relative;
+    padding: 1em 0;
+
+    &.screen {
+        display: flex;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 20%;
+        width: 60%;
+        bottom: 10px;
+        height: 1px;
+        border-bottom: 1px solid black;
+    }
+}
+`
+
+const CategoryDropdown = styled(Image)`
+width: 15px;
+transition: .5s ease;
+
+${props => props.show && css`
+transform: rotateZ(180deg);
+`}
+`
+
+const ProjectDiv = styled.div`
+z-index: 1;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+grid-gap: 3em;
 `
 
 export class Portfolio extends Component {
@@ -89,52 +173,14 @@ export class Portfolio extends Component {
             projects: [
                 {
                     title: "Eniak",
-                    description: "Eniak description",
-                    image: "https://ik.imagekit.io/bizwem110d/inkling/Eniak_project_images/Phone_5zgidaNEt.png",
+                    image: "https://ik.imagekit.io/bizwem110d/inkling/Eniak_project_images/small-01_ZFX3FoFYE.png?tr=w-500,h-500",
                     alt: "Eniak",
                     link: "eniak",
                     category: ['Design', 'Development'],
-                    cardType:"square"
-                },
-                {
-                    title: "Main Bhi Ambani",
-                    description: "Spoofing the oligarch",
-                    image: "https://ik.imagekit.io/bizwem110d/inkling/Main_bhi_Ambani/mainbhiambani-banner-1_iLApmpYn2.png",
-                    alt: "Main bhi ambani",
-                    link: "mainbhiambani",
-                    category: ['Development'],
-                    cardType:"tall"
-                },
-                {
-                    title: "Thakur College Feedback System",
-                    description: "Feedback management system",
-                    image: "https://ik.imagekit.io/bizwem110d/inkling/TCSC_Feedback/tcsc-banner-1_mAiOSZvKY.png",
-                    alt: "TCSC Feedback",
-                    link: "tcscfeedback",
-                    category: ['Development'],
-                    cardType:"square"
-                },
-                {
-                    title: "ITK",
-                    description: "Bringing computational thinking to school children.",
-                    image: "https://ik.imagekit.io/bizwem110d/inkling/ITK_project/ITK_illustration_RFbw68B8k.png",
-                    alt: "ITK",
-                    link: "itk",
-                    category: ['Development', 'Curriculum Design'],
                     cardType: "square"
                 },
                 {
                     title: "ITK",
-                    description: "Bringing computational thinking to school children.",
-                    image: "https://ik.imagekit.io/bizwem110d/inkling/ITK_project/ITK_illustration_RFbw68B8k.png",
-                    alt: "ITK",
-                    link: "itk",
-                    category: ['Development', 'Curriculum Design'],
-                    cardType: "square"
-                },
-                {
-                    title: "ITK",
-                    description: "Bringing computational thinking to school children.",
                     image: "https://ik.imagekit.io/bizwem110d/inkling/ITK_project/ITK_illustration_RFbw68B8k.png",
                     alt: "ITK",
                     link: "itk",
@@ -142,64 +188,50 @@ export class Portfolio extends Component {
                     cardType: "tall"
                 },
                 {
-                    title: "ITK",
-                    description: "Bringing computational thinking to school children.",
-                    image: "https://ik.imagekit.io/bizwem110d/inkling/ITK_project/ITK_illustration_RFbw68B8k.png",
-                    alt: "ITK",
-                    link: "itk",
-                    category: ['Development', 'Curriculum Design'],
-                    cardType: "large"
-                },
-                {
-                    title: "ITK",
-                    description: "Bringing computational thinking to school children.",
-                    image: "https://ik.imagekit.io/bizwem110d/inkling/ITK_project/ITK_illustration_RFbw68B8k.png",
-                    alt: "ITK",
-                    link: "itk",
+                    title: "90min app challenge",
+                    image: "https://ik.imagekit.io/bizwem110d/inkling/90_Min_App_Challenge/90min_logo_LwfeKLTs-.png?tr=w-800,h-500",
+                    alt: "90 min app challenge",
+                    link: "90minapp",
                     category: ['Development', 'Curriculum Design'],
                     cardType: "square"
                 },
                 {
-                    title: "ITK",
-                    description: "Bringing computational thinking to school children.",
-                    image: "https://ik.imagekit.io/bizwem110d/inkling/ITK_project/ITK_illustration_RFbw68B8k.png",
-                    alt: "ITK",
-                    link: "itk",
+                    title: "Code for All",
+                    image: "https://ik.imagekit.io/bizwem110d/inkling/Code_for_all/CFA_logo_FRqV2ki7NB.png?tr=h-500",
+                    alt: "code for all",
+                    link: "codeforall",
                     category: ['Development', 'Curriculum Design'],
                     cardType: "square"
                 },
                 {
-                    title: "ITK",
-                    description: "Bringing computational thinking to school children.",
-                    image: "https://ik.imagekit.io/bizwem110d/inkling/ITK_project/ITK_illustration_RFbw68B8k.png",
-                    alt: "ITK",
-                    link: "itk",
-                    category: ['Development', 'Curriculum Design'],
+                    title: "AllSpace Ventures",
+                    image: "https://ik.imagekit.io/bizwem110d/inkling/AllSpace_Ventures/AllSpace_insta_JnP_iTILu.png?tr=h-500",
+                    alt: "all space ventures",
+                    link: "allspace",
+                    category: ['Design'],
+                    cardType: "square"
+                },
+                {
+                    title: "Aadhiyaran Agrarian Services",
+                    image: "https://ik.imagekit.io/bizwem110d/inkling/Aadhiyaran_Agrarian_Services/Aadhiyaran_cards_v1HcYI1_Q.png?tr=h-500",
+                    alt: "aadhiyaran agrarian services",
+                    link: "agrarian",
+                    category: ['Design'],
                     cardType: "tall"
                 },
                 {
-                    title: "ITK",
-                    description: "Bringing computational thinking to school children.",
-                    image: "https://ik.imagekit.io/bizwem110d/inkling/ITK_project/ITK_illustration_RFbw68B8k.png",
-                    alt: "ITK",
-                    link: "itk",
-                    category: ['Development', 'Curriculum Design'],
+                    title: "Doolally",
+                    image: "https://ik.imagekit.io/bizwem110d/inkling/Doolally/Doolally_finalposter1-01_RV2jbJUMj.png?tr=h-500",
+                    alt: "doolally",
+                    link: "doolally",
+                    category: ['Design'],
                     cardType: "large"
-                },
-                {
-                    title: "ITK",
-                    description: "Bringing computational thinking to school children.",
-                    image: "https://ik.imagekit.io/bizwem110d/inkling/ITK_project/ITK_illustration_RFbw68B8k.png",
-                    alt: "ITK",
-                    link: "itk",
-                    category: ['Development', 'Curriculum Design'],
-                    cardType: "square"
                 }
-                
             ],
             showProjects: [],
             count: 5,
-            category: 'all'
+            category: 'all',
+            showCat: true,
         }
     }
 
@@ -207,12 +239,21 @@ export class Portfolio extends Component {
         this.categorySelector('all')
     }
 
-    categorySelector = category => {
+    toggleCategories = () => {
+        this.setState(prevState => {
+            return {
+                showCat: !prevState.showCat
+            }
+        })
+    }
+
+    categorySelector = async (category) => {
         if (category === 'all') {
             this.setState({
                 showProjects: this.state.projects.slice(0, this.state.count),
                 category: 'all'
             })
+            this.toggleCategories()
         } else {
             let showProjectList = []
             this.state.projects.map(project => {
@@ -221,11 +262,11 @@ export class Portfolio extends Component {
                 }
                 return null
             })
-            showProjectList.slice(0, this.state.count)
             this.setState({
-                showProjects: showProjectList,
+                showProjects: showProjectList.slice(0, this.state.count),
                 category: category,
             })
+            this.toggleCategories()
         }
     }
 
@@ -240,35 +281,41 @@ export class Portfolio extends Component {
         return <Fragment>
             <ScrollToTopOnMount />
             <ParentContainer>
-                <div className="flex column w-80 w-xlg-50 margin-center">
-                    {/* <CategoryContainerDiv className="flex py-2 py-md-3">
-                        <CategoryDiv
-                            onClick={() => this.categorySelector('all')}
-                            className={this.state.category === 'all' && "selected"}>
-                            All Projects
+                <div className="flex column w-80 w-xlg-50 margin-center py-3 relative">
+                    <CategoryMenuDiv className="flex align-center c-g-1 pb-3">
+                        <CategoryMenu onClick={this.toggleCategories}>Categories</CategoryMenu>
+                        <CategoryDropdown src={dropdown} alt="dropdown" show={this.state.showCat} />
+                    </CategoryMenuDiv>
+                    <div className="flex center">
+                        <CategoryMenu className="screen py-2">Categories</CategoryMenu>
+                    </div>
+                    <CategoryDiv className="column xmd-row xmd-space-between lg-space-evenly w-80 w-md-50 w-xmd-80 w-xlg-50 margin-center pl-2 py-2 px-xmd-unset" toggleShow={this.state.showCat}>
+                        <Category className="flex align-center c-g-1" onClick={() => this.categorySelector('all')}>
+                            <Image src={allProjects} alt="all projects" />
+                            <CategoryImpText
+                                className={this.state.category === 'all' && "selected"}>All Projects</CategoryImpText>
+                        </Category>
+                        <Category className="flex align-center c-g-1" onClick={() => this.categorySelector('Design')}>
+                            <Image src={design} alt="design" />
+                            <CategoryImpText
+                                className={this.state.category === 'Design' && "selected"}>Design</CategoryImpText>
+                        </Category>
+                        <Category className="flex align-center c-g-1" onClick={() => this.categorySelector('Development')}>
+                            <Image src={development} alt="development" />
+                            <CategoryImpText
+                                className={this.state.category === 'Development' && "selected"}>Development</CategoryImpText>
+                        </Category>
+                        <Category className="flex align-center c-g-1" onClick={() => this.categorySelector('Curriculum Design')}>
+                            <Image src={cDesign} alt="curriculum" />
+                            <CategoryImpText
+                                className={this.state.category === 'Curriculum Design' && "selected"}>Curriculum Design</CategoryImpText>
+                        </Category>
                     </CategoryDiv>
-                        <CategoryDiv
-                            onClick={() => this.categorySelector('Design')}
-                            className={this.state.category === 'Design' && "selected"}>
-                            Design
-                    </CategoryDiv>
-                        <CategoryDiv
-                            onClick={() => this.categorySelector('Development')}
-                            className={this.state.category === 'Development' && "selected"}>
-                            Development
-                    </CategoryDiv>
-                        <CategoryDiv
-                            onClick={() => this.categorySelector('Curriculum Design')}
-                            className={this.state.category === 'Curriculum Design' && "selected"}>
-                            Curriculum Design
-                    </CategoryDiv>
-                    </CategoryContainerDiv> */}
                     <ProjectDiv>
                         {this.state.showProjects.map((project, index) => <Project
                             key={index}
                             title={project.title}
-                            description={project.description}
-                            image={project.image + '?tr=w-500,h-250,fo-center'}
+                            image={project.image}
                             alt={project.alt}
                             link={"/portfolio/" + project.link}
                             cardType={project.cardType} />)}
