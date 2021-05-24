@@ -156,6 +156,10 @@ hr {
   justify-self: flex-end;
 }
 
+.self-center {
+  justify-self: center;
+}
+
 .wrap {
   flex-wrap: wrap;
 }
@@ -1103,6 +1107,9 @@ hr {
   .p-xmd-half {
     padding: 0.5em;
   }
+  .p-xmd-unset {
+    padding: 0em;
+  }
   .p-xmd-1 {
     padding: 1em;
   }
@@ -1117,6 +1124,10 @@ hr {
   }
   .p-xmd-5 {
     padding: 5em;
+  }
+  .px-xmd-unset {
+    padding-left: 0em;
+    padding-right: 0em;
   }
   .py-xmd-1 {
     padding-top: 1em;
