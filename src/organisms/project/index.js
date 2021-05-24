@@ -1,8 +1,11 @@
 import styled, { css } from 'styled-components'
+// components
+import { Text } from '../../atoms/text'
 
-const StyledDiv = styled.div`
+const StyledContainer = styled.div`
+overflow: hidden;
+position: relative;
 min-height: 25vh;
-border: 1px solid black;
 ${props => props.cardType === 'tall' && css`
 grid-row: span 2;
 min-height: 50vh;
@@ -50,6 +53,62 @@ grid-row: span 2;
     min-height: 40vh;
     `}
 }
+
+&>.title {
+    position: absolute;
+    bottom: 2em;
+    left: 0;
+    background-color: var(--primary-dark-variant);
+    color: var(--primary-text);
+    max-width: 60%;
+    min-width: 50%;
+    z-index: 1;
+}
+
+&>.title::before {
+    content: '';
+    position: absolute;
+    left: 100%;
+    top: 0;
+    bottom: 0;
+    border: 25px solid transparent;
+}
+
+&>.title::before {
+    border-left-color: var(--primary-dark-variant);
+}
+
+&>.title>span {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
 `
 
-export const Project = props => <StyledDiv {...props}>Project</StyledDiv>
+const StyledDiv = styled.div`
+position: relative;
+background-image: url(${props => props.image});
+background-position: center;
+background-size: cover;
+width: 100%;
+height: 100%;
+transition: .5s ease;
+
+&:hover {
+    transform: scale(1.2);
+}
+`
+
+const StyledText = styled(Text)`
+font-family: 'Montserrat', sans-serif;
+font-size: 15px;
+text-transform: capitalize;
+`
+
+export const Project = props => <StyledContainer {...props}>
+    <div className="title p-1">
+        <StyledText>{props.title}</StyledText>
+    </div>
+    <StyledDiv {...props}>
+    </StyledDiv>
+</StyledContainer>
