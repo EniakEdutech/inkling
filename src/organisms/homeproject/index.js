@@ -21,7 +21,7 @@ export const HomeProject = props => <Link to={props.to} className={props.classNa
         {/* <div className="title column">
             <Heading3 className="p-1 p-xmd-half p-ipp-1 p-lg-1">{props.title}</Heading3>
         </div> */}
-        <Picture className="w-100" {...props}>
+        <Picture className="col-12" {...props}>
             {props.children}
         </Picture>
     </StyledDiv>

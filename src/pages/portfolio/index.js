@@ -335,31 +335,31 @@ export class Portfolio extends Component {
         return <Fragment>
             <ScrollToTopOnMount />
             <ParentContainer>
-                <div className="flex column w-80 w-xlg-50 margin-center py-3 relative">
-                    <CategoryMenuDiv className="flex align-center c-g-1 pb-3" onClick={this.toggleCategories}>
+                <div className="d-flex column col-10 col-xlg-6 margin-center py-3 relative">
+                    <CategoryMenuDiv className="d-flex align-center c-g-1 pb-3" onClick={this.toggleCategories}>
                         <CategoryMenu>Categories</CategoryMenu>
                         <CategoryDropdown src={dropdown} alt="dropdown" show={this.state.showCat} />
                     </CategoryMenuDiv>
-                    <div className="flex center">
+                    <div className="d-flex center">
                         <CategoryMenu className="screen py-2">Categories</CategoryMenu>
                     </div>
-                    <CategoryDiv className="column xmd-row xmd-space-between lg-space-evenly w-80 w-md-50 w-xmd-80 w-xlg-50 margin-center pl-2 py-2 px-xmd-unset pt-xmd-unset pb-xmd-3" toggleShow={this.state.showCat}>
-                        <Category className="flex align-center c-g-1" onClick={() => this.categorySelector('all')}>
+                    <CategoryDiv className="column xmd-row xmd-space-between lg-space-evenly col-10 col-md-6 col-xmd-10 col-xlg-6 margin-center pl-2 py-2 px-xmd-unset pt-xmd-unset pb-xmd-3" toggleShow={this.state.showCat}>
+                        <Category className="d-flex align-center c-g-1" onClick={() => this.categorySelector('all')}>
                             <Image src={allProjects} alt="all projects" />
                             <CategoryImpText
                                 className={this.state.category === 'all' && "selected"}>All Projects</CategoryImpText>
                         </Category>
-                        <Category className="flex align-center c-g-1" onClick={() => this.categorySelector('Design')}>
+                        <Category className="d-flex align-center c-g-1" onClick={() => this.categorySelector('Design')}>
                             <Image src={design} alt="design" />
                             <CategoryImpText
                                 className={this.state.category === 'Design' && "selected"}>Design</CategoryImpText>
                         </Category>
-                        <Category className="flex align-center c-g-1" onClick={() => this.categorySelector('Development')}>
+                        <Category className="d-flex align-center c-g-1" onClick={() => this.categorySelector('Development')}>
                             <Image src={development} alt="development" />
                             <CategoryImpText
                                 className={this.state.category === 'Development' && "selected"}>Development</CategoryImpText>
                         </Category>
-                        <Category className="flex align-center c-g-1" onClick={() => this.categorySelector('Curriculum Design')}>
+                        <Category className="d-flex align-center c-g-1" onClick={() => this.categorySelector('Curriculum Design')}>
                             <Image src={cDesign} alt="curriculum" />
                             <CategoryImpText
                                 className={this.state.category === 'Curriculum Design' && "selected"}>Curriculum Design</CategoryImpText>
@@ -376,8 +376,8 @@ export class Portfolio extends Component {
                             cardType={project.cardType} />)}
                     </ProjectDiv>
                     {this.state.count < this.state.projects.length &&
-                        <div className="flex center" style={{ margin: "50px" }}>
-                            <StyledPortfolioLink onClick={this.increaseCount} className="flex center align-center my-2">view more</StyledPortfolioLink>
+                        <div className="d-flex center" style={{ margin: "50px" }}>
+                            <StyledPortfolioLink onClick={this.increaseCount} className="d-flex center align-center my-2">view more</StyledPortfolioLink>
                         </div>
                     }
                 </div>

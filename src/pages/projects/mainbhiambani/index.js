@@ -15,15 +15,15 @@ import { Banner } from '../../../atoms/banner'
 export const MainBhiAmbani = props => {
     return <Fragment>
         <ScrollToTopOnMount />
-        <div class="flex column r-g-1 w-80 w-xlg-50 margin-center my-2 my-lg-5">
+        <div class="d-flex column r-g-1 col-10 col-xlg-6 margin-center my-2 my-lg-5">
             <Title>Main Bhi Ambani</Title>
-            <div className="flex column lg-row r-g-1">
-                <div className="flex-lg-3 flex column r-g-1">
+            <div className="d-flex column lg-row r-g-1">
+                <div className="flex-lg-3 d-flex column r-g-1">
                     <Heading4>Services</Heading4>
                     <ImportantText>Web Development, Data Collection strategy, Cloud Architecture.
                     </ImportantText>
                 </div>
-                <div className="flex-lg-7 flex column r-g-1">
+                <div className="flex-lg-7 d-flex column r-g-1">
                     <Heading4>Context</Heading4>
                     <Paragraph>
                         We consulted a major social influencer on a social experiment called “Mai Bhi Ambani”. It is a web
@@ -37,8 +37,8 @@ export const MainBhiAmbani = props => {
         </div>
         <Banner src="https://ik.imagekit.io/bizwem110d/inkling/Main_bhi_Ambani/mainbhiambani-banner-1_iLApmpYn2.png" />
         <StickyNavButtons prev="/portfolio/eniak" next="/portfolio/tcscfeedback" />
-        <div className="flex column lg-row g-1 w-80 w-xlg-50 margin-center my-2 my-lg-5">
-            <div className="flex column r-g-1 flex-lg-1">
+        <div className="d-flex column lg-row g-1 col-10 col-xlg-6 margin-center my-2 my-lg-5">
+            <div className="d-flex column r-g-1 flex-lg-1">
                 <Heading4>Goal</Heading4>
                 <Paragraph>
                     The goal of the experiment was to understand what would
@@ -54,7 +54,7 @@ export const MainBhiAmbani = props => {
                     <ListItem>Distilling the data.</ListItem>
                 </UnorderedList>
             </div>
-            <div className="flex column r-g-1 flex-lg-1">
+            <div className="d-flex column r-g-1 flex-lg-1">
                 <Heading4>Challenges</Heading4>
                 <UnorderedList>
                     <ListItem>Multi-Lingual (As the target market’s primary language as Hindi)</ListItem>

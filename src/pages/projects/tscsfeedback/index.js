@@ -14,16 +14,16 @@ import { Image } from '../../../atoms/image'
 export const TCSCFeedback = props => {
     return <Fragment>
         <ScrollToTopOnMount />
-        <div class="flex column r-g-1 w-80 w-xlg-50 margin-center my-2 my-lg-5">
+        <div class="d-flex column r-g-1 col-10 col-xlg-6 margin-center my-2 my-lg-5">
             <Title>Thakur College Feedback System</Title>
-            <div className="flex column lg-row r-g-1">
-                <div className="flex-lg-3 flex column r-g-1">
+            <div className="d-flex column lg-row r-g-1">
+                <div className="flex-lg-3 d-flex column r-g-1">
                     <Heading4>Services</Heading4>
                     <ImportantText>
                         Web Development, Data Collection strategy, Cloud Architecture.
                     </ImportantText>
                 </div>
-                <div className="flex-lg-7 flex column r-g-1">
+                <div className="flex-lg-7 d-flex column r-g-1">
                     <Heading4>Context</Heading4>
                     <Paragraph>
                         Thakur College Of Science and Commerce used to implement a tedious and time-consuming
@@ -31,8 +31,8 @@ export const TCSCFeedback = props => {
                     </Paragraph>
                 </div>
             </div>
-            <div className="flex column lg-row r-g-1">
-                <div className="flex-lg-3 flex column r-g-1">
+            <div className="d-flex column lg-row r-g-1">
+                <div className="flex-lg-3 d-flex column r-g-1">
                     <Heading4>Tools &amp; Tech</Heading4>
                     <UnorderedList liststyle="none">
                         <ListItem>MySQL - Database</ListItem>
@@ -41,7 +41,7 @@ export const TCSCFeedback = props => {
                         <ListItem>Frontend - HTML, CSS, Javascript, AJAX</ListItem>
                     </UnorderedList>
                 </div>
-                <div className="flex-lg-7 flex column r-g-1">
+                <div className="flex-lg-7 d-flex column r-g-1">
                     <Heading4>Goal</Heading4>
                     <Paragraph>
                         Design and Develop a system that reduced the time consumed, erased the possibility of human
@@ -53,9 +53,9 @@ export const TCSCFeedback = props => {
             <NavButtons prev="/portfolio/eniak" next="/portfolio/mainbhiambani" />
         </div>
         <StickyNavButtons prev="/portfolio/eniak" next="/portfolio/mainbhiambani" />
-        <div className="flex column lg-row g-2 w-80 w-xlg-50 my-1 my-md-3 my-lg-5 margin-center">
+        <div className="d-flex column lg-row g-2 col-10 col-xlg-6 my-1 my-md-3 my-lg-5 margin-center">
             <Image src="https://ik.imagekit.io/bizwem110d/inkling/TCSC_Feedback/tcsc-banner-1_mAiOSZvKY.png" className="flex-lg-1" />
-            <div className="flex column center r-g-3 w-100 my-1 my-md-2 my-lg-3 margin-center flex-lg-1">
+            <div className="d-flex column center r-g-3 col-12 my-1 my-md-2 my-lg-3 margin-center flex-lg-1">
                 <Heading4>Research</Heading4>
                 <Paragraph>
                     We identified a few errors within the system through personal experience. To

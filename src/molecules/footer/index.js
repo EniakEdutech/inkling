@@ -85,25 +85,25 @@ border-bottom: 1px solid var(--primary-lightest-variant);
 
 export const Footer = props => {
 
-    return <StyledContainer className="w-100 flex center">
-        <div className="flex column xmd-row align-center center g-2 w-80 w-xmd-95 w-lg-80 w-xlg-50 py-xmd-2">
+    return <StyledContainer className="col-12 d-flex center">
+        <div className="d-flex column xmd-row align-center center g-2 col-10 col-xmd-11 col-lg-10 col-xlg-6 py-xmd-2">
             <StyledFooterLogo>
                 <img src={footerSvg} alt="logo" title="Inkling" />
             </StyledFooterLogo>
-            <StyledNavLinkDiv className="flex row xmd-align-center space-between md-center c-g-md-1 w-100 py-2 px-xmd-2 py-xmd-unset">
+            <StyledNavLinkDiv className="d-flex row xmd-align-center space-between md-center c-g-md-1 col-12 py-2 px-xmd-2 py-xmd-unset">
                 <NavLink to="/" exact>Home</NavLink>
                 <NavLink to="/aboutus">About Us</NavLink>
                 <NavLink to="/portfolio">Portfolio</NavLink>
                 <NavLink to="/contactus">Contact Us</NavLink>
             </StyledNavLinkDiv>
-            <div className="flex column xmd-align-start g-1">
-                <div className="flex align-center center c-g-1">
+            <div className="d-flex column xmd-align-start g-1">
+                <div className="d-flex align-center center c-g-1">
                     <MailIcon />
                     <Anchor href="mailto:inklingbyeniak@gmail.com">inklingbyeniak@gmail.com</Anchor>
                 </div>
-                <div className="flex align-center center c-g-1">
+                <div className="d-flex align-center center c-g-1">
                     <CallIcon />
-                    <div className="flex column">
+                    <div className="d-flex column">
                         <Anchor href="tel:+917900897894">+91 79008-97894</Anchor>
                         <Anchor href="tel:+917900134918">+91 79001-34918</Anchor>
                     </div>

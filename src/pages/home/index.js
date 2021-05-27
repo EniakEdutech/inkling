@@ -168,9 +168,9 @@ font-size: .9em;
 export const Home = props => {
     return <Fragment>
         <ScrollToTopOnMount />
-        <StyledDivContainer className="flex column center align-center r-g-3 r-g-md-5">
-            <StyledDivParent className="w-75 w-lg-66 w-xlg-33 py-4 pl-3 pr-2 py-md-5 px-md-4 py-ipp-7 py-xmd-4 px-xmd-6">
-                <StyledDivChild className="flex column r-g-2 w-100 pl-1 pl-md-2">
+        <StyledDivContainer className="d-flex column center align-center r-g-3 r-g-md-5">
+            <StyledDivParent className="col-9 col-lg-8 col-xlg-4 py-4 pl-3 pr-2 py-md-5 px-md-4 py-ipp-7 py-xmd-4 px-xmd-6">
+                <StyledDivChild className="d-flex column r-g-2 col-12 pl-1 pl-md-2">
                     <StyledHeading1>From elegant systems to<br />beautiful designs...</StyledHeading1>
                     <StyledHeading3>
                         Our team of skilled designers and developers can help build your
@@ -181,9 +181,9 @@ export const Home = props => {
             <Link to="/contactus"><Button className="px-6 py-1" primary capital>Contact Us</Button></Link>
         </StyledDivContainer>
         <div className="py-2 py-md-3 py-xmd-4 py-lg-5">
-            <div className="flex column w-md-80 margin-center align-center">
+            <div className="d-flex column col-md-10 margin-center align-center">
                 <SectionHeading1 className="my-1">Our Clients</SectionHeading1>
-                <ClientImagesDiv className="flex align-center c-g-3 c-g-md-4 w-100 pl-2 py-2 mr-2 px-md-unset mx-md-unset">
+                <ClientImagesDiv className="d-flex align-center c-g-3 c-g-md-4 col-12 pl-2 py-2 mr-2 px-md-unset mx-md-unset">
                     <Client src="https://ik.imagekit.io/bizwem110d/inkling/home/clients/klm_Je65JneOCu.svg" />
                     <Client src="https://ik.imagekit.io/bizwem110d/inkling/home/clients/snapdeal_9xyblg8qbh.svg" small />
                     <Client src="https://ik.imagekit.io/bizwem110d/inkling/home/clients/itk_SfoaOfIWfN.svg" small />
@@ -192,10 +192,10 @@ export const Home = props => {
                 </ClientImagesDiv>
             </div>
         </div>
-        <div className="flex column align-center">
+        <div className="d-flex column align-center">
             <SectionHeading1 className="my-1">Featured Projects</SectionHeading1>
-            <div className="flex column xmd-row ipp-column w-xmd-80 w-ipp-100 w-xlg-66 my-2 margin-center">
-                <div className="flex column flex-xmd-5 flex-ipp-1">
+            <div className="d-flex column xmd-row ipp-column col-xmd-10 col-ipp-12 col-xlg-8 my-2 margin-center">
+                <div className="d-flex column flex-xmd-5 flex-ipp-1">
                     <HomeProject className="flex-xmd-1 p-xmd-1 p-ipp-unset" to="/portfolio/snapdeal" title="Snapdeal">
                         <Image width="inherit" height="inherit" src="https://ik.imagekit.io/bizwem110d/inkling/Snapdeal/snapdeal_box1_3KfhaxJVc.png" alt={props.alt} />
                     </HomeProject>
@@ -203,7 +203,7 @@ export const Home = props => {
                         <Image width="inherit" height="inherit" src="https://ik.imagekit.io/bizwem110d/inkling/90_Min_App_Challenge/90min_pamphlet_f4S5mNkYr.png?tr=ar-16-9,w-1000" alt={props.alt} />
                     </HomeProject>
                 </div>
-                <div className="flex column flex-xmd-5 flex-ipp-1">
+                <div className="d-flex column flex-xmd-5 flex-ipp-1">
                     <HomeProject className="flex-xmd-12 p-xmd-1 p-ipp-unset" to="/portfolio/doolally" title="Doolally">
                         <source srcSet="https://ik.imagekit.io/bizwem110d/inkling/Doolally/Doolally_poster2_irR3RpwEN.png?tr=h-600,w-500" media="(min-width: 992px)" />
                         <source
@@ -213,17 +213,17 @@ export const Home = props => {
                     </HomeProject>
                 </div>
             </div>
-            <StyledPortfolioLink to="/portfolio" className="flex center align-center my-2">view more &rarr;</StyledPortfolioLink>
+            <StyledPortfolioLink to="/portfolio" className="d-flex center align-center my-2">view more &rarr;</StyledPortfolioLink>
         </div>
         <StyledServicessDiv>
-            <div className="flex column align-center w-80 w-xlg-50 margin-center py-3 pb-10">
-                <ServiceSectionHeading1 className="flex my-3 self-align-start">Our Services</ServiceSectionHeading1>
-                <div className="flex wrap row r-g-2">
+            <div className="d-flex column align-center col-10 col-xlg-6 margin-center py-3 pb-10">
+                <ServiceSectionHeading1 className="d-flex my-3 self-align-start">Our Services</ServiceSectionHeading1>
+                <div className="d-flex wrap row r-g-2">
                     <Service
                         heading="design"
                         body="We have designers who ensure your company has a unique brand identity and can translate that onto digital platforms."
                         src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/digitalDesign_VPGRt3UnG2.svg" alt="services" title="services">
-                        <div className="flex column lg-row c-g-1">
+                        <div className="d-flex column lg-row c-g-1">
                             <StyledUList>
                                 <StyledListItem>print design</StyledListItem>
                                 <StyledListItem>digital design</StyledListItem>
@@ -242,7 +242,7 @@ export const Home = props => {
                         heading="development"
                         body="Technology is a brilliant tool. From creating apps and websites to market yourself to creating management systems, we can help you do it all."
                         src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/webDevelopment_HyfTru1XVP.svg" alt="services" title="services">
-                        <div className="flex column lg-row c-g-1">
+                        <div className="d-flex column lg-row c-g-1">
                             <StyledUList>
                                 <StyledListItem>web development</StyledListItem>
                                 <StyledListItem>app development</StyledListItem>
@@ -261,7 +261,7 @@ export const Home = props => {
                         heading="analytics"
                         body="Experience with consulting for businesses and creating efficient marketing strategies to make their brands grow."
                         src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/services/machineLearning_VZY73dIsDv.svg" alt="services" title="services">
-                        <div className="flex column lg-row c-g-1">
+                        <div className="d-flex column lg-row c-g-1">
                             <StyledUList>
                                 <StyledListItem>analytics measurement plan</StyledListItem>
                                 <StyledListItem>analytics ecosystem</StyledListItem>

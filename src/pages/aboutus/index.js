@@ -99,9 +99,9 @@ font-weight: 700;
 export const AboutUs = () => {
     return <Fragment>
         <ScrollToTopOnMount />
-        <StyledContainer className="flex align-center center">
-            <div className="flex column md-center w-xlg-50 margin-center r-g-2 r-g-md-4 r-g-xlg-5 py-3 px-2 px-md-3 px-lg-5">
-                <StyledParent1 className="flex column r-g-1 self-align-start w-75 w-lg-66 w-xlg-50 py-2 px-2 py-ipp-3 px-ipp-3 py-lg-4 px-lg-4 py-xlg-5 px-xlg-5">
+        <StyledContainer className="d-flex align-center center">
+            <div className="d-flex column md-center col-xlg-6 margin-center r-g-2 r-g-md-4 r-g-xlg-5 py-3 px-2 px-md-3 px-lg-5">
+                <StyledParent1 className="d-flex column r-g-1 self-align-start col-9 col-lg-8 col-xlg-6 py-2 px-2 py-ipp-3 px-ipp-3 py-lg-4 px-lg-4 py-xlg-5 px-xlg-5">
                     <StyledHeading2>We help you create an impact! </StyledHeading2>
                     <Paragraph>
                         Design creates an impression on your user. Be it the brand identity
@@ -110,15 +110,15 @@ export const AboutUs = () => {
                         navigate with ease.
                 </Paragraph>
                 </StyledParent1>
-                <StyledParent2 className="flex w-75 w-lg-66 w-xlg-50 self-align-end py-1 px-1 py-ipp-2 px-ipp-2 py-lg-4 px-lg-4 py-xlg-5 px-xlg-5">
+                <StyledParent2 className="d-flex col-9 col-lg-8 col-xlg-6 self-align-end py-1 px-1 py-ipp-2 px-ipp-2 py-lg-4 px-lg-4 py-xlg-5 px-xlg-5">
                     <StyledHeading2>We will help you create that impact with aesthetic and system design. </StyledHeading2>
                 </StyledParent2>
             </div>
         </StyledContainer>
         <AboutUsDiv>
-            <SectionDiv className="flex column w-80 w-lg-75 w-xlg-50 margin-center px-1 py-3 pb-5">
+            <SectionDiv className="d-flex column col-10 col-lg-9 col-xlg-6 margin-center px-1 py-3 pb-5">
                 <SectionHeading1 className="my-1 pb-1">Our Team</SectionHeading1>
-                <div className="flex wrap r-g-4 my-2">
+                <div className="d-flex wrap r-g-4 my-2">
                     <TeamMember
                         name="jasprit sudan"
                         designation="Business Strategist"

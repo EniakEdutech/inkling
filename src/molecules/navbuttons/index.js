@@ -8,12 +8,12 @@ text-align: right
 `
 
 export const NavButtons = props => {
-    return <div className="flex space-between">
-        <Link to={props.prev} className="flex align-center">
+    return <div className="d-flex space-between">
+        <Link to={props.prev} className="d-flex align-center">
             <span>&larr;</span>
             <Strong>previous project</Strong>
         </Link>
-        <Link to={props.next} className="flex align-center">
+        <Link to={props.next} className="d-flex align-center">
             <StyledStrong>next project</StyledStrong>
             <span>&rarr;</span>
         </Link>
@@ -63,11 +63,11 @@ top: 50%;
 `
 
 export const StickyNavButtons = props => {
-    return <DesignerDiv className="flex space-between">
-        <Link to={props.prev} className="flex align-center end md-center absolute left" title="Previous project">
+    return <DesignerDiv className="d-flex space-between">
+        <Link to={props.prev} className="d-flex align-center end md-center absolute left" title="Previous project">
             <Text>&lt;</Text>
         </Link>
-        <Link to={props.prev} className="flex align-center start md-center absolute right" title="Next project">
+        <Link to={props.prev} className="d-flex align-center start md-center absolute right" title="Next project">
             <Text>&gt;</Text>
         </Link>
     </DesignerDiv>

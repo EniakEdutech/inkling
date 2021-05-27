@@ -12,7 +12,7 @@ text-overflow: ellipsis;
 `
 
 export const CardTitle = props => {
-    return <div className="w-100">
+    return <div className="col-12">
         <CardTitleHeading {...props}>{props.children}</CardTitleHeading>
     </div>
 }

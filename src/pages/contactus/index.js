@@ -57,14 +57,14 @@ font-family: 'Work Sans', sans-serif;
 `
 
 export const ContactUs = props => {
-    return <StyledContainer className="flex center align-center">
-        <div className="flex column start align-center r-g-2 w-80 w-md-66 w-xmd-80 w-ipp-66 w-xlg-33 pb-10">
+    return <StyledContainer className="d-flex center align-center">
+        <div className="d-flex column start align-center r-g-2 col-10 col-md-8 col-xmd-10 col-ipp-8 col-xlg-4 pb-10">
             <SectionHeading1 className="self-align-start py-2">Contact Us</SectionHeading1>
-            <div className="flex column xmd-row r-g-2 c-g-1 w-100">
-                <StyledInput className="w-100" placeholder="Name" type="text" />
-                <StyledInput className="w-100" placeholder="Email" type="email" />
+            <div className="d-flex column xmd-row r-g-2 c-g-1 col-12">
+                <StyledInput className="col-12" placeholder="Name" type="text" />
+                <StyledInput className="col-12" placeholder="Email" type="email" />
             </div>
-            <StyledTextArea className="w-100" rows="2" placeholder="Write to us" />
+            <StyledTextArea className="col-12" rows="2" placeholder="Write to us" />
             <Button className="self-align-start py-1 px-3" primary>Submit</Button>
         </div>
     </StyledContainer>

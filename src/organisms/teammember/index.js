@@ -37,8 +37,8 @@ const TeamInfo = styled(Paragraph)`
 line-height: 20px;
 `
 
-export const TeamMember = props => <div className="w-50 w-md-33 w-xlg-25">
-    <div className="flex column r-g-2 w-95 margin-center">
+export const TeamMember = props => <div className="col-6 col-md-4 col-xlg-3">
+    <div className="d-flex column r-g-2 col-11 margin-center">
         <TeamImage colour1={props.colour1} colour2={props.colour2}>
             {props.children}
         </TeamImage>
