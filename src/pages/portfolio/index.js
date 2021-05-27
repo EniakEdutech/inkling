@@ -343,7 +343,7 @@ export class Portfolio extends Component {
                     <div className="d-flex center">
                         <CategoryMenu className="screen py-2">Categories</CategoryMenu>
                     </div>
-                    <CategoryDiv className="column xmd-row xmd-space-between lg-space-evenly col-10 col-md-6 col-xmd-10 col-xlg-6 margin-center pl-2 py-2 px-xmd-unset pt-xmd-unset pb-xmd-3" toggleShow={this.state.showCat}>
+                    <CategoryDiv className="column xmd-row xmd-space-between lg-space-evenly col-10 col-md-6 col-xmd-10 col-xlg-6 margin-center pl-2 py-2 px-xmd-none pt-xmd-none pb-xmd-3" toggleShow={this.state.showCat}>
                         <Category className="d-flex align-center c-g-1" onClick={() => this.categorySelector('all')}>
                             <Image src={allProjects} alt="all projects" />
                             <CategoryImpText

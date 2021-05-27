@@ -183,7 +183,7 @@ export const Home = props => {
         <div className="py-2 py-md-3 py-xmd-4 py-lg-5">
             <div className="d-flex column col-md-10 margin-center align-center">
                 <SectionHeading1 className="my-1">Our Clients</SectionHeading1>
-                <ClientImagesDiv className="d-flex align-center c-g-3 c-g-md-4 col-12 pl-2 py-2 mr-2 px-md-unset mx-md-unset">
+                <ClientImagesDiv className="d-flex align-center c-g-3 c-g-md-4 col-12 pl-2 py-2 mr-2 px-md-none mx-md-none">
                     <Client src="https://ik.imagekit.io/bizwem110d/inkling/home/clients/klm_Je65JneOCu.svg" />
                     <Client src="https://ik.imagekit.io/bizwem110d/inkling/home/clients/snapdeal_9xyblg8qbh.svg" small />
                     <Client src="https://ik.imagekit.io/bizwem110d/inkling/home/clients/itk_SfoaOfIWfN.svg" small />
@@ -196,15 +196,15 @@ export const Home = props => {
             <SectionHeading1 className="my-1">Featured Projects</SectionHeading1>
             <div className="d-flex column xmd-row ipp-column col-xmd-10 col-ipp-12 col-xlg-8 my-2 margin-center">
                 <div className="d-flex column flex-xmd-5 flex-ipp-1">
-                    <HomeProject className="flex-xmd-1 p-xmd-1 p-ipp-unset" to="/portfolio/snapdeal" title="Snapdeal">
+                    <HomeProject className="flex-xmd-1 p-xmd-1 p-ipp-none" to="/portfolio/snapdeal" title="Snapdeal">
                         <Image width="inherit" height="inherit" src="https://ik.imagekit.io/bizwem110d/inkling/Snapdeal/snapdeal_box1_3KfhaxJVc.png" alt={props.alt} />
                     </HomeProject>
-                    <HomeProject className="flex-xmd-1 p-xmd-1 p-ipp-unset" to="/portfolio/90min" title="90 minute app challenge">
+                    <HomeProject className="flex-xmd-1 p-xmd-1 p-ipp-none" to="/portfolio/90min" title="90 minute app challenge">
                         <Image width="inherit" height="inherit" src="https://ik.imagekit.io/bizwem110d/inkling/90_Min_App_Challenge/90min_pamphlet_f4S5mNkYr.png?tr=ar-16-9,w-1000" alt={props.alt} />
                     </HomeProject>
                 </div>
                 <div className="d-flex column flex-xmd-5 flex-ipp-1">
-                    <HomeProject className="flex-xmd-12 p-xmd-1 p-ipp-unset" to="/portfolio/doolally" title="Doolally">
+                    <HomeProject className="flex-xmd-12 p-xmd-1 p-ipp-none" to="/portfolio/doolally" title="Doolally">
                         <source srcSet="https://ik.imagekit.io/bizwem110d/inkling/Doolally/Doolally_poster2_irR3RpwEN.png?tr=h-600,w-500" media="(min-width: 992px)" />
                         <source
                             srcSet="https://ik.imagekit.io/bizwem110d/inkling/Doolally/Doolally_poster2_irR3RpwEN.png"
@@ -216,8 +216,8 @@ export const Home = props => {
             <StyledPortfolioLink to="/portfolio" className="d-flex center align-center my-2">view more &rarr;</StyledPortfolioLink>
         </div>
         <StyledServicessDiv>
-            <div className="d-flex column align-center col-10 col-xlg-6 margin-center py-3 pb-10">
-                <ServiceSectionHeading1 className="d-flex my-3 self-align-start">Our Services</ServiceSectionHeading1>
+            <div className="d-flex column align-center col-10 col-xlg-6 margin-center pt-1 pb-10">
+                <ServiceSectionHeading1 className="d-flex mt-2 mb-3 self-align-start">Our Services</ServiceSectionHeading1>
                 <div className="d-flex wrap row r-g-2">
                     <Service
                         heading="design"

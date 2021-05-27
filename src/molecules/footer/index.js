@@ -90,7 +90,7 @@ export const Footer = props => {
             <StyledFooterLogo>
                 <img src={footerSvg} alt="logo" title="Inkling" />
             </StyledFooterLogo>
-            <StyledNavLinkDiv className="d-flex row xmd-align-center space-between md-center c-g-md-1 col-12 py-2 px-xmd-2 py-xmd-unset">
+            <StyledNavLinkDiv className="d-flex row xmd-align-center space-between md-center c-g-md-1 col-12 py-2 px-xmd-2 py-xmd-none">
                 <NavLink to="/" exact>Home</NavLink>
                 <NavLink to="/aboutus">About Us</NavLink>
                 <NavLink to="/portfolio">Portfolio</NavLink>
