@@ -135,7 +135,7 @@ export const NavMenu = props => {
             </StyledLogo>
             <StylesNavigationItems className="column md-row w-100 w-md-unset" toggleShow={show}>
                 <NavLink to="/" exact onClick={() => setShow(false)}>Home</NavLink>
-                <NavLink to="/aboutus" onClick={() => setShow(false)}F>About Us</NavLink>
+                <NavLink to="/aboutus" onClick={() => setShow(false)}>About Us</NavLink>
                 <NavLink to="/portfolio" onClick={() => setShow(false)}>Portfolio</NavLink>
                 <NavLink to="/contactus" onClick={() => setShow(false)}>Contact Us</NavLink>
             </StylesNavigationItems>
