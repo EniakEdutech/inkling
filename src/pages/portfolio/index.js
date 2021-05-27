@@ -231,7 +231,7 @@ export class Portfolio extends Component {
                 },
                 {
                     title: "ITK",
-                    image: "https://ik.imagekit.io/bizwem110d/inkling/ITK_project/ITK_illustration_RFbw68B8k.png",
+                    image: "https://ik.imagekit.io/bizwem110d/inkling/ITK_project/itk_portfolio_banner_msquWt3k9.png",
                     alt: "ITK",
                     link: "itk",
                     category: ['Development', 'Curriculum Design'],
