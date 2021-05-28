@@ -228,6 +228,7 @@ export class Portfolio extends Component {
                     category: ['Design', 'Development'],
                     cardType: "square",
                     nShown: false,
+                    bSize: 'cover',
                 },
                 {
                     title: "ITK",
@@ -237,6 +238,7 @@ export class Portfolio extends Component {
                     category: ['Development', 'Curriculum Design'],
                     cardType: "tall",
                     nShown: true,
+                    bSize: 'cover',
                 },
                 {
                     title: "90min app challenge",
@@ -246,6 +248,7 @@ export class Portfolio extends Component {
                     category: ['Development', 'Curriculum Design'],
                     cardType: "square",
                     nShown: true,
+                    bSize: 'contain',
                 },
                 {
                     title: "Code for All",
@@ -255,6 +258,7 @@ export class Portfolio extends Component {
                     category: ['Development', 'Curriculum Design'],
                     cardType: "square",
                     nShown: false,
+                    bSize: 'cover',
                 },
                 {
                     title: "AllSpace Ventures",
@@ -264,6 +268,7 @@ export class Portfolio extends Component {
                     category: ['Design'],
                     cardType: "square",
                     nShown: false,
+                    bSize: 'cover',
                 },
                 {
                     title: "Aadhiyaran Agrarian Services",
@@ -273,6 +278,7 @@ export class Portfolio extends Component {
                     category: ['Design'],
                     cardType: "tall",
                     nShown: false,
+                    bSize: 'cover',
                 },
                 {
                     title: "Doolally",
@@ -282,6 +288,57 @@ export class Portfolio extends Component {
                     category: ['Design'],
                     cardType: "large",
                     nShown: false,
+                    bSize: 'cover',
+                },
+                {
+                    title: "Pathways Life Coaching",
+                    image: "https://ik.imagekit.io/bizwem110d/inkling/Doolally/Doolally_finalposter1-01_RV2jbJUMj.png?tr=h-500",
+                    alt: "pathways life coaching",
+                    link: "pathwayslc",
+                    category: ['Design'],
+                    cardType: "square",
+                    nShown: true,
+                    bSize: 'cover',
+                },
+                {
+                    title: "Armor Security",
+                    image: "https://ik.imagekit.io/bizwem110d/inkling/AllSpace_Ventures/AllSpace_insta_JnP_iTILu.png?tr=h-500",
+                    alt: "armor security",
+                    link: "armor",
+                    category: ['Design'],
+                    cardType: "square",
+                    nShown: true,
+                    bSize: 'cover',
+                },
+                {
+                    title: "Snapdeal",
+                    image: "https://ik.imagekit.io/bizwem110d/inkling/Snapdeal/snap2-01_onEKKlsjQ.png",
+                    alt: "snapdeal",
+                    link: "snapdeal",
+                    category: ['Design'],
+                    cardType: "tall",
+                    nShown: false,
+                    bSize: 'cover',
+                },
+                {
+                    title: "KLM Royal Dutch Airlines",
+                    image: "https://ik.imagekit.io/bizwem110d/inkling/KLM/KLM_signin_nWmnvkWOg.png",
+                    alt: "klm royal dutch airlines",
+                    link: "klm",
+                    category: ['Design', 'Development'],
+                    cardType: "large",
+                    nShown: false,
+                    bSize: 'cover',
+                },
+                {
+                    title: "Main Bhi Ambani",
+                    image: "https://ik.imagekit.io/bizwem110d/inkling/Main_bhi_Ambani/mainbhiambani-banner-1_iLApmpYn2.png?tr=h-500,w-1200,fo-custom",
+                    alt: "main bhi ambani",
+                    link: "mainbhiambani",
+                    category: ['Design', 'Development'],
+                    cardType: "sqaure",
+                    nShown: true,
+                    bSize: 'contain',
                 }
             ],
             showProjects: [],
@@ -373,7 +430,8 @@ export class Portfolio extends Component {
                             alt={project.alt}
                             link={"/portfolio/" + project.link}
                             nameShow={project.nShown}
-                            cardType={project.cardType} />)}
+                            cardType={project.cardType}
+                            bSize={project.bSize} />)}
                     </ProjectDiv>
                     {this.state.count < this.state.projects.length &&
                         <div className="d-flex center" style={{ margin: "50px" }}>

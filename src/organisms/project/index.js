@@ -103,8 +103,7 @@ const StyledDiv = styled.div`
 position: relative;
 background-image: url(${props => props.image});
 background-position: center;
-background-size: cover;
-${props => props.link === '/portfolio/90minapp' && css`background-size: contain`};
+background-size: ${props => props.bSize};
 width: 100%;
 height: 100%;
 transition: .5s ease;
