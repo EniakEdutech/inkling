@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import { Link } from 'react-router-dom'
 // components
 import { Text } from '../../atoms/text'
 
@@ -55,7 +56,7 @@ grid-row: span 2;
 }
 
 ${props => props.nameShow ? css`
-&>.title {
+&>a>.title {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -65,7 +66,7 @@ ${props => props.nameShow ? css`
     z-index: 1;
 }
 ` : css`
-&>.title {
+&>a>.title {
     position: absolute;
     bottom: 1.5em;
     left: 0;
@@ -76,7 +77,7 @@ ${props => props.nameShow ? css`
     z-index: 1;
 }
 
-&>.title::before {
+&>a>.title::before {
     content: '';
     position: absolute;
     left: 100%;
@@ -85,13 +86,13 @@ ${props => props.nameShow ? css`
     border: 25px solid transparent;
 }
 
-&>.title::before {
+&>a>.title::before {
     border-left-color: var(--primary-dark-variant);
 }
 `}
 
 
-&>.title>span {
+&>a>.title>span {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -120,9 +121,11 @@ text-transform: capitalize;
 `
 
 export const Project = props => <StyledContainer {...props}>
-    <div className="title p-1">
-        <StyledText>{props.title}</StyledText>
-    </div>
-    <StyledDiv {...props}>
-    </StyledDiv>
+    <Link to={props.link}>
+        <div className="title p-1">
+            <StyledText>{props.title}</StyledText>
+        </div>
+        <StyledDiv {...props}>
+        </StyledDiv>
+    </Link>
 </StyledContainer>
