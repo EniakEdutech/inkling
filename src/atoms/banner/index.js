@@ -1,7 +1,14 @@
 import { Image } from "../image"
+import styled from "styled-components"
+
+const StyledImage = styled(Image)`
+object-fit: cover;
+max-width: 100vw;
+max-height: 100vh;
+`
 
 export const Banner = props => {
-    return <div className="col-xlg-8 margin-center">
-        <Image src={props.src} />
+    return <div className={`d-flex center col-xlg-8 ${props.className}`}>
+        <StyledImage src={props.src} />
     </div>
 }

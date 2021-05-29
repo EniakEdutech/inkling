@@ -2,7 +2,7 @@ import { Fragment } from 'react'
 // special components
 import ScrollToTopOnMount from '../../../atoms/scrollToTop'
 // components
-import { NavButtons, StickyNavButtons } from '../../../molecules/navbuttons'
+import { NavButtons } from '../../../molecules/navbuttons'
 import { Title } from '../../../atoms/title'
 import { Heading4 } from '../../../atoms/heading4'
 import { ImportantText } from '../../../atoms/importantText'
@@ -14,7 +14,7 @@ import { Image } from '../../../atoms/image'
 export const TCSCFeedback = props => {
     return <Fragment>
         <ScrollToTopOnMount />
-        <div class="d-flex column r-g-1 col-10 col-xlg-6 margin-center my-2 my-lg-5">
+        <div className="d-flex column r-g-1 col-10 col-xlg-6 margin-center my-2 my-lg-5">
             <Title>Thakur College Feedback System</Title>
             <div className="d-flex column lg-row r-g-1">
                 <div className="flex-lg-3 d-flex column r-g-1">
@@ -52,7 +52,6 @@ export const TCSCFeedback = props => {
             </div>
             <NavButtons prev="/portfolio/eniak" next="/portfolio/mainbhiambani" />
         </div>
-        <StickyNavButtons prev="/portfolio/eniak" next="/portfolio/mainbhiambani" />
         <div className="d-flex column lg-row g-2 col-10 col-xlg-6 my-1 my-md-3 my-lg-5 margin-center">
             <Image src="https://ik.imagekit.io/bizwem110d/inkling/TCSC_Feedback/tcsc-banner-1_mAiOSZvKY.png" className="flex-lg-1" />
             <div className="d-flex column center r-g-3 col-12 my-1 my-md-2 my-lg-3 margin-center flex-lg-1">

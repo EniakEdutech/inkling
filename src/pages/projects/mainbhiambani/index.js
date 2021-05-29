@@ -2,7 +2,7 @@ import { Fragment } from 'react'
 // special components
 import ScrollToTopOnMount from '../../../atoms/scrollToTop'
 // components
-import { NavButtons, StickyNavButtons } from '../../../molecules/navbuttons'
+import { NavButtons } from '../../../molecules/navbuttons'
 import { Title } from '../../../atoms/title'
 import { Heading4 } from '../../../atoms/heading4'
 import { ImportantText } from '../../../atoms/importantText'
@@ -15,7 +15,7 @@ import { Banner } from '../../../atoms/banner'
 export const MainBhiAmbani = props => {
     return <Fragment>
         <ScrollToTopOnMount />
-        <div class="d-flex column r-g-1 col-10 col-xlg-6 margin-center my-2 my-lg-5">
+        <div className="d-flex column r-g-1 col-10 col-xlg-6 margin-center my-2 my-lg-5">
             <Title>Main Bhi Ambani</Title>
             <div className="d-flex column lg-row r-g-1">
                 <div className="flex-lg-3 d-flex column r-g-1">
@@ -35,8 +35,7 @@ export const MainBhiAmbani = props => {
             </div>
             <NavButtons prev="/portfolio/eniak" next="/portfolio/tcscfeedback" />
         </div>
-        <Banner src="https://ik.imagekit.io/bizwem110d/inkling/Main_bhi_Ambani/mainbhiambani-banner-1_iLApmpYn2.png" />
-        <StickyNavButtons prev="/portfolio/eniak" next="/portfolio/tcscfeedback" />
+        <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/Main_bhi_Ambani/mainbhiambani-banner-1_iLApmpYn2.png" />
         <div className="d-flex column lg-row g-1 col-10 col-xlg-6 margin-center my-2 my-lg-5">
             <div className="d-flex column r-g-1 flex-lg-1">
                 <Heading4>Goal</Heading4>
@@ -67,6 +66,6 @@ export const MainBhiAmbani = props => {
                 </Paragraph>
             </div>
         </div>
-        <Banner src="https://ik.imagekit.io/bizwem110d/inkling/Main_bhi_Ambani/Main_bhi_Ambani_aVzqkXzCy.png" />
+        <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/Main_bhi_Ambani/Main_bhi_Ambani_aVzqkXzCy.png" />
     </Fragment>
 }
