@@ -294,7 +294,7 @@ export class Portfolio extends Component {
                     title: "Pathways Life Coaching",
                     image: "https://ik.imagekit.io/bizwem110d/inkling/Doolally/Doolally_finalposter1-01_RV2jbJUMj.png?tr=h-500",
                     alt: "pathways life coaching",
-                    link: "pathwayslc",
+                    link: "pathways",
                     category: ['Design'],
                     cardType: "square",
                     nShown: true,

@@ -61,6 +61,6 @@ export const AadhiyaranAgrarianServices = props => {
             </div>
         </div>
         <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/Aadhiyaran_Agrarian_Services/Aadhiyaran_bags_rus2TC8D5.png?tr=w-1000" />
-        <NavButtons prev="snapdeal" pName="Snapdeal" next="pathwayslc" nName="Pathways" />
+        <NavButtons prev="snapdeal" pName="Snapdeal" next="pathways" nName="Pathways" />
     </Fragment>
 }
