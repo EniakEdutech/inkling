@@ -31,11 +31,10 @@ font-weight: 700;
 
 const ServicesBody = styled(Paragraph)`
 font-size: 14px;
-line-height: 22px;
 `
 
 export const Service = props => <div className="col-12 col-xmd-4 margin-center px-md-1">
-    <div class="d-flex column align-start r-g-2">
+    <div className="d-flex column align-start r-g-2">
         <ServicesIcon>
             <img src={props.src} alt={props.alt} title={props.title} />
         </ServicesIcon>
