@@ -35,7 +35,6 @@ export const Eniak = props => {
                 </ProjectParagraph>
                 </div>
             </div>
-            <NavButtons prev="/portfolio/mainbhiambani" next="/portfolio/tcscfeedback" />
         </div>
         <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/Eniak_project_images/tiny2-01_tOFi8YDp3.png" />
         <div className="d-flex column lg-row col-10 col-xlg-6 margin-center g-1 my-2 my-md-3 my-lg-4">
@@ -56,5 +55,6 @@ export const Eniak = props => {
         </div>
         <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/Eniak_project_images/small-01_ZFX3FoFYE.png" />
         <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/Eniak_project_images/ENIAK_ClWusekxn.png" />
+        <NavButtons prev="tcscfeedback" pName="Thakur College" next="itk" nName="I.T. Kindergarden" />
     </Fragment>
 }

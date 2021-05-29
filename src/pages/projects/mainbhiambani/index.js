@@ -33,7 +33,6 @@ export const MainBhiAmbani = props => {
                 </ProjectParagraph>
                 </div>
             </div>
-            <NavButtons prev="/portfolio/eniak" next="/portfolio/tcscfeedback" />
         </div>
         <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/Main_bhi_Ambani/mainbhiambani-banner-1_iLApmpYn2.png" />
         <div className="d-flex column lg-row g-1 col-10 col-xlg-6 margin-center my-2 my-lg-5">
@@ -67,5 +66,6 @@ export const MainBhiAmbani = props => {
             </div>
         </div>
         <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/Main_bhi_Ambani/Main_bhi_Ambani_aVzqkXzCy.png" />
+        <NavButtons prev="klm" pName="KLM Royal Dutch Airlines" next="tcscfeedback" nName="Thakur College" />
     </Fragment>
 }

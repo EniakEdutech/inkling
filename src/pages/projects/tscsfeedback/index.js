@@ -50,7 +50,6 @@ export const TCSCFeedback = props => {
                     </ProjectParagraph>
                 </div>
             </div>
-            <NavButtons prev="/portfolio/eniak" next="/portfolio/mainbhiambani" />
         </div>
         <div className="d-flex column lg-row g-2 col-10 col-xlg-6 my-1 my-md-3 my-lg-5 margin-center">
             <Image src="https://ik.imagekit.io/bizwem110d/inkling/TCSC_Feedback/tcsc-banner-1_mAiOSZvKY.png" className="flex-lg-1" />
@@ -93,5 +92,6 @@ export const TCSCFeedback = props => {
                 </UnorderedList>
             </div>
         </div>
+        <NavButtons prev="mainbhiambani" pName="Main Bhi Ambani" next="eniak" nName="Eniak" />
     </Fragment>
 }

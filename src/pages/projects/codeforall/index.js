@@ -63,8 +63,6 @@ export const CodeForAll = props => {
             </div>
             <Banner className="col-12 col-xmd-6" src="https://ik.imagekit.io/bizwem110d/inkling/Code_for_all/CFA_insta_Z0AQIkQYC.png?tr=h-500" />
         </div>
-        <div className="d-flex col-10 col-xlg-6 margin-center my-2 my-xmd-4 my-lg-5">
-            <NavButtons prev="/portfolio/mainbhiambani" next="/portfolio/tcscfeedback" />
-        </div>
+        <NavButtons prev="itk" pName="I.T. Kindergarden" next="90minapp" nName="90min app challenge" />
     </Fragment>
 }

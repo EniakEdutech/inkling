@@ -52,5 +52,6 @@ export const Ninetyminapp = props => {
             </div>
         </div>
         <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/90_Min_App_Challenge/90min_pamphlet_f4S5mNkYr.png?tr=w-1000" />
+        <NavButtons prev="codeforall" pName="Code For All" next="doolally" nName="Doolally" />
     </Fragment>
 }
