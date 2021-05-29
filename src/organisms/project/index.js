@@ -121,7 +121,7 @@ text-transform: capitalize;
 `
 
 export const Project = props => <StyledContainer {...props}>
-    <Link to={props.link}>
+    <Link to={"/portfolio/" + props.link}>
         <div className="title p-1">
             <StyledText>{props.title}</StyledText>
         </div>

@@ -427,7 +427,7 @@ export class Portfolio extends Component {
                             key={index}
                             title={project.title}
                             image={project.image}
-                            link={"/portfolio/" + project.link}
+                            link={project.link}
                             nameShow={project.nShown}
                             cardType={project.cardType}
                             bSize={project.bSize} />)}
