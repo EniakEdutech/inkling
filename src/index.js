@@ -19,6 +19,7 @@ import { Ninetyminapp } from './pages/projects/90minapp'
 import { Doolally } from './pages/projects/doolally'
 import { ArmorSecurity } from './pages/projects/armorsecurity'
 import { AllSpaceVentures } from './pages/projects/allspaceventures'
+import { Snapdeal } from './pages/projects/snapdeal'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -35,6 +36,7 @@ ReactDOM.render(
         <Route path="/portfolio/doolally"><Doolally /></Route>
         <Route path="/portfolio/armor"><ArmorSecurity /></Route>
         <Route path="/portfolio/allspace"><AllSpaceVentures /></Route>
+        <Route path="/portfolio/snapdeal"><Snapdeal /></Route>
         <Route path="/portfolio"><Portfolio /></Route>
         <Route path="/contactus"><ContactUs /></Route>
         <Route path="/" ><Home /></Route>
