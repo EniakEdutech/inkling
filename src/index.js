@@ -17,6 +17,7 @@ import { Itk } from './pages/projects/itk'
 import { CodeForAll } from './pages/projects/codeforall'
 import { Ninetyminapp } from './pages/projects/90minapp'
 import { Doolally } from './pages/projects/doolally'
+import { ArmorSecurity } from './pages/projects/armorsecurity'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -32,6 +33,7 @@ ReactDOM.render(
         <Route path="/portfolio/codeforall"><CodeForAll /></Route>
         <Route path="/portfolio/90minapp"><Ninetyminapp /></Route>
         <Route path="/portfolio/doolally"><Doolally /></Route>
+        <Route path="/portfolio/armor"><ArmorSecurity /></Route>
         <Route path="/contactus"><ContactUs /></Route>
         <Route path="/" ><Home /></Route>
       </Switch>
