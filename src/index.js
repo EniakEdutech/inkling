@@ -15,6 +15,7 @@ import { MainBhiAmbani } from './pages/projects/mainbhiambani'
 import { TCSCFeedback } from './pages/projects/tscsfeedback'
 import { Itk } from './pages/projects/itk'
 import { CodeForAll } from './pages/projects/codeforall'
+import { Ninetyminapp } from './pages/projects/90minapp';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -28,6 +29,7 @@ ReactDOM.render(
         <Route path="/portfolio/tcscfeedback"><TCSCFeedback /></Route>
         <Route path="/portfolio/itk"><Itk /></Route>
         <Route path="/portfolio/codeforall"><CodeForAll /></Route>
+        <Route path="/portfolio/90minapp"><Ninetyminapp /></Route>
         <Route path="/contactus"><ContactUs /></Route>
         <Route path="/" ><Home /></Route>
       </Switch>
