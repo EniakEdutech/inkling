@@ -8,7 +8,7 @@ max-height: 100vh;
 `
 
 export const Banner = props => {
-    return <div className={`d-flex center col-xlg-8 ${props.className}`}>
+    return <div className={`d-flex center col-xlg-8 margin-center ${props.className}`}>
         <StyledImage src={props.src} />
     </div>
 }
