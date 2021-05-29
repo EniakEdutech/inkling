@@ -15,3 +15,12 @@ font-size: 16px;
 export const Heading4 = props => {
     return <StyledH5 {...props}>{props.children}</StyledH5>
 }
+
+const ProjectStyledH5 = styled(StyledH5)`
+font-weight: 400;
+letter-spacing: 1px;
+`
+
+export const ProjectHeading4 = props => {
+    return <ProjectStyledH5 {...props}>{props.children}</ProjectStyledH5>
+}
