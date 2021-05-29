@@ -14,6 +14,7 @@ import { Eniak } from './pages/projects/eniak'
 import { MainBhiAmbani } from './pages/projects/mainbhiambani'
 import { TCSCFeedback } from './pages/projects/tscsfeedback'
 import { Itk } from './pages/projects/itk'
+import { CodeForAll } from './pages/projects/codeforall'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -26,6 +27,7 @@ ReactDOM.render(
         <Route path="/portfolio/mainbhiambani"><MainBhiAmbani /></Route>
         <Route path="/portfolio/tcscfeedback"><TCSCFeedback /></Route>
         <Route path="/portfolio/itk"><Itk /></Route>
+        <Route path="/portfolio/codeforall"><CodeForAll /></Route>
         <Route path="/contactus"><ContactUs /></Route>
         <Route path="/" ><Home /></Route>
       </Switch>
