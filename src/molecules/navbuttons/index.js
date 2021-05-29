@@ -11,7 +11,7 @@ text-align: right
 `
 
 export const NavButtons = props => {
-    return <div className="d-flex space-between">
+    return <div className="d-flex col-12 space-between">
         <Link to={props.prev} className="d-flex align-baseline c-g-xmd-1">
             <StyledSpan>&larr;</StyledSpan>
             <Strong>previous project</Strong>
