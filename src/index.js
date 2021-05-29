@@ -25,7 +25,6 @@ ReactDOM.render(
       <NavMenu />
       <Switch>
         <Route path="/aboutus" ><AboutUs /></Route>
-        <Route path="/portfolio" exact><Portfolio /></Route>
         <Route path="/portfolio/eniak"><Eniak /></Route>
         <Route path="/portfolio/mainbhiambani"><MainBhiAmbani /></Route>
         <Route path="/portfolio/tcscfeedback"><TCSCFeedback /></Route>
@@ -34,6 +33,7 @@ ReactDOM.render(
         <Route path="/portfolio/90minapp"><Ninetyminapp /></Route>
         <Route path="/portfolio/doolally"><Doolally /></Route>
         <Route path="/portfolio/armor"><ArmorSecurity /></Route>
+        <Route path="/portfolio"><Portfolio /></Route>
         <Route path="/contactus"><ContactUs /></Route>
         <Route path="/" ><Home /></Route>
       </Switch>
