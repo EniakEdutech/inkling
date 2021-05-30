@@ -1,6 +1,6 @@
 import styled from "styled-components"
 // special component
-import ScrollToTopOnMount from '../../../atoms/scrollToTop'
+import ScrollToTopOnMount from '../../atoms/scrollToTop'
 // Component
 import { Heading1 } from '../../atoms/heading1'
 import { Button } from "../../atoms/button"
