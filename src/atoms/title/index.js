@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 
 const StyledH1 = styled.h1`
-font-size: 30px;
+font-size: 20px;
 font-family: 'Montserrat', sans-serif;
-letter-spacing: 2px;
 text-transform: uppercase;
 
 @media (min-width: 768px) {
-    font-size: 50px;
+    font-size: 35px;
+    letter-spacing: 2px;
 }
 
 @media (min-width: 1200px) {
