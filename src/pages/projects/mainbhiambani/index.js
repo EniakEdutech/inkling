@@ -66,6 +66,6 @@ export const MainBhiAmbani = props => {
             </div>
         </div>
         <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/Main_bhi_Ambani/Main_bhi_Ambani_aVzqkXzCy.png" />
-        <NavButtons prev="klm" pName="KLM Royal Dutch Airlines" next="tcscfeedback" nName="Thakur College" />
+        <NavButtons prev="klm" pName="KLM Royal Dutch Airlines" next="tcsc-feedback" nName="Thakur College" />
     </Fragment>
 }

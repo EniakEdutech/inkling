@@ -80,6 +80,6 @@ export const Klm = props => {
             </div>
         </div>
         <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/KLM/KLM_system_MAggtzbLs.png?tr=w-1000" />
-        <NavButtons prev="pathways" pName="Pathways" next="mainbhiambani" nName="Main Bhi Ambani" />
+        <NavButtons prev="pathways" pName="Pathways" next="main-bhi-ambani" nName="Main Bhi Ambani" />
     </Fragment>
 }

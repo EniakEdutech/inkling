@@ -71,6 +71,6 @@ export const Itk = props => {
             </div>
         </div>
         <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/ITK_project/ITK_website_qUjaD1wsY.png?tr=w-1000" />
-        <NavButtons prev="eniak" pName="Eniak" next="codeforall" nName="Code For All" />
+        <NavButtons prev="eniak" pName="Eniak" next="code-for-all" nName="Code For All" />
     </Fragment>
 }

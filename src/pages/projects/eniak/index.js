@@ -55,6 +55,6 @@ export const Eniak = props => {
         </div>
         <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/Eniak_project_images/small-01_ZFX3FoFYE.png" />
         <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/Eniak_project_images/ENIAK_ClWusekxn.png" />
-        <NavButtons prev="tcscfeedback" pName="Thakur College" next="itk" nName="I.T. Kindergarden" />
+        <NavButtons prev="tcsc-feedback" pName="Thakur College" next="itk" nName="I.T. Kindergarden" />
     </Fragment>
 }

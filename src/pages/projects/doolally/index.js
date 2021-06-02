@@ -59,6 +59,6 @@ export const Doolally = props => {
             </div>
         </div>
         <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/Doolally/Doolally_finalposter1-01_RV2jbJUMj.png?tr=w-1000" />
-        <NavButtons prev="90minapp" pName="90min App Challenge" next="armor" nName="Armor Security" />
+        <NavButtons prev="90-min-app" pName="90min App Challenge" next="armor" nName="Armor Security" />
     </Fragment>
 }
