@@ -4,55 +4,64 @@ import ScrollToTopOnMount from '../../../atoms/scrollToTop'
 // components
 import { NavButtons } from '../../../molecules/navbuttons'
 import { Title } from '../../../atoms/title'
-import { Heading1 } from '../../../atoms/heading1'
+import { ProjectHeading1 } from '../../../atoms/heading1'
 import { ProjectHeading4 } from '../../../atoms/heading4'
 import { ImportantText } from '../../../atoms/importantText'
 import { ProjectParagraph } from '../../../atoms/paragraph'
 import { Banner } from '../../../atoms/banner'
+import { BIContainer } from '../../../atoms/bicontainer'
 
 export const Eniak = props => {
     return <Fragment>
         <ScrollToTopOnMount />
-        <div className="d-flex column r-g-1 col-10 col-xlg-6 margin-center my-2 my-xmd-4 my-lg-5">
-            <div className="d-flex column lg-row">
-                <Title className="flex-lg-3">Eniak</Title>
-                <Heading1 className="flex-lg-7">Making educational and technological reform.</Heading1>
-            </div>
-            <div className="d-flex column lg-row r-g-1">
-                <div className="flex-lg-3 d-flex column r-g-1">
-                    <ProjectHeading4>Services</ProjectHeading4>
-                    <ImportantText>Branding, E-mail Marketing, Signage, Print, Stationary, Social.
+        <BIContainer className=""
+            image="https://ik.imagekit.io/bizwem110d/inkling/Backgrounds_for_mobile/eniak_mob_1_1__5ayw8XyK1.png" position="right top" size="cover"
+            desImage="https://ik.imagekit.io/bizwem110d/inkling/eniakproject_web_1_RwutNliMs.png">
+            <div className="d-flex column g-2 col-6 col-md-8 margin-center py-5 py-md-7 py-xmd-5 py-ipp-7 py-lg-5">
+                <div className="d-flex column lg-row">
+                    <Title className="flex-lg-3">Eniak</Title>
+                    <ProjectHeading1 className="flex-lg-7">Making educational and technological reform.</ProjectHeading1>
+                </div>
+                <div className="d-flex column lg-row r-g-1">
+                    <div className="flex-lg-3 d-flex column r-g-1">
+                        <ProjectHeading4>Services</ProjectHeading4>
+                        <ImportantText>Branding, E-mail Marketing, Signage, Print, Stationary, Social.
                     </ImportantText>
-                </div>
-                <div className="flex-lg-7 d-flex column r-g-1">
-                    <ProjectHeading4>Context</ProjectHeading4>
-                    <ProjectParagraph>
-                        Eniak (Educational network of information and knowledge) works in the EduTech sector creating
-                        innovative and unique products/services for greater educational and technological reform. Eniak
-                        is a parent company to its pilot product ITK that explores education and technology. Not only is
-                        Eniak venturing into improving technological literacy for younger children but also for college
-                        children and graduates.
+                    </div>
+                    <div className="flex-lg-7 d-flex column r-g-1">
+                        <ProjectHeading4>Context</ProjectHeading4>
+                        <ProjectParagraph>
+                            Eniak (Educational network of information and knowledge) works in the EduTech sector creating
+                            innovative and unique products/services for greater educational and technological reform. Eniak
+                            is a parent company to its pilot product ITK that explores education and technology. Not only is
+                            Eniak venturing into improving technological literacy for younger children but also for college
+                            children and graduates.
                 </ProjectParagraph>
+                    </div>
                 </div>
             </div>
-        </div>
+        </BIContainer>
         <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/Eniak_project_images/tiny2-01_tOFi8YDp3.png" />
-        <div className="d-flex column lg-row col-10 col-xlg-6 margin-center g-1 my-2 my-md-3 my-lg-4">
-            <Heading1 className="flex-lg-3">A revolutionary way&nbsp;to approach education.</Heading1>
-            <div className="d-flex column flex-lg-7 r-g-1">
-                <ProjectHeading4>Design Brief</ProjectHeading4>
-                <ProjectParagraph>Eniak as a parent company needs to encompass all its different components (products and
-                services) which together forms a revolutionary way to approach education.
+        <BIContainer className=""
+            image="https://ik.imagekit.io/bizwem110d/inkling/Backgrounds_for_mobile/eniak_mob_1_tcOcMSVTJ.png" position="right top" size="cover"
+            desImage="https://ik.imagekit.io/bizwem110d/inkling/eniakproject_web_2_xkkLzr-7c.png" desPosition="left bottom">
+            <div className="d-flex column lg-row col-6 col-md-8 margin-center r-g-2 c-g-1 py-3 py-md-4 py-xmd-5">
+                <ProjectHeading1 className="flex-lg-3">A revolutionary way&nbsp;to approach education.</ProjectHeading1>
+                <div className="d-flex column flex-lg-7 r-g-1">
+                    <ProjectHeading4>Design Brief</ProjectHeading4>
+                    <ProjectParagraph>Eniak as a parent company needs to encompass all its different components (products and
+                    services) which together forms a revolutionary way to approach education.
                 </ProjectParagraph>
-                <ProjectHeading4>Design Approach</ProjectHeading4>
-                <ProjectParagraph>
-                    The eniak logo is a representation of something  called a fractal which is the smallest unit
-                    of a pattern that when repeated in large numbers always remains the same. The fractal is in
-                    perspective to represent momentum. A fractal in motion seemed to represent the different
-                    components of eniak and the revolutionary aspect.
+                    <ProjectHeading4>Design Approach</ProjectHeading4>
+                    <ProjectParagraph>
+                        The eniak logo is a representation of something  called a fractal which is the smallest unit
+                        of a pattern that when repeated in large numbers always remains the same. The fractal is in
+                        perspective to represent momentum. A fractal in motion seemed to represent the different
+                        components of eniak and the revolutionary aspect.
                 </ProjectParagraph>
+                </div>
             </div>
-        </div>
+        </BIContainer>
         <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/Eniak_project_images/small-01_ZFX3FoFYE.png" />
         <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/Eniak_project_images/ENIAK_ClWusekxn.png" />
         <NavButtons prev="tcsc-feedback" pName="Thakur College" next="itk" nName="I.T. Kindergarden" />
