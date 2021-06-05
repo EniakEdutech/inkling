@@ -67,7 +67,7 @@ export const Eniak = props => {
             </div>
         </BIContainer>
         <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/Eniak_project_images/small-01_ZFX3FoFYE.png" />
-        <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/Eniak_project_images/ENIAK_ClWusekxn.png" />
+        <Banner contain className="" src="https://ik.imagekit.io/bizwem110d/inkling/Eniak_project_images/ENIAK_ClWusekxn.png" />
         <NavButtons prev="main-bhi-ambani" pName="Main Bhi Ambani" next="itk" nName="I.T. Kindergarden" />
     </Fragment>
 }

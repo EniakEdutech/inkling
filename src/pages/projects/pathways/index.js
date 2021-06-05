@@ -53,8 +53,8 @@ export const Pathways = props => {
             </div>
         </BIContainer>
         <div className="d-flex column xmd-row col-12 col-xlg-8 xlg-margin-center">
-            <Banner className="col-xmd-6" src="https://ik.imagekit.io/bizwem110d/inkling/Pathways/Pathways_brochure-01_5cJUs0Wqe.jpg?tr=w-1000" />
-            <Banner className="col-xmd-6" src="https://ik.imagekit.io/bizwem110d/inkling/Pathways/Pathways_brochure-02_Jp_R82pGxS.jpg?tr=w-1000" />
+            <Banner contain className="col-xmd-6" src="https://ik.imagekit.io/bizwem110d/inkling/Pathways/Pathways_brochure-01_5cJUs0Wqe.jpg?tr=w-1000" />
+            <Banner contain className="col-xmd-6" src="https://ik.imagekit.io/bizwem110d/inkling/Pathways/Pathways_brochure-02_Jp_R82pGxS.jpg?tr=w-1000" />
         </div>
         <NavButtons prev="aadhiyaran-agrarian-services" pName="Aadhiyaran Agrarian Services" next="klm" nName="KLM Royal Dutch Airlines" />
     </Fragment>

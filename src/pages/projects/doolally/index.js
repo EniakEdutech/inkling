@@ -73,7 +73,7 @@ export const Doolally = props => {
                 </div>
             </div>
         </BIContainer>
-        <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/Doolally/Doolally_finalposter1-01_RV2jbJUMj.png?tr=w-1000" />
+        <Banner contain className="" src="https://ik.imagekit.io/bizwem110d/inkling/Doolally/Doolally_finalposter1-01_RV2jbJUMj.png?tr=w-1000" />
         <NavButtons prev="90-min-app" pName="90min App Challenge" next="armor-security" nName="Armor Security" />
     </Fragment>
 }
