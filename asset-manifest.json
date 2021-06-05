@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/inkling/static/css/main.4251f3c9.chunk.css",
-    "main.js": "/inkling/static/js/main.db5e8968.chunk.js",
-    "main.js.map": "/inkling/static/js/main.db5e8968.chunk.js.map",
+    "main.js": "/inkling/static/js/main.471fbff3.chunk.js",
+    "main.js.map": "/inkling/static/js/main.471fbff3.chunk.js.map",
     "runtime-main.js": "/inkling/static/js/runtime-main.6880259b.js",
     "runtime-main.js.map": "/inkling/static/js/runtime-main.6880259b.js.map",
     "static/js/2.593d989d.chunk.js": "/inkling/static/js/2.593d989d.chunk.js",
@@ -24,6 +24,6 @@
     "static/js/runtime-main.6880259b.js",
     "static/js/2.593d989d.chunk.js",
     "static/css/main.4251f3c9.chunk.css",
-    "static/js/main.db5e8968.chunk.js"
+    "static/js/main.471fbff3.chunk.js"
   ]
 }
