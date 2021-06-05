@@ -6,7 +6,7 @@ import { NavButtons } from '../../../molecules/navbuttons'
 import { Title } from '../../../atoms/title'
 import { ProjectHeading1 } from '../../../atoms/heading1'
 import { ProjectHeading4 } from '../../../atoms/heading4'
-import { ImportantText } from '../../../atoms/importantText'
+import { ProjectText } from '../../../atoms/text'
 import { ProjectParagraph } from '../../../atoms/paragraph'
 import { Banner } from '../../../atoms/banner'
 import { BIContainer } from '../../../atoms/bicontainer'
@@ -15,17 +15,17 @@ export const Pathways = props => {
     return <Fragment>
         <ScrollToTopOnMount />
         <BIContainer className=""
-            image="https://ik.imagekit.io/bizwem110d/inkling/Backgrounds_for_mobile/pathways_mob_1_SZ_u8PVmA.png" position="right" size="cover"
+            image="https://ik.imagekit.io/bizwem110d/inkling/mobile_backgrounds_redone/Pathways_1_aAdB-Xx9y.png" position="right" size="cover"
             desImage="https://ik.imagekit.io/bizwem110d/inkling/Armor_web_1_k3Ivpu6BW.png">
-            <div className="d-flex column r-g-2 c-g-1 col-6 col-md-8 margin-center py-5 py-md-7 py-xmd-5 py-ipp-7 py-lg-5">
-                <Title>PATHWAYS</Title>
-                <ProjectHeading1>The logo, graphic elements and printables.</ProjectHeading1>
+            <div className="d-flex column r-g-2 col-6 col-md-8 margin-center py-5 py-md-7 py-xmd-5 py-ipp-7 py-lg-5">
+                <div className="d-flex column">
+                    <Title>PATHWAYS</Title>
+                    <ProjectHeading1>The logo, graphic elements and printables.</ProjectHeading1>
+                </div>
                 <div className="d-flex column xmd-row ipp-column col-12 r-g-2 c-g-1">
                     <div className="d-flex column r-g-1 col-xmd-3 col-ipp-12">
                         <ProjectHeading4>Services</ProjectHeading4>
-                        <ImportantText>
-                            Branding, Illustration, Packaging.
-                    </ImportantText>
+                        <ProjectText>Branding, Illustration, Packaging.</ProjectText>
                     </div>
                     <div className="d-flex column r-g-1 col-xmd-9 col-ipp-12">
                         <ProjectHeading4>Context</ProjectHeading4>
@@ -39,9 +39,9 @@ export const Pathways = props => {
         </BIContainer>
         <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/Pathways/pathways_BC_MRhGxkJ7Y.png?tr=w-1000" />
         <BIContainer className=""
-            image="https://ik.imagekit.io/bizwem110d/inkling/Backgrounds_for_mobile/pathways_mob_2_twTJD5bsv.png" position="top right" size="cover"
+            image="https://ik.imagekit.io/bizwem110d/inkling/mobile_backgrounds_redone/Pathways_2_BWDoskqw4.png" position="top right" size="cover"
             desImage="https://ik.imagekit.io/bizwem110d/inkling/eniakproject_web_1_RwutNliMs.png">
-            <div className="d-flex column xmd-row col-6 col-md-8 margin-center r-g-2 c-g-1 py-3 py-md-4 py-xmd-5">
+            <div className="d-flex column xmd-row col-6 col-md-8 margin-center r-g-1 c-g-2 py-3 py-md-4 py-xmd-5">
                 <ProjectHeading4>DESIGN APPROACH</ProjectHeading4>
                 <ProjectParagraph>
                     While conceptualizing the logo, I tried to collect pictures of things that were positive. This includes pictures of people smiling, flowers blooming,
@@ -56,6 +56,6 @@ export const Pathways = props => {
             <Banner className="col-xmd-6" src="https://ik.imagekit.io/bizwem110d/inkling/Pathways/Pathways_brochure-01_5cJUs0Wqe.jpg?tr=w-1000" />
             <Banner className="col-xmd-6" src="https://ik.imagekit.io/bizwem110d/inkling/Pathways/Pathways_brochure-02_Jp_R82pGxS.jpg?tr=w-1000" />
         </div>
-        <NavButtons prev="Aadhiyaran Agrarian Services" pName="agrarian" next="klm" nName="KLM Royal Dutch Airlines" />
+        <NavButtons prev="aadhiyaran-agrarian-services" pName="Aadhiyaran Agrarian Services" next="klm" nName="KLM Royal Dutch Airlines" />
     </Fragment>
 }

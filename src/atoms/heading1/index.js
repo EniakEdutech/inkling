@@ -19,6 +19,7 @@ export const Heading1 = props => {
 }
 
 const ProjectStyledH2 = styled(StyledH2)`
+font-weight: 500;
 @media (min-width: 768px) {
     font-size: 30px;
 }

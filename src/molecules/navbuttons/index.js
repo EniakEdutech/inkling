@@ -6,21 +6,25 @@ const StyledSpan = styled.span`
 line-height: 1px;
 `
 
-const StyledStrong = styled(Strong)`
+const StyledLink = styled(Link)`
 text-align: right
 `
 
 export const NavButtons = props => {
-    return <div className="d-flex col-10 col-xlg-6 margin-center my-2 my-xmd-4 my-lg-5">
+    return <div className="d-flex col-10 col-xlg-6 margin-center my-2 my-xmd-3 my-xlg-5">
         <div className="d-flex col-12 space-between">
-            <Link to={"/portfolio/" + props.prev} className="d-flex align-baseline c-g-xmd-1">
+            <div className="d-flex align-baseline c-g-xmd-1">
                 <StyledSpan>&larr;</StyledSpan>
-                <Strong>{props.pName}</Strong>
-            </Link>
-            <Link to={"/portfolio/" + props.next} className="d-flex align-baseline c-g-xmd-1">
-                <StyledStrong>{props.nName}</StyledStrong>
+                <Link to={"/portfolio/" + props.prev}>
+                    <Strong>{props.pName}</Strong>
+                </Link>
+            </div>
+            <div className="d-flex align-baseline c-g-xmd-1">
+                <StyledLink to={"/portfolio/" + props.next} className="">
+                    <Strong>{props.nName}</Strong>
+                </StyledLink>
                 <StyledSpan>&rarr;</StyledSpan>
-            </Link>
+            </div>
         </div>
     </div>
 }

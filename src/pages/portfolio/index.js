@@ -163,6 +163,10 @@ z-index: 1;
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 grid-gap: 3em;
+
+@media screen and (min-width: 1200px) {
+    grid-template-columns: repeat(3, 1fr);
+}
 `
 
 const StyledPortfolioLink = styled(Button)`
@@ -264,7 +268,7 @@ export class Portfolio extends Component {
                     title: "AllSpace Ventures",
                     image: "https://ik.imagekit.io/bizwem110d/inkling/AllSpace_Ventures/AllSpace_insta_JnP_iTILu.png?tr=h-500",
                     alt: "all space ventures",
-                    link: "allspace",
+                    link: "allspace-ventures",
                     category: ['Design'],
                     cardType: "square",
                     nShown: false,
@@ -274,7 +278,7 @@ export class Portfolio extends Component {
                     title: "Aadhiyaran Agrarian Services",
                     image: "https://ik.imagekit.io/bizwem110d/inkling/Aadhiyaran_Agrarian_Services/Aadhiyaran_cards_v1HcYI1_Q.png?tr=h-500",
                     alt: "aadhiyaran agrarian services",
-                    link: "agrarian",
+                    link: "aadhiyaran-agrarian-services",
                     category: ['Design'],
                     cardType: "tall",
                     nShown: false,
@@ -304,7 +308,7 @@ export class Portfolio extends Component {
                     title: "Armor Security",
                     image: "https://ik.imagekit.io/bizwem110d/inkling/AllSpace_Ventures/AllSpace_insta_JnP_iTILu.png?tr=h-500",
                     alt: "armor security",
-                    link: "armor",
+                    link: "armor-security",
                     category: ['Design'],
                     cardType: "square",
                     nShown: true,

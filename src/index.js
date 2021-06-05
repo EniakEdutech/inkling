@@ -12,7 +12,7 @@ import { ContactUs } from './pages/contactus'
 import { Portfolio } from './pages/portfolio'
 import { Eniak } from './pages/projects/eniak'
 import { MainBhiAmbani } from './pages/projects/mainbhiambani'
-import { TCSCFeedback } from './pages/projects/tscsfeedback'
+// import { TCSCFeedback } from './pages/projects/tscsfeedback'
 import { Itk } from './pages/projects/itk'
 import { CodeForAll } from './pages/projects/codeforall'
 import { Ninetyminapp } from './pages/projects/90minapp'
@@ -32,15 +32,15 @@ ReactDOM.render(
         <Route path="/aboutus" ><AboutUs /></Route>
         <Route path="/portfolio/eniak"><Eniak /></Route>
         <Route path="/portfolio/main-bhi-ambani"><MainBhiAmbani /></Route>
-        <Route path="/portfolio/tcsc-feedback"><TCSCFeedback /></Route>
+        {/* <Route path="/portfolio/tcsc-feedback"><TCSCFeedback /></Route> */}
         <Route path="/portfolio/itk"><Itk /></Route>
         <Route path="/portfolio/code-for-all"><CodeForAll /></Route>
         <Route path="/portfolio/90-min-app"><Ninetyminapp /></Route>
         <Route path="/portfolio/doolally"><Doolally /></Route>
-        <Route path="/portfolio/armor"><ArmorSecurity /></Route>
-        <Route path="/portfolio/allspace"><AllSpaceVentures /></Route>
+        <Route path="/portfolio/armor-security"><ArmorSecurity /></Route>
+        <Route path="/portfolio/allspace-ventures"><AllSpaceVentures /></Route>
         <Route path="/portfolio/snapdeal"><Snapdeal /></Route>
-        <Route path="/portfolio/agrarian"><AadhiyaranAgrarianServices /></Route>
+        <Route path="/portfolio/aadhiyaran-agrarian-services"><AadhiyaranAgrarianServices /></Route>
         <Route path="/portfolio/pathways"><Pathways /></Route>
         <Route path="/portfolio/klm"><Klm /></Route>
         <Route path="/portfolio"><Portfolio /></Route>

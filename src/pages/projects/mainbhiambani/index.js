@@ -5,7 +5,7 @@ import ScrollToTopOnMount from '../../../atoms/scrollToTop'
 import { NavButtons } from '../../../molecules/navbuttons'
 import { Title } from '../../../atoms/title'
 import { ProjectHeading4 } from '../../../atoms/heading4'
-import { ImportantText } from '../../../atoms/importantText'
+import { ProjectText } from '../../../atoms/text'
 import { Text } from '../../../atoms/text'
 import { ProjectParagraph } from '../../../atoms/paragraph'
 import { UnorderedList } from '../../../atoms/unorderedList'
@@ -17,15 +17,14 @@ export const MainBhiAmbani = props => {
     return <Fragment>
         <ScrollToTopOnMount />
         <BIContainer className=""
-            image="https://ik.imagekit.io/bizwem110d/inkling/Backgrounds_for_mobile/mainbhi_mob_1_-4oasglas-.png" position="right" size="cover"
+            image="https://ik.imagekit.io/bizwem110d/inkling/mobile_backgrounds_redone/Mainbhi_1_sB-LGL4Am.png" position="right" size="cover"
             desImage="https://ik.imagekit.io/bizwem110d/inkling/Armor_web_1_k3Ivpu6BW.png">
             <div className="d-flex column r-g-2 col-6 col-md-8 margin-center py-5 py-md-7 py-xmd-5 py-ipp-7 py-lg-5">
                 <Title>Main Bhi Ambani</Title>
-                <div className="d-flex column xmd-row ipp-column r-g-2">
+                <div className="d-flex column xmd-row ipp-column r-g-2 c-g-1">
                     <div className="flex-xmd-3 flex-ipp-1 d-flex column r-g-1">
                         <ProjectHeading4>Services</ProjectHeading4>
-                        <ImportantText>Web Development, Data Collection strategy, Cloud Architecture.
-                    </ImportantText>
+                        <ProjectText>Web Development, Data Collection strategy, Cloud Architecture.</ProjectText>
                     </div>
                     <div className="flex-xmd-7 flex-ipp-1 d-flex column r-g-1">
                         <ProjectHeading4>Context</ProjectHeading4>
@@ -41,7 +40,7 @@ export const MainBhiAmbani = props => {
         </BIContainer>
         <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/Main_bhi_Ambani/mainbhiambani-banner-1_iLApmpYn2.png" />
         <BIContainer className=""
-            image="https://ik.imagekit.io/bizwem110d/inkling/Backgrounds_for_mobile/mainbhi_mob_2_DEuM8mZud.png" position="top left" size="cover">
+            image="https://ik.imagekit.io/bizwem110d/inkling/mobile_backgrounds_redone/Mainbhi_2_XssJVku0h.png" position="top left" size="cover">
             <div className="d-flex column xmd-row g-2 col-6 col-md-8 margin-center py-5 py-md-7 py-xmd-5 py-ipp-7 py-lg-5">
                 <div className="d-flex column r-g-2 flex-xmd-1">
                     <div className="d-flex column r-g-1">
@@ -84,6 +83,6 @@ export const MainBhiAmbani = props => {
             </div>
         </BIContainer>
         <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/Main_bhi_Ambani/Main_bhi_Ambani_aVzqkXzCy.png" />
-        <NavButtons prev="klm" pName="KLM Royal Dutch Airlines" next="tcsc-feedback" nName="Thakur College" />
+        <NavButtons prev="klm" pName="KLM Royal Dutch Airlines" next="eniak" nName="Eniak" />
     </Fragment>
 }

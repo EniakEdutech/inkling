@@ -6,26 +6,28 @@ import { NavButtons } from '../../../molecules/navbuttons'
 import { Title } from '../../../atoms/title'
 import { ProjectHeading1 } from '../../../atoms/heading1'
 import { ProjectHeading4 } from '../../../atoms/heading4'
-import { ImportantText } from '../../../atoms/importantText'
 import { ProjectParagraph } from '../../../atoms/paragraph'
 import { Banner } from '../../../atoms/banner'
 import { BIContainer } from '../../../atoms/bicontainer'
+import { ProjectText } from '../../../atoms/text'
 
 export const Ninetyminapp = props => {
     return <Fragment>
         <ScrollToTopOnMount />
         <BIContainer className=""
-            image="https://ik.imagekit.io/bizwem110d/inkling/Backgrounds_for_mobile/90min_mob_1_xzHbYh10S.png" position="right" size="cover"
+            image="https://ik.imagekit.io/bizwem110d/inkling/mobile_backgrounds_redone/90min_1_JuOuLyFaV.png" position="right" size="cover"
             desImage="https://ik.imagekit.io/bizwem110d/inkling/90min_web_1_6bw0GjrlZ.png">
             <div className="d-flex column g-2 col-6 col-md-8 margin-center py-5 py-md-7 py-xmd-5 py-ipp-7 py-lg-5">
-                <Title>90MIN APP CHALLENGE</Title>
-                <ProjectHeading1>The logo, graphic elements and printables.</ProjectHeading1>
+                <div className="d-flex column">
+                    <Title>90MIN APP CHALLENGE</Title>
+                    <ProjectHeading1>The logo, graphic elements and printables.</ProjectHeading1>
+                </div>
                 <div className="d-flex column xmd-row ipp-column col-12 g-2">
                     <div className="d-flex column r-g-1 col-xmd-3 col-ipp-12">
                         <ProjectHeading4>Services</ProjectHeading4>
-                        <ImportantText>
+                        <ProjectText>
                             Branding, E-mail Marketing, Signage, Print, Stationary, Social.
-                            </ImportantText>
+                        </ProjectText>
                     </div>
                     <div className="d-flex column r-g-1 col-xmd-9 col-ipp-12">
                         <ProjectHeading4>Context</ProjectHeading4>
@@ -41,7 +43,7 @@ export const Ninetyminapp = props => {
         </BIContainer>
         <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/90_Min_App_Challenge/90min_logo_LwfeKLTs-.png" />
         <BIContainer className=""
-            image="https://ik.imagekit.io/bizwem110d/inkling/Backgrounds_for_mobile/90min_mob_2_VwtGdwbt5.png" size="cover" position="right"
+            image="https://ik.imagekit.io/bizwem110d/inkling/mobile_backgrounds_redone/90min_2_v2qsInun7.png" size="cover" position="right"
             desImage="https://ik.imagekit.io/bizwem110d/inkling/90min_web_2_aIT4E6CKyL.png">
             <div className="d-flex column xmd-row col-6 col-md-8 margin-center r-g-2 c-g-1 py-3 py-md-4 py-xmd-5">
                 <ProjectHeading1 className="flex-xmd-3">Create amazing Apps&nbsp;in 90 mins.</ProjectHeading1>

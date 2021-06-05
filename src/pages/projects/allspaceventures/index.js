@@ -6,7 +6,7 @@ import { NavButtons } from '../../../molecules/navbuttons'
 import { Title } from '../../../atoms/title'
 import { ProjectHeading1 } from '../../../atoms/heading1'
 import { ProjectHeading4 } from '../../../atoms/heading4'
-import { ImportantText } from '../../../atoms/importantText'
+import { ProjectText } from '../../../atoms/text'
 import { ProjectParagraph } from '../../../atoms/paragraph'
 import { Banner } from '../../../atoms/banner'
 import { BIContainer } from '../../../atoms/bicontainer'
@@ -15,17 +15,19 @@ export const AllSpaceVentures = props => {
     return <Fragment>
         <ScrollToTopOnMount />
         <BIContainer className=""
-            image="https://ik.imagekit.io/bizwem110d/inkling/Backgrounds_for_mobile/allspace_mob_1_zycfkzFyFU.png" position="right" size="cover"
+            image="https://ik.imagekit.io/bizwem110d/inkling/mobile_backgrounds_redone/Allspace_1_5_LYdUT9p.png" position="right" size="cover"
             desImage="https://ik.imagekit.io/bizwem110d/inkling/Allspace_web_1_viXWlIEBI.png">
-            <div className="d-flex column g-2 col-6 col-xmd-8 col-ipp-10 col-xlg-8 margin-center py-5 py-md-7 py-xmd-5 py-ipp-7 py-lg-5">
-                <Title>ALLSPACE VENTURES</Title>
-                <ProjectHeading1>Design for all their social media content.</ProjectHeading1>
+            <div className="d-flex column g-2 col-6 col-md-8 margin-center py-5 py-md-7 py-xmd-5 py-ipp-7 py-lg-5">
+                <div className="d-flex column">
+                    <Title>ALLSPACE VENTURES</Title>
+                    <ProjectHeading1>Design for all their social media content.</ProjectHeading1>
+                </div>
                 <div className="d-flex column xmd-row ipp-column col-12 r-g-2 c-g-1">
                     <div className="d-flex column r-g-1 col-xmd-3 col-ipp-12">
                         <ProjectHeading4>Services</ProjectHeading4>
-                        <ImportantText>
+                        <ProjectText>
                             Social Media posts, Illustration.
-                    </ImportantText>
+                        </ProjectText>
                     </div>
                     <div className="d-flex column r-g-1 col-xmd-9 col-ipp-12">
                         <ProjectHeading4>Context</ProjectHeading4>
@@ -33,16 +35,16 @@ export const AllSpaceVentures = props => {
                             AllSpace Ventures is a real estate company that has a unique proposal. They sell single properties to a
                             bunch of stakeholders such that they can all enjoy the property as a vacation home at different times.
                             This is a concept called fractional ownership.
-                    </ProjectParagraph>
+                        </ProjectParagraph>
                     </div>
                 </div>
             </div>
         </BIContainer>
         <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/AllSpace_Ventures/AllSpace_fb_WBb0QZ2dg.png?tr=w-1000" />
         <BIContainer className=""
-            image="https://ik.imagekit.io/bizwem110d/inkling/Backgrounds_for_mobile/allspace_mob_2_BKcfLYCemx.png" position="right top" size="cover"
+            image="https://ik.imagekit.io/bizwem110d/inkling/mobile_backgrounds_redone/AllSpace_2_0xt_76KAt.png" position="right top" size="cover"
             desImage="https://ik.imagekit.io/bizwem110d/inkling/Allspace_web_2_3vKr-PhaSJ.png">
-            <div className="d-flex center align-center col-6 col-xmd-8 col-ipp-6 col-xlg-8 margin-center py-5 py-md-7 py-xmd-5 py-ipp-7 py-lg-5">
+            <div className="d-flex center align-center col-6 col-md-8 margin-center py-5 py-md-7 py-xmd-5 py-ipp-7 py-lg-5">
                 <div className="d-flex column r-g-2 col-12">
                     <div className="d-flex column r-g-1">
                         <ProjectHeading4>DESIGN BRIEF</ProjectHeading4>
@@ -63,6 +65,6 @@ export const AllSpaceVentures = props => {
             </div>
         </BIContainer>
         <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/AllSpace_Ventures/AllSpace_insta_JnP_iTILu.png?tr=w-1000" />
-        <NavButtons prev="armor" pName="Armor Security" next="snapdeal" nName="Snapdeal" />
+        <NavButtons prev="armor-security" pName="Armor Security" next="snapdeal" nName="Snapdeal" />
     </Fragment>
 }
