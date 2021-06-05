@@ -63,6 +63,6 @@ export const AllSpaceVentures = props => {
             </div>
         </BIContainer>
         <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/AllSpace_Ventures/AllSpace_insta_JnP_iTILu.png?tr=w-1000" />
-        <NavButtons prev="armor" pName="Armor Security" next="snapdeal" nName="Snapdeal" />
+        <NavButtons prev="armor-security" pName="Armor Security" next="snapdeal" nName="Snapdeal" />
     </Fragment>
 }

@@ -56,6 +56,6 @@ export const Pathways = props => {
             <Banner className="col-xmd-6" src="https://ik.imagekit.io/bizwem110d/inkling/Pathways/Pathways_brochure-01_5cJUs0Wqe.jpg?tr=w-1000" />
             <Banner className="col-xmd-6" src="https://ik.imagekit.io/bizwem110d/inkling/Pathways/Pathways_brochure-02_Jp_R82pGxS.jpg?tr=w-1000" />
         </div>
-        <NavButtons prev="Aadhiyaran Agrarian Services" pName="agrarian" next="klm" nName="KLM Royal Dutch Airlines" />
+        <NavButtons prev="aadhiyaran-agrarian-services" pName="Aadhiyaran Agrarian Services" next="klm" nName="KLM Royal Dutch Airlines" />
     </Fragment>
 }

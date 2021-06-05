@@ -62,6 +62,6 @@ export const ArmorSecurity = props => {
             </div>
         </BIContainer>
         <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/Armor_Security/Free_Landscape_Brochure_Mockup_05_4st2A3-2MD.png?tr=w-1000" />
-        <NavButtons prev="doolally" pName="Doolally" next="allspace" nName="AllSpace Ventures" />
+        <NavButtons prev="doolally" pName="Doolally" next="allspace-ventures" nName="AllSpace Ventures" />
     </Fragment>
 }

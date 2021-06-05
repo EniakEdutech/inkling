@@ -37,10 +37,10 @@ ReactDOM.render(
         <Route path="/portfolio/code-for-all"><CodeForAll /></Route>
         <Route path="/portfolio/90-min-app"><Ninetyminapp /></Route>
         <Route path="/portfolio/doolally"><Doolally /></Route>
-        <Route path="/portfolio/armor"><ArmorSecurity /></Route>
-        <Route path="/portfolio/allspace"><AllSpaceVentures /></Route>
+        <Route path="/portfolio/armor-security"><ArmorSecurity /></Route>
+        <Route path="/portfolio/allspace-ventures"><AllSpaceVentures /></Route>
         <Route path="/portfolio/snapdeal"><Snapdeal /></Route>
-        <Route path="/portfolio/agrarian"><AadhiyaranAgrarianServices /></Route>
+        <Route path="/portfolio/aadhiyaran-agrarian-services"><AadhiyaranAgrarianServices /></Route>
         <Route path="/portfolio/pathways"><Pathways /></Route>
         <Route path="/portfolio/klm"><Klm /></Route>
         <Route path="/portfolio"><Portfolio /></Route>

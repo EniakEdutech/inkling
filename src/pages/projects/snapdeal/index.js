@@ -58,6 +58,6 @@ export const Snapdeal = props => {
         </BIContainer>
         <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/Snapdeal/snapdeal_box2_40ieBuCTN.png?tr=w-1000" />
         <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/Snapdeal/snapdeal_box1_3KfhaxJVc.png?tr=w-1000" />
-        <NavButtons prev="allspace" pName="AllSpace Ventures" next="agrarian" nName="Aadhiyaran Agrarian Services" />
+        <NavButtons prev="allspace-ventures" pName="AllSpace Ventures" next="aadhiyaran-agrarian-services" nName="Aadhiyaran Agrarian Services" />
     </Fragment>
 }
