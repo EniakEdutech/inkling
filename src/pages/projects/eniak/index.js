@@ -55,14 +55,15 @@ export const Eniak = props => {
                         services) which together forms a revolutionary way to approach education.
                         </ProjectParagraph>
                     </div>
-                    <div className="d-flex column r-g-1"></div>
-                    <ProjectHeading4>Design Approach</ProjectHeading4>
-                    <ProjectParagraph>
-                        The eniak logo is a representation of something  called a fractal which is the smallest unit
-                        of a pattern that when repeated in large numbers always remains the same. The fractal is in
-                        perspective to represent momentum. A fractal in motion seemed to represent the different
-                        components of eniak and the revolutionary aspect.
-                </ProjectParagraph>
+                    <div className="d-flex column r-g-1">
+                        <ProjectHeading4>Design Approach</ProjectHeading4>
+                        <ProjectParagraph>
+                            The eniak logo is a representation of something  called a fractal which is the smallest unit
+                            of a pattern that when repeated in large numbers always remains the same. The fractal is in
+                            perspective to represent momentum. A fractal in motion seemed to represent the different
+                            components of eniak and the revolutionary aspect.
+                        </ProjectParagraph>
+                    </div>
                 </div>
             </div>
         </BIContainer>
