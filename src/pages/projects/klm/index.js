@@ -6,7 +6,7 @@ import { NavButtons } from '../../../molecules/navbuttons'
 import { Title } from '../../../atoms/title'
 import { ProjectHeading1 } from '../../../atoms/heading1'
 import { ProjectHeading4 } from '../../../atoms/heading4'
-import { ImportantText } from '../../../atoms/importantText'
+import { ProjectText } from '../../../atoms/text'
 import { ProjectParagraph } from '../../../atoms/paragraph'
 import { Banner } from '../../../atoms/banner'
 import { UnorderedList } from '../../../atoms/unorderedList'
@@ -17,17 +17,17 @@ export const Klm = props => {
     return <Fragment>
         <ScrollToTopOnMount />
         <BIContainer className=""
-            image="https://ik.imagekit.io/bizwem110d/inkling/Backgrounds_for_mobile/KLM_mob_1_KjtMZOLHw.png" position="top right" size="cover"
+            image="https://ik.imagekit.io/bizwem110d/inkling/mobile_backgrounds_redone/KLM_1_PrMJXYGVd.png" position="top right" size="cover"
             desImage="https://ik.imagekit.io/bizwem110d/inkling/Allspace_web_1_viXWlIEBI.png" desPosition="bottom right">
             <div className="d-flex column g-2 col-6 col-md-8 margin-center py-5 py-md-7 py-xmd-5 py-ipp-7 py-lg-5">
-                <Title>KLM ROYAL DUTCH AIRLINES </Title>
-                <ProjectHeading1>User Interface design and development of the management software.</ProjectHeading1>
+                <div className="d-flex column">
+                    <Title>KLM ROYAL DUTCH AIRLINES </Title>
+                    <ProjectHeading1>User Interface design and development of the management software.</ProjectHeading1>
+                </div>
                 <div className="d-flex column xmd-row ipp-column col-12 r-g-2 c-g-1">
                     <div className="d-flex column r-g-1 col-xmd-3 col-ipp-12">
                         <ProjectHeading4>Services</ProjectHeading4>
-                        <ImportantText>
-                            Creating a management system.
-                    </ImportantText>
+                        <ProjectText>Creating a management system.</ProjectText>
                     </div>
                     <div className="d-flex column r-g-1 col-xmd-9 col-ipp-12">
                         <ProjectHeading4>Context</ProjectHeading4>
@@ -43,7 +43,7 @@ export const Klm = props => {
         </BIContainer>
         <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/KLM/KLM_signin_nWmnvkWOg.png?tr=w-1000" />
         <BIContainer className=""
-            image="https://ik.imagekit.io/bizwem110d/inkling/About_web_2_UEel0P6InS.png" position="unset" size="cover"
+            image="https://ik.imagekit.io/bizwem110d/inkling/mobile_backgrounds_redone/KLM_2_BKw-k7cIQ.png" position="unset" size="cover"
             desImage="https://ik.imagekit.io/bizwem110d/inkling/eniakproject_web_1_RwutNliMs.png" desPosition="right">
             <div className="d-flex column xmd-row g-2 col-6 col-md-8 margin-center py-3 py-md-4 py-xmd-5">
                 <div className="d-flex column r-g-2 flex-xmd-1">

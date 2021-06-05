@@ -6,7 +6,7 @@ import { NavButtons } from '../../../molecules/navbuttons'
 import { Title } from '../../../atoms/title'
 import { ProjectHeading1 } from '../../../atoms/heading1'
 import { ProjectHeading4 } from '../../../atoms/heading4'
-import { ImportantText } from '../../../atoms/importantText'
+import { ProjectText } from '../../../atoms/text'
 import { ProjectParagraph } from '../../../atoms/paragraph'
 import { Banner } from '../../../atoms/banner'
 import { BIContainer } from '../../../atoms/bicontainer'
@@ -15,19 +15,17 @@ export const Snapdeal = props => {
     return <Fragment>
         <ScrollToTopOnMount />
         <BIContainer className=""
-            image="https://ik.imagekit.io/bizwem110d/inkling/Backgrounds_for_mobile/snapdeal_mob_1_HjzmcwoEqD.png" position="top right" size="cover"
+            image="https://ik.imagekit.io/bizwem110d/inkling/mobile_backgrounds_redone/Snapdeal_1_4LzUO-JXA.png" position="top right" size="cover"
             desImage="https://ik.imagekit.io/bizwem110d/inkling/itk_web_1_c5WE0exdx.png">
             <div className="d-flex column g-2 col-6 col-md-8 margin-center py-5 py-md-7 py-xmd-5 py-ipp-7 py-lg-5">
-                <div className="d-flex column r-g-1">
+                <div className="d-flex column">
                     <Title>SNAPDEAL</Title>
                     <ProjectHeading1>Unbox Zindagi</ProjectHeading1>
                 </div>
                 <div className="d-flex column xmd-row ipp-column col-12 r-g-2 c-g-1">
                     <div className="d-flex column r-g-1 col-xmd-3 col-ipp-12">
                         <ProjectHeading4>Services</ProjectHeading4>
-                        <ImportantText>
-                            Branding, Illustration, Packaging.
-                        </ImportantText>
+                        <ProjectText>Branding, Illustration, Packaging.</ProjectText>
                     </div>
                     <div className="d-flex column r-g-1 col-xmd-9 col-ipp-12">
                         <ProjectHeading4>Context</ProjectHeading4>
@@ -43,7 +41,7 @@ export const Snapdeal = props => {
         </BIContainer>
         <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/Snapdeal/snapdeal_main_u7Cns0O-3.png" />
         <BIContainer className=""
-            image="https://ik.imagekit.io/bizwem110d/inkling/Backgrounds_for_mobile/snapdeal_mob_2_DwWCP6Rb1.png" position="right" size="cover">
+            image="https://ik.imagekit.io/bizwem110d/inkling/mobile_backgrounds_redone/Snapdeal_2_fXjQe1xVE.png" position="right" size="cover">
             <div className="d-flex center align-center col-6 col-md-8 margin-center r-g-2 c-g-1 py-3 py-md-4 py-xmd-5">
                 <div className="d-flex column r-g-1 col-12">
                     <ProjectHeading4>DESIGN APPROACH</ProjectHeading4>
