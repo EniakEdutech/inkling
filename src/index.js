@@ -26,7 +26,7 @@ import { Klm } from './pages/projects/klm'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router basename={process.env.PUBLIC_URL} >
+    <Router>
       <NavMenu />
       <Switch>
         <Route path="/aboutus" ><AboutUs /></Route>
