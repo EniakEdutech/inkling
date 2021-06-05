@@ -163,6 +163,10 @@ z-index: 1;
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 grid-gap: 3em;
+
+@media screen and (min-width: 1200px) {
+    grid-template-columns: repeat(3, 1fr);
+}
 `
 
 const StyledPortfolioLink = styled(Button)`
