@@ -18,11 +18,11 @@ export const Eniak = props => {
             image="https://ik.imagekit.io/bizwem110d/inkling/mobile_backgrounds_redone/eniak_1_dn30D-RFXG.png" position="right top" size="cover"
             desImage="https://ik.imagekit.io/bizwem110d/inkling/eniakproject_web_1_RwutNliMs.png">
             <div className="d-flex column g-2 col-6 col-md-8 margin-center py-5 py-md-7 py-xmd-5 py-ipp-7 py-lg-5">
-                <div className="d-flex column xmd-row ipp-column">
+                <div className="d-flex column xmd-row ipp-column c-g-1">
                     <Title className="flex-xmd-3 flex-ipp-1">Eniak</Title>
                     <ProjectHeading1 className="flex-xmd-7 flex-ipp-1">Making educational and technological reform.</ProjectHeading1>
                 </div>
-                <div className="d-flex column xmd-row r-g-2">
+                <div className="d-flex column xmd-row r-g-2 c-g-1">
                     <div className="flex-xmd-3 d-flex column r-g-1">
                         <ProjectHeading4>Services</ProjectHeading4>
                         <ProjectText>
@@ -37,7 +37,7 @@ export const Eniak = props => {
                             is a parent company to its pilot product ITK that explores education and technology. Not only is
                             Eniak venturing into improving technological literacy for younger children but also for college
                             children and graduates.
-                </ProjectParagraph>
+                        </ProjectParagraph>
                     </div>
                 </div>
             </div>

@@ -2,9 +2,9 @@ import { Image } from "../image"
 import styled from "styled-components"
 
 const StyledImage = styled(Image)`
-object-fit: ${props => props.contain ? 'contain' : 'cover'};
+object-fit: cover;
 max-width: 100vw;
-max-height: 100vh;
+max-height: ${props => props.contain ? 'unset' : '100vh'};;
 `
 
 export const Banner = props => {
