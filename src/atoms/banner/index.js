@@ -1,5 +1,5 @@
 import { Image } from "../image"
-import styled, { css } from "styled-components"
+import styled from "styled-components"
 
 const StyledImage = styled(Image)`
 object-fit: ${props => props.contain ? 'contain' : 'cover'};

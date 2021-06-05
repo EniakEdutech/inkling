@@ -55,6 +55,7 @@ border-bottom: 1px solid var(--primary-lightest-variant);
 > a {
     font-size: 12px;
     font-family: 'Poppins',sans-serif;
+    text-transform: uppercase;
 }
 
 > a.active {
@@ -68,6 +69,7 @@ border-bottom: 1px solid var(--primary-lightest-variant);
     border-bottom: none;
     > a {
         font-size: 13px;
+        padding-bottom: 0.5em;
     }
 
     > a:hover {
@@ -77,7 +79,6 @@ border-bottom: 1px solid var(--primary-lightest-variant);
     
     > a.active {
         text-decoration: none;
-        padding-bottom: 0.5em;
         border-bottom: 1px solid var(--primary-lightest-variant);
     }
 }
@@ -87,16 +88,16 @@ export const Footer = props => {
 
     return <StyledContainer className="col-12 d-flex center">
         <div className="d-flex column xmd-row align-center center g-2 col-10 col-xmd-11 col-lg-10 col-xlg-6 py-xmd-2">
-            <StyledFooterLogo>
+            <StyledFooterLogo className="col-12 col-xmd-3 col-xlg-4">
                 <img src={footerSvg} alt="logo" title="Inkling" />
             </StyledFooterLogo>
-            <StyledNavLinkDiv className="d-flex row xmd-align-center space-evenly md-center c-g-md-1 col-12 py-2 px-xmd-2 py-xmd-none">
+            <StyledNavLinkDiv className="d-flex row xmd-align-center space-evenly xlg-space-around md-center c-g-md-1 col-12 col-xmd-6 col-xlg-4 py-2 px-xmd-none py-xmd-none">
                 <NavLink to="/" exact>Home</NavLink>
                 <NavLink to="/aboutus">About Us</NavLink>
-                <NavLink to="/portfolio">Portfolio</NavLink>
+                <NavLink to="/portfolio">Projects</NavLink>
                 <NavLink to="/contactus">Contact Us</NavLink>
             </StyledNavLinkDiv>
-            <div className="d-flex column xmd-align-start g-1">
+            <div className="d-flex column xmd-align-start g-1 col-12 col-xmd-3 col-xlg-4">
                 <div className="d-flex align-center center c-g-1">
                     <MailIcon />
                     <Anchor href="mailto:inklingbyeniak@gmail.com">inklingbyeniak@gmail.com</Anchor>

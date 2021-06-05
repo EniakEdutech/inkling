@@ -88,6 +88,7 @@ display: none;
     padding: 12px 0px;
     margin: 10px 0;
     font-family: 'Poppins',sans-serif;
+    text-transform: uppercase;
 }
 
 >a.active {
@@ -100,7 +101,7 @@ display: none;
     display: flex;
     >a {
         display: inline-block;
-        margin: 25px 20px;
+        margin: 25px 10px;
         padding: 5px 0px;
     }
     >a.active:hover, >a:hover {
@@ -136,7 +137,7 @@ export const NavMenu = props => {
             <StylesNavigationItems className="column md-row col-12 col-md-none" toggleShow={show}>
                 <NavLink to="/" exact onClick={() => setShow(false)}>Home</NavLink>
                 <NavLink to="/aboutus" onClick={() => setShow(false)}>About Us</NavLink>
-                <NavLink to="/portfolio" onClick={() => setShow(false)}>Portfolio</NavLink>
+                <NavLink to="/portfolio" onClick={() => setShow(false)}>Projects</NavLink>
                 <NavLink to="/contactus" onClick={() => setShow(false)}>Contact Us</NavLink>
             </StylesNavigationItems>
             <Hamburger click={() => setShow(!show)} show={show} />
