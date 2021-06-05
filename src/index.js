@@ -32,7 +32,7 @@ ReactDOM.render(
         <Route path="/aboutus" ><AboutUs /></Route>
         <Route path="/portfolio/eniak"><Eniak /></Route>
         <Route path="/portfolio/main-bhi-ambani"><MainBhiAmbani /></Route>
-        <Route path="/portfolio/tcsc-feedback"><TCSCFeedback /></Route>
+        {/* <Route path="/portfolio/tcsc-feedback"><TCSCFeedback /></Route> */}
         <Route path="/portfolio/itk"><Itk /></Route>
         <Route path="/portfolio/code-for-all"><CodeForAll /></Route>
         <Route path="/portfolio/90-min-app"><Ninetyminapp /></Route>
