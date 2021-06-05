@@ -74,11 +74,6 @@ q, blockquote {
   font-style: italic;
 }
 
-span {
-  font-size: 22px;
-  font-family: 'Lateef', cursive;
-}
-
 a {
   color: inherit;
   text-decoration: none;
