@@ -17,7 +17,7 @@ export const Heading4 = props => {
 }
 
 const ProjectStyledH5 = styled(StyledH5)`
-font-weight: 600;
+font-weight: 500;
 letter-spacing: 1px;
 `
 
