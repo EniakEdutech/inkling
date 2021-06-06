@@ -7,24 +7,16 @@ import { Button } from "../../atoms/button"
 import { Fragment } from "react"
 
 const StyledContainer = styled.div`
-min-height: var(--small-screen-100vh);
+min-height: var(--small-screen-navmenu-100vh);
 background-image: url("https://ik.imagekit.io/bizwem110d/inkling/Projects_web_FvBoVS1BU.png");
 background-size: cover;
 background-position: top;
 @media screen and (min-width: 768px) {
-    min-height: var(--tablet-screen-100vh);
-}
-
-@media screen and (min-width: 992px) {
-    min-height: var(--small-desktop-screen-100vh);
-}
-
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
-    min-height: var(--ipadpro-screen-100vh);
+    min-height: var(--tablet-navmenu-100vh);
 }
 
 @media screen and (min-width: 2560x) {
-    min-height: var( --extra-large-screen-100vh);
+    min-height: var(--extra-large-navmenu-100vh);
 }
 `
 
@@ -63,7 +55,7 @@ export const ContactUs = props => {
     return <Fragment>
         <ScrollToTopOnMount />
         <StyledContainer className="d-flex center align-center">
-            <div className="d-flex column start align-center r-g-2 col-10 col-md-8 col-xmd-10 col-ipp-8 col-xlg-4 pb-10">
+            <div className="d-flex column start align-center r-g-2 col-10 col-md-8 col-xmd-10 col-ipp-8 col-lg-8 col-tv-6 col-xlg-4 pb-10">
                 <SectionHeading1 className="self-align-start py-2">Contact Us</SectionHeading1>
                 <div className="d-flex column xmd-row r-g-2 c-g-1 col-12">
                     <StyledInput className="col-12" placeholder="Name" type="text" />
