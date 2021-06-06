@@ -7,14 +7,10 @@ import { Paragraph } from '../../atoms/paragraph'
 const TeamImage = styled.picture`
 width: 100%;
 height: auto;
-background: ${props => "linear-gradient(" + props.colour1 + "," + props.colour2 + ")"};
-position: relative;
 
 > * {
     width: 100%;
     height: auto;
-    position: sticky;
-    bottom: 0;
     vertical-align: bottom;
 }
 `
@@ -33,9 +29,9 @@ font-weight: 300;
 font-size: 16px;
 `
 
-export const TeamMember = props => <div className="col-12 col-md-6 col-xmd-4 col-ipp-6 col-xlg-3">
+export const TeamMember = props => <div className="col-12 col-md-6 col-xmd-4 col-ipp-6">
     <div className="d-flex column r-g-2 col-11 margin-center">
-        <TeamImage colour1={props.colour1} colour2={props.colour2}>
+        <TeamImage>
             {props.children}
         </TeamImage>
         <div>
