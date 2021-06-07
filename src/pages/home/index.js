@@ -216,7 +216,7 @@ export const Home = props => {
             <StyledPortfolioLink to="/portfolio" className="d-flex center align-center my-2">view more &rarr;</StyledPortfolioLink>
         </div>
         <StyledServicessDiv>
-            <div className="d-flex column align-center col-10 col-xlg-6 margin-center pt-1 pb-10">
+            <div className="d-flex column align-center col-10 col-xlg-6 margin-center pt-1 pb-10" style={{backgroundColor: "white"}}>
                 <ServiceSectionHeading1 className="d-flex mt-2 mb-3 self-align-start">Our Services</ServiceSectionHeading1>
                 <div className="d-flex wrap row r-g-2">
                     <Service

@@ -22,7 +22,6 @@ background-position: top;
 
 const SectionHeading1 = styled(Heading1)`
 position: relative;
-padding-bottom: 20px;
 text-transform: uppercase;
 font-weight: 700;
 
@@ -55,8 +54,8 @@ export const ContactUs = props => {
     return <Fragment>
         <ScrollToTopOnMount />
         <StyledContainer className="d-flex center align-center">
-            <div className="d-flex column start align-center r-g-2 col-10 col-md-8 col-xmd-10 col-ipp-8 col-lg-8 col-tv-6 col-xlg-4 pb-10">
-                <SectionHeading1 className="self-align-start py-2">Contact Us</SectionHeading1>
+            <div className="d-flex column start align-center r-g-2 h-100 col-10 col-md-8 col-xmd-10 col-ipp-8 col-lg-8 col-tv-6 col-xlg-4 p-1 mb-10" style={{backgroundColor: "white"}}>
+                <SectionHeading1 className="self-align-start pb-half">Contact Us</SectionHeading1>
                 <div className="d-flex column xmd-row r-g-2 c-g-1 col-12">
                     <StyledInput className="col-12" placeholder="Name" type="text" />
                     <StyledInput className="col-12" placeholder="Email" type="email" />
