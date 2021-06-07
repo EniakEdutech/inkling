@@ -41,8 +41,8 @@ export const AadhiyaranAgrarianServices = props => {
             </div>
         </BIContainer>
         <div className="d-flex column xmd-row col-12 col-xlg-8 margin-center">
-            <Banner className="col-xmd-4" src="https://ik.imagekit.io/bizwem110d/inkling/Aadhiyaran_Agrarian_Services/Aadhiyaran_logo_tu13sSJID.png" />
-            <Banner className="col-xmd-8" src="https://ik.imagekit.io/bizwem110d/inkling/Aadhiyaran_Agrarian_Services/Aadhiyaran_cards_v1HcYI1_Q.png?tr=w-1000" />
+            <Banner className="col-xmd-4" alt="aadhiyaran-logo-image" src="https://ik.imagekit.io/bizwem110d/inkling/Aadhiyaran_Agrarian_Services/Aadhiyaran_logo_tu13sSJID.png" />
+            <Banner className="col-xmd-8" alt="aadhiyaran-cards-image" src="https://ik.imagekit.io/bizwem110d/inkling/Aadhiyaran_Agrarian_Services/Aadhiyaran_cards_v1HcYI1_Q.png?tr=w-1000" />
         </div>
         <BIContainer className=""
             image="https://ik.imagekit.io/bizwem110d/inkling/mobile_backgrounds_redone/Aadhiyaran_2_K1kjCH-zK.png" size="cover"
@@ -59,7 +59,7 @@ export const AadhiyaranAgrarianServices = props => {
             </div>
         </BIContainer>
         <div className="d-flex column xmd-row col-xlg-8 xlg-margin-center">
-            <Banner className="col-xmd-6" src="https://ik.imagekit.io/bizwem110d/inkling/Aadhiyaran_Agrarian_Services/Aadhiyaran_tshirt_0rd-EmIk2.png?tr=w-1000" />
+            <Banner className="col-xmd-6" alt="aadiyaran-tshirt-image" src="https://ik.imagekit.io/bizwem110d/inkling/Aadhiyaran_Agrarian_Services/Aadhiyaran_tshirt_0rd-EmIk2.png?tr=w-1000" />
             <BIContainer className=""
                 desImage="https://ik.imagekit.io/bizwem110d/inkling/Aadhiyaran_web_3_-_wfjhJKw.png" size="cover" position="right top">
                 <div className="d-flex column xmd-center col-6 col-md-8 h-md-100 margin-center py-4 px-xmd-4 r-g-1">
@@ -74,7 +74,7 @@ export const AadhiyaranAgrarianServices = props => {
                 </div>
             </BIContainer>
         </div>
-        <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/Aadhiyaran_Agrarian_Services/Aadhiyaran_bags_rus2TC8D5.png?tr=w-1000" />
+        <Banner className="" alt="aadhiyaran-bags-image" src="https://ik.imagekit.io/bizwem110d/inkling/Aadhiyaran_Agrarian_Services/Aadhiyaran_bags_rus2TC8D5.png?tr=w-1000" />
         <NavButtons prev="snapdeal" pName="Snapdeal" next="pathways" nName="Pathways" />
     </Fragment>
 }

@@ -42,7 +42,7 @@ export const Eniak = props => {
                 </div>
             </div>
         </BIContainer>
-        <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/Eniak_project_images/tiny2-01_tOFi8YDp3.png" />
+        <Banner className="" alt="eniak-image" src="https://ik.imagekit.io/bizwem110d/inkling/Eniak_project_images/tiny2-01_tOFi8YDp3.png" />
         <BIContainer className=""
             image="https://ik.imagekit.io/bizwem110d/inkling/mobile_backgrounds_redone/eniak_2_mxu69tiKvw.png" position="right top" size="cover"
             desImage="https://ik.imagekit.io/bizwem110d/inkling/eniakproject_web_2_xkkLzr-7c.png" desPosition="left bottom">
@@ -67,8 +67,8 @@ export const Eniak = props => {
                 </div>
             </div>
         </BIContainer>
-        <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/Eniak_project_images/small-01_ZFX3FoFYE.png" />
-        <Banner contain className="" src="https://ik.imagekit.io/bizwem110d/inkling/Eniak_project_images/ENIAK_ClWusekxn.png" />
+        <Banner className="" alt="eniak-1-image" src="https://ik.imagekit.io/bizwem110d/inkling/Eniak_project_images/small-01_ZFX3FoFYE.png" />
+        <Banner contain className="" alt="eniak-2-image" src="https://ik.imagekit.io/bizwem110d/inkling/Eniak_project_images/ENIAK_ClWusekxn.png" />
         <NavButtons prev="main-bhi-ambani" pName="Main Bhi Ambani" next="itk" nName="I.T. Kindergarden" />
     </Fragment>
 }

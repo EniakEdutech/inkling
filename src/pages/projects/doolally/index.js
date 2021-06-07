@@ -43,8 +43,8 @@ export const Doolally = props => {
             </div>
         </BIContainer>
         <div className="d-flex column xmd-row col-12 col-xlg-8 xlg-margin-center">
-            <Banner className="col-xmd-6" src="https://ik.imagekit.io/bizwem110d/inkling/Doolally/Doolally_poster2_irR3RpwEN.png?tr=w-1000" />
-            <Banner className="col-xmd-6" src="https://ik.imagekit.io/bizwem110d/inkling/Doolally/Doolally_poster1_TK4TOmsmw.png?tr=w-1000" />
+            <Banner className="col-xmd-6" alt="doolally-poster1-image" src="https://ik.imagekit.io/bizwem110d/inkling/Doolally/Doolally_poster2_irR3RpwEN.png?tr=w-1000" />
+            <Banner className="col-xmd-6" alt="doolally-poster2-image" src="https://ik.imagekit.io/bizwem110d/inkling/Doolally/Doolally_poster1_TK4TOmsmw.png?tr=w-1000" />
         </div>
         <BIContainer className=""
             image="https://ik.imagekit.io/bizwem110d/inkling/mobile_backgrounds_redone/Doolally_1_ik5MEWNWO.png" position="right" size="cover"
@@ -73,7 +73,7 @@ export const Doolally = props => {
                 </div>
             </div>
         </BIContainer>
-        <Banner contain className="" src="https://ik.imagekit.io/bizwem110d/inkling/Doolally/Doolally_finalposter1-01_RV2jbJUMj.png?tr=w-1000" />
+        <Banner contain className="" alt="doolally-poster3-image" src="https://ik.imagekit.io/bizwem110d/inkling/Doolally/Doolally_finalposter1-01_RV2jbJUMj.png?tr=w-1000" />
         <NavButtons prev="90-min-app" pName="90min App Challenge" next="armor-security" nName="Armor Security" />
     </Fragment>
 }

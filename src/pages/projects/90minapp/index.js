@@ -41,7 +41,7 @@ export const Ninetyminapp = props => {
                 </div>
             </div>
         </BIContainer>
-        <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/90_Min_App_Challenge/90min_logo_LwfeKLTs-.png" />
+        <Banner className="" alt="90min-logo-image" src="https://ik.imagekit.io/bizwem110d/inkling/90_Min_App_Challenge/90min_logo_LwfeKLTs-.png" />
         <BIContainer className=""
             image="https://ik.imagekit.io/bizwem110d/inkling/mobile_backgrounds_redone/90min_2_v2qsInun7.png" size="cover" position="right"
             desImage="https://ik.imagekit.io/bizwem110d/inkling/90min_web_2_aIT4E6CKyL.png">
@@ -62,7 +62,7 @@ export const Ninetyminapp = props => {
                 </div>
             </div>
         </BIContainer>
-        <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/90_Min_App_Challenge/90min_pamphlet_f4S5mNkYr.png?tr=w-1000" />
+        <Banner className="" alt="90min-pamphlet-image" src="https://ik.imagekit.io/bizwem110d/inkling/90_Min_App_Challenge/90min_pamphlet_f4S5mNkYr.png?tr=w-1000" />
         <NavButtons prev="code-for-all" pName="Code For All" next="doolally" nName="Doolally" />
     </Fragment>
 }

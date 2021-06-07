@@ -100,6 +100,12 @@ ${props => props.nameShow ? css`
 }
 `
 
+const BackgroundText = styled(Text)`
+z-index: -1;
+position: absolute;
+top: 0;
+`
+
 const StyledDiv = styled.div`
 position: relative;
 background-image: url(${props => props.image});
@@ -121,6 +127,7 @@ text-transform: capitalize;
 `
 
 export const Project = props => <StyledContainer {...props}>
+    <BackgroundText>{props.alt} project image</BackgroundText>
     <Link to={"/portfolio/" + props.link}>
         <div className="title p-1">
             <StyledText>{props.title}</StyledText>

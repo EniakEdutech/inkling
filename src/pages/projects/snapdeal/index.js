@@ -39,7 +39,7 @@ export const Snapdeal = props => {
                 </div>
             </div>
         </BIContainer>
-        <Banner contain className="" src="https://ik.imagekit.io/bizwem110d/inkling/Snapdeal/snapdeal_main_u7Cns0O-3.png" />
+        <Banner contain className="" alt="snapdeal-main-image" src="https://ik.imagekit.io/bizwem110d/inkling/Snapdeal/snapdeal_main_u7Cns0O-3.png" />
         <BIContainer className=""
             image="https://ik.imagekit.io/bizwem110d/inkling/mobile_backgrounds_redone/Snapdeal_2_fXjQe1xVE.png" position="right" size="cover">
             <div className="d-flex center align-center col-6 col-md-8 margin-center r-g-2 c-g-1 py-3 py-md-4 py-xmd-5">
@@ -54,8 +54,8 @@ export const Snapdeal = props => {
                 </div>
             </div>
         </BIContainer>
-        <Banner contain className="" src="https://ik.imagekit.io/bizwem110d/inkling/Snapdeal/snapdeal_box2_40ieBuCTN.png?tr=w-1000" />
-        <Banner contain className="" src="https://ik.imagekit.io/bizwem110d/inkling/Snapdeal/snapdeal_box1_3KfhaxJVc.png?tr=w-1000" />
+        <Banner contain className="" alt="snapdeal-box1-image" src="https://ik.imagekit.io/bizwem110d/inkling/Snapdeal/snapdeal_box2_40ieBuCTN.png?tr=w-1000" />
+        <Banner contain className="" alt="snapdeal-box2-image" src="https://ik.imagekit.io/bizwem110d/inkling/Snapdeal/snapdeal_box1_3KfhaxJVc.png?tr=w-1000" />
         <NavButtons prev="allspace-ventures" pName="AllSpace Ventures" next="aadhiyaran-agrarian-services" nName="Aadhiyaran Agrarian Services" />
     </Fragment>
 }

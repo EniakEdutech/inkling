@@ -41,7 +41,7 @@ export const Klm = props => {
                 </div>
             </div>
         </BIContainer>
-        <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/KLM/KLM_signin_nWmnvkWOg.png?tr=w-1000" />
+        <Banner className="" alt="klm-sign-in-image" src="https://ik.imagekit.io/bizwem110d/inkling/KLM/KLM_signin_nWmnvkWOg.png?tr=w-1000" />
         <BIContainer className=""
             image="https://ik.imagekit.io/bizwem110d/inkling/mobile_backgrounds_redone/KLM_2_BKw-k7cIQ.png" position="unset" size="cover"
             desImage="https://ik.imagekit.io/bizwem110d/inkling/eniakproject_web_1_RwutNliMs.png" desPosition="right">
@@ -96,7 +96,7 @@ export const Klm = props => {
                 </div>
             </div>
         </BIContainer>
-        <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/KLM/KLM_system_MAggtzbLs.png?tr=w-1000" />
+        <Banner className="" alt="klm-system-image" src="https://ik.imagekit.io/bizwem110d/inkling/KLM/KLM_system_MAggtzbLs.png?tr=w-1000" />
         <NavButtons prev="pathways" pName="Pathways" next="main-bhi-ambani" nName="Main Bhi Ambani" />
     </Fragment>
 }

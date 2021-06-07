@@ -296,7 +296,7 @@ export class Portfolio extends Component {
                 },
                 {
                     title: "Pathways Life Coaching",
-                    image: "https://ik.imagekit.io/bizwem110d/inkling/Doolally/Doolally_finalposter1-01_RV2jbJUMj.png?tr=h-500",
+                    image: "https://ik.imagekit.io/bizwem110d/inkling/Pathways/Screenshot_2021-05-28_at_3.12.17_PM_o5MCgTL1d.png?tr=h-500",
                     alt: "pathways life coaching",
                     link: "pathways",
                     category: ['Design'],
@@ -306,7 +306,7 @@ export class Portfolio extends Component {
                 },
                 {
                     title: "Armor Security",
-                    image: "https://ik.imagekit.io/bizwem110d/inkling/AllSpace_Ventures/AllSpace_insta_JnP_iTILu.png?tr=h-500",
+                    image: "https://ik.imagekit.io/bizwem110d/inkling/Armor_Security/armorsecurityproject_Fz5CXZVgH.png?tr=h-500",
                     alt: "armor security",
                     link: "armor-security",
                     category: ['Design'],
@@ -431,6 +431,7 @@ export class Portfolio extends Component {
                             key={index}
                             title={project.title}
                             image={project.image}
+                            alt={project.alt}
                             link={project.link}
                             nameShow={project.nShown}
                             cardType={project.cardType}

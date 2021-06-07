@@ -40,7 +40,7 @@ export const ArmorSecurity = props => {
                 </div>
             </div>
         </BIContainer>
-        <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/Armor_Security/Armor_security_business_15M0dy-DrO.png?tr=w-1000" />
+        <Banner className="" alt="armor-card-image" src="https://ik.imagekit.io/bizwem110d/inkling/Armor_Security/Armor_security_business_15M0dy-DrO.png?tr=w-1000" />
         <BIContainer className=""
             image="https://ik.imagekit.io/bizwem110d/inkling/Backgrounds_for_mobile/Armor_mob_2_lMeNuqv1K.png" position="right top" size="cover"
             desImage="https://ik.imagekit.io/bizwem110d/inkling/doolally_web_1_k2Jvm2Ma2.png">
@@ -63,7 +63,7 @@ export const ArmorSecurity = props => {
                 </div>
             </div>
         </BIContainer>
-        <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/Armor_Security/Free_Landscape_Brochure_Mockup_05_4st2A3-2MD.png?tr=w-1000" />
+        <Banner className="" alt="armor-brochure-image" src="https://ik.imagekit.io/bizwem110d/inkling/Armor_Security/Free_Landscape_Brochure_Mockup_05_4st2A3-2MD.png?tr=w-1000" />
         <NavButtons prev="doolally" pName="Doolally" next="allspace-ventures" nName="AllSpace Ventures" />
     </Fragment>
 }

@@ -125,7 +125,7 @@ export const AboutUs = () => {
                         info="Experience with consulting for businesses and creating efficient marketing strategies to make their brands grow." >
                         <source srcSet="https://ik.imagekit.io/bizwem110d/inkling/aboutus/team/jasprit_rzpE0NUpf.png?tr=w-200" />
                         <source srcSet="https://ik.imagekit.io/bizwem110d/inkling/aboutus/team/jasprit_rzpE0NUpf.png" media="(min-width: 992px)" />
-                        <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/team/jasprit_rzpE0NUpf.png?tr=w-200" alt="team" title="team" />
+                        <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/team/jasprit_rzpE0NUpf.png?tr=w-200" alt="businessStrategist:jasprit" title="Jasprit, Business Strategist" />
                     </TeamMember>
                     <TeamMember
                         name="prabjyot sudan"
@@ -133,7 +133,7 @@ export const AboutUs = () => {
                         info="Proficient in building software products and services along with core content creation and strategy in advertising." >
                         <source srcSet="https://ik.imagekit.io/bizwem110d/inkling/aboutus/team/prabjyot_yFYdumQy1S.png?tr=w-200" />
                         <source srcSet="https://ik.imagekit.io/bizwem110d/inkling/aboutus/team/prabjyot_yFYdumQy1S.png" media="(min-width: 992px)" />
-                        <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/team/prabjyot_yFYdumQy1S.png?tr=w-200" alt="team" title="team" />
+                        <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/team/prabjyot_yFYdumQy1S.png?tr=w-200" alt="businessStategist&amp;developer:prabjyot" title="Prabjyot, Business Strategist &amp; Developer" />
                     </TeamMember>
                     <TeamMember
                         name="utkarsh mehta"
@@ -141,7 +141,7 @@ export const AboutUs = () => {
                         info="Here only for the benefits">
                         <source srcSet="https://ik.imagekit.io/bizwem110d/inkling/aboutus/team/utkarsh_OZWm2tSd0N.png?tr=w-200" />
                         <source srcSet="https://ik.imagekit.io/bizwem110d/inkling/aboutus/team/utkarsh_OZWm2tSd0N.png" media="(min-width: 992px)" />
-                        <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/team/utkarsh_OZWm2tSd0N.png?tr=w-200" alt="team" title="team" />
+                        <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/team/utkarsh_OZWm2tSd0N.png?tr=w-200" alt="automationEngineer:utkarsh" title="Utkarsh, Automations Engineer" />
                     </TeamMember>
                     <TeamMember
                         name="anushka menon"
@@ -149,15 +149,15 @@ export const AboutUs = () => {
                         info="Experience freelancing as a graphic designer and working as a content developer in the education sector." >
                         <source srcSet="https://ik.imagekit.io/bizwem110d/inkling/aboutus/team/anushka_C9fVIZmJr9.png?tr=w-200" />
                         <source srcSet="https://ik.imagekit.io/bizwem110d/inkling/aboutus/team/anushka_C9fVIZmJr9.png" media="(min-width: 992px)" />
-                        <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/team/anushka_C9fVIZmJr9.png?tr=w-200" alt="team" title="team" />
+                        <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/team/anushka_C9fVIZmJr9.png?tr=w-200" alt="designDirector:anushka" title="Anushka, Design Director" />
                     </TeamMember>
                     <TeamMember
-                        name="rishab mehta"
+                        name="rishabh mehta"
                         designation="developer"
                         info="Meticulous Web developer responsible for developing user friendly end to end dynamic web &amp; mobile services with firm." >
                         <source srcSet="https://ik.imagekit.io/bizwem110d/inkling/aboutus/team/rishabh_57BOdfKOUn.png?tr=w-200" />
                         <source srcSet="https://ik.imagekit.io/bizwem110d/inkling/aboutus/team/rishabh_57BOdfKOUn.png" media="(min-width: 992px)" />
-                        <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/team/rishabh_57BOdfKOUn.png?tr=w-200" alt="team" title="team" />
+                        <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/team/rishabh_57BOdfKOUn.png?tr=w-200" alt="developer:rishabh" title="Rishabh, Developer" />
                     </TeamMember>
                     <TeamMember
                         name="Tapan Desai"
@@ -165,7 +165,7 @@ export const AboutUs = () => {
                         info="Proficient in building software products and services along with core content creation and strategy in advertising." >
                         <source srcSet="https://ik.imagekit.io/bizwem110d/inkling/aboutus/team/tapan_xWmIXfp-1.png?tr=w-200" />
                         <source srcSet="https://ik.imagekit.io/bizwem110d/inkling/aboutus/team/tapan_xWmIXfp-1.png" media="(min-width: 992px)" />
-                        <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/team/tapan_xWmIXfp-1.png?tr=w-200" alt="team" title="team" />
+                        <img src="https://ik.imagekit.io/bizwem110d/inkling/aboutus/team/tapan_xWmIXfp-1.png?tr=w-200" alt="businessStrategist:tapan" title="Tapan, Business Strategist" />
                     </TeamMember>
                 </div>
             </SectionDiv>

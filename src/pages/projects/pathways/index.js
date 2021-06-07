@@ -37,7 +37,7 @@ export const Pathways = props => {
                 </div>
             </div>
         </BIContainer>
-        <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/Pathways/pathways_BC_MRhGxkJ7Y.png?tr=w-1000" />
+        <Banner className="" alt="pathways-image" src="https://ik.imagekit.io/bizwem110d/inkling/Pathways/pathways_BC_MRhGxkJ7Y.png?tr=w-1000" />
         <BIContainer className=""
             image="https://ik.imagekit.io/bizwem110d/inkling/mobile_backgrounds_redone/Pathways_2_BWDoskqw4.png" position="top right" size="cover"
             desImage="https://ik.imagekit.io/bizwem110d/inkling/eniakproject_web_1_RwutNliMs.png">
@@ -53,8 +53,8 @@ export const Pathways = props => {
             </div>
         </BIContainer>
         <div className="d-flex column xmd-row col-12 col-xlg-8 xlg-margin-center">
-            <Banner contain className="col-xmd-6" src="https://ik.imagekit.io/bizwem110d/inkling/Pathways/Pathways_brochure-01_5cJUs0Wqe.jpg?tr=w-1000" />
-            <Banner contain className="col-xmd-6" src="https://ik.imagekit.io/bizwem110d/inkling/Pathways/Pathways_brochure-02_Jp_R82pGxS.jpg?tr=w-1000" />
+            <Banner contain className="col-xmd-6" alt="pathways-brochure-image" src="https://ik.imagekit.io/bizwem110d/inkling/Pathways/Pathways_brochure-01_5cJUs0Wqe.jpg?tr=w-1000" />
+            <Banner contain className="col-xmd-6" alt="pathways-brochure-image" src="https://ik.imagekit.io/bizwem110d/inkling/Pathways/Pathways_brochure-02_Jp_R82pGxS.jpg?tr=w-1000" />
         </div>
         <NavButtons prev="aadhiyaran-agrarian-services" pName="Aadhiyaran Agrarian Services" next="klm" nName="KLM Royal Dutch Airlines" />
     </Fragment>

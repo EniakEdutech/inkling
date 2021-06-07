@@ -40,7 +40,7 @@ export const AllSpaceVentures = props => {
                 </div>
             </div>
         </BIContainer>
-        <Banner contain className="" src="https://ik.imagekit.io/bizwem110d/inkling/AllSpace_Ventures/AllSpace_fb_WBb0QZ2dg.png?tr=w-1000" />
+        <Banner contain className="" alt="allspace-facebook-image" src="https://ik.imagekit.io/bizwem110d/inkling/AllSpace_Ventures/AllSpace_fb_WBb0QZ2dg.png?tr=w-1000" />
         <BIContainer className=""
             image="https://ik.imagekit.io/bizwem110d/inkling/mobile_backgrounds_redone/AllSpace_2_0xt_76KAt.png" position="right top" size="cover"
             desImage="https://ik.imagekit.io/bizwem110d/inkling/Allspace_web_2_3vKr-PhaSJ.png">
@@ -64,7 +64,7 @@ export const AllSpaceVentures = props => {
                 </div>
             </div>
         </BIContainer>
-        <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/AllSpace_Ventures/AllSpace_insta_JnP_iTILu.png?tr=w-1000" />
+        <Banner className="" alt="allspace-instagram-image" src="https://ik.imagekit.io/bizwem110d/inkling/AllSpace_Ventures/AllSpace_insta_JnP_iTILu.png?tr=w-1000" />
         <NavButtons prev="armor-security" pName="Armor Security" next="snapdeal" nName="Snapdeal" />
     </Fragment>
 }

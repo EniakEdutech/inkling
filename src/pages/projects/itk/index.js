@@ -42,7 +42,7 @@ export const Itk = props => {
                 </div>
             </div>
         </BIContainer>
-        <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/ITK_project/ITK_illustration_RFbw68B8k.png" />
+        <Banner className="" alt="itk-illustrations-image" src="https://ik.imagekit.io/bizwem110d/inkling/ITK_project/ITK_illustration_RFbw68B8k.png" />
         <BIContainer className=""
             image="https://ik.imagekit.io/bizwem110d/inkling/mobile_backgrounds_redone/itk_2_d28c1Gceop.png" position="right top" size="cover"
             desImage="https://ik.imagekit.io/bizwem110d/inkling/itk_web_2_dMhmhVZ2Y.png">
@@ -56,10 +56,10 @@ export const Itk = props => {
             </ProjectParagraph>
             </div>
         </BIContainer>
-        <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/ITK_project/ITK_Calendar_MydHJPR4-.png?tr=w1000" />
+        <Banner className="" alt="itk-calendar-image" src="https://ik.imagekit.io/bizwem110d/inkling/ITK_project/ITK_Calendar_MydHJPR4-.png?tr=w1000" />
         <div className="d-flex column xmd-row col-12 col-xlg-8 xlg-margin-center">
-            <Banner className="col-12 col-xmd-6" src="https://ik.imagekit.io/bizwem110d/inkling/ITK_project/ITK_brochure_ewW0HXvhx.png?tr=w-1000" />
-            <Banner className="col-12 col-xmd-6" src="https://ik.imagekit.io/bizwem110d/inkling/ITK_project/ITK_tshirt_bcfqQOk5N.png?tr=w-1000" />
+            <Banner className="col-12 col-xmd-6" alt="itk-brochure-image" src="https://ik.imagekit.io/bizwem110d/inkling/ITK_project/ITK_brochure_ewW0HXvhx.png?tr=w-1000" />
+            <Banner className="col-12 col-xmd-6" alt="itk-tshirt-image" src="https://ik.imagekit.io/bizwem110d/inkling/ITK_project/ITK_tshirt_bcfqQOk5N.png?tr=w-1000" />
         </div>
         <BIContainer className=""
             image="https://ik.imagekit.io/bizwem110d/inkling/mobile_backgrounds_redone/itk_1_YlyUvKHe5.png" position="right bottom" size="cover"
@@ -83,7 +83,7 @@ export const Itk = props => {
                 </div>
             </div>
         </BIContainer>
-        <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/ITK_project/ITK_website_qUjaD1wsY.png?tr=w-1000" />
+        <Banner className="" alt="itk-website-image" src="https://ik.imagekit.io/bizwem110d/inkling/ITK_project/ITK_website_qUjaD1wsY.png?tr=w-1000" />
         <NavButtons prev="eniak" pName="Eniak" next="code-for-all" nName="Code For All" />
     </Fragment>
 }

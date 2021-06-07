@@ -43,8 +43,8 @@ export const CodeForAll = props => {
                 </div>
             </div>
         </BIContainer>
-        <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/Code_for_all/CFA_brochure_FerSKwt23.png?tr=h-1000" />
-        <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/Code_for_all/cfa_horizontal_image_ZNJBiqQbR.png" />
+        <Banner className="" alt="code-for-all-brochure-image" src="https://ik.imagekit.io/bizwem110d/inkling/Code_for_all/CFA_brochure_FerSKwt23.png?tr=h-1000" />
+        <Banner className="" alt="code-for-all-image" src="https://ik.imagekit.io/bizwem110d/inkling/Code_for_all/cfa_horizontal_image_ZNJBiqQbR.png" />
         <div className="d-flex column xmd-row col-12 col-xlg-8 xlg-margin-center">
             <div className="col-12 col-xmd-6">
                 <BIContainer className="d-flex center align-center h-100"
@@ -76,7 +76,7 @@ export const CodeForAll = props => {
                     </div>
                 </BIContainer>
             </div>
-            <Banner className="col-12 col-xmd-6" src="https://ik.imagekit.io/bizwem110d/inkling/Code_for_all/CFA_insta_Z0AQIkQYC.png?tr=h-500" />
+            <Banner className="col-12 col-xmd-6" alt="code-for-all-instagram-image" src="https://ik.imagekit.io/bizwem110d/inkling/Code_for_all/CFA_insta_Z0AQIkQYC.png?tr=h-500" />
         </div>
         <NavButtons prev="itk" pName="I.T. Kindergarden" next="90-min-app" nName="90min app challenge" />
     </Fragment>

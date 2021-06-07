@@ -38,7 +38,7 @@ export const MainBhiAmbani = props => {
                 </div>
             </div>
         </BIContainer>
-        <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/Main_bhi_Ambani/mainbhiambani-banner-1_iLApmpYn2.png" />
+        <Banner className="" alt="main-bhi-ambani-banner-image" src="https://ik.imagekit.io/bizwem110d/inkling/Main_bhi_Ambani/mainbhiambani-banner-1_iLApmpYn2.png" />
         <BIContainer className=""
             image="https://ik.imagekit.io/bizwem110d/inkling/mobile_backgrounds_redone/Mainbhi_2_XssJVku0h.png" position="top left" size="cover">
             <div className="d-flex column xmd-row g-2 col-6 col-md-8 margin-center py-5 py-md-7 py-xmd-5 py-ipp-7 py-lg-5">
@@ -82,7 +82,7 @@ export const MainBhiAmbani = props => {
                 </div>
             </div>
         </BIContainer>
-        <Banner className="" src="https://ik.imagekit.io/bizwem110d/inkling/Main_bhi_Ambani/Main_bhi_Ambani_aVzqkXzCy.png" />
+        <Banner className="" alt="main-bhi-ambani-image" src="https://ik.imagekit.io/bizwem110d/inkling/Main_bhi_Ambani/Main_bhi_Ambani_aVzqkXzCy.png" />
         <NavButtons prev="klm" pName="KLM Royal Dutch Airlines" next="eniak" nName="Eniak" />
     </Fragment>
 }
