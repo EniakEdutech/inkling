@@ -54,7 +54,7 @@ export const ContactUs = props => {
     return <Fragment>
         <ScrollToTopOnMount />
         <StyledContainer className="d-flex center align-center">
-            <div className="d-flex column start align-center r-g-2 h-100 col-10 col-md-8 col-xmd-10 col-ipp-8 col-lg-8 col-tv-6 col-xlg-4 p-1 mb-10" style={{backgroundColor: "white"}}>
+            <div className="d-flex column start align-center r-g-2 col-10 col-md-8 col-xmd-10 col-ipp-8 col-lg-8 col-tv-6 col-xlg-4 p-1" style={{backgroundColor: "white"}}>
                 <SectionHeading1 className="self-align-start pb-half">Contact Us</SectionHeading1>
                 <div className="d-flex column xmd-row r-g-2 c-g-1 col-12">
                     <StyledInput className="col-12" placeholder="Name" type="text" />
