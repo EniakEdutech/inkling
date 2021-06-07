@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.4251f3c9.chunk.css",
-    "main.js": "/static/js/main.627cb656.chunk.js",
-    "main.js.map": "/static/js/main.627cb656.chunk.js.map",
+    "main.css": "/static/css/main.076d3a16.chunk.css",
+    "main.js": "/static/js/main.b9d318d6.chunk.js",
+    "main.js.map": "/static/js/main.b9d318d6.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.aa4d49a6.js",
     "runtime-main.js.map": "/static/js/runtime-main.aa4d49a6.js.map",
     "static/js/2.327d100d.chunk.js": "/static/js/2.327d100d.chunk.js",
     "static/js/2.327d100d.chunk.js.map": "/static/js/2.327d100d.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.4251f3c9.chunk.css.map": "/static/css/main.4251f3c9.chunk.css.map",
+    "static/css/main.076d3a16.chunk.css.map": "/static/css/main.076d3a16.chunk.css.map",
     "static/js/2.327d100d.chunk.js.LICENSE.txt": "/static/js/2.327d100d.chunk.js.LICENSE.txt",
     "static/media/allProjects.b00df689.svg": "/static/media/allProjects.b00df689.svg",
     "static/media/curriculumDesign.1c9ad7df.svg": "/static/media/curriculumDesign.1c9ad7df.svg",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.aa4d49a6.js",
     "static/js/2.327d100d.chunk.js",
-    "static/css/main.4251f3c9.chunk.css",
-    "static/js/main.627cb656.chunk.js"
+    "static/css/main.076d3a16.chunk.css",
+    "static/js/main.b9d318d6.chunk.js"
   ]
 }
