@@ -2,31 +2,27 @@ import styled, { css } from 'styled-components'
 
 const StyledButton = styled.button`
 background: white;
-box-shadow: 3px 3px 9px 0px var(--primary-variant);
-color: black;                                                                                                                       
-padding: 15px 30px;
-border-radius: 15px;
+box-shadow: 3px 3px 9px 0px var(--primary-light-variant);
+color: var(--primary-light-text);
+border-radius: 30px;
 border: transparent;
+font-family: 'Montserrat', san-serif;
+text-transform: ${props => props.capital && 'uppercase'};
 
 :hover {
-  box-shadow: 2px 2px 4px var(--primary-variant);
-  ${props => props.secondary && css`
-  box-shadow: 2px 2px 4px var(--secondary-variant);
-  `}
+  box-shadow: 2px 2px 4px var(--primary-light-variant);
 }
 
 :active {
-  box-shadow: none;
+  box-shadow: 3px 3px 9px 0px var(--primary-light-variant) inset;
 }
 
 ${props => props.primary && css`
-background: var(--primary);
+background: var(--primary-dark-variant);
 color: var(--primary-text);
 `};
-${props => props.secondary && css`
-background: var(--secondary);
-color: var(--secondary-text);
-box-shadow: 3px 3px 9px 0px var(--secondary-variant);
+${props => props.showmore && css`
+box-shadow: var(--primary-light-variant) 0px 5px 15px;
 `}
 ${props => props.info && css`
 color: var(--info);
